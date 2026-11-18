@@ -112,11 +112,21 @@ const CODEX_DATA = {
             nom: "Asher",
             categorie: "2. Personnages secondaires",
             image: "images/persos/Asher.jpg",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            age: "500 ans environ",
+            descriptionPhysique: "Vampire, habillé d'une tunique toujours noire et sombre",
+            aptitudes: "Rapide, hypnotise ses proies, très bon combattant",
+            infosComplementaires: "Est le père de Saphira",
             etat: "Vivant"
+        },
+        {
+            nom: "Darch",
+            categorie: "2. Personnages secondaires",
+            image: "images/persos/Darch.jpg",
+            age: "Iconnu",
+            descriptionPhysique: "Imposant, grand, décharné, dangereux",
+            aptitudes: "Fait peur jusque dans nos rêves",
+            infosComplementaires: "C'est le chef des Wendigos, le premier rempart vers le royaume d'Asher",
+            etat: "Mort"
         },
         {
             nom: "Erydin",
@@ -132,10 +142,10 @@ const CODEX_DATA = {
             nom: "Le Grand Maître",
             categorie: "2. Personnages secondaires",
             image: "",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            age: "56 ans",
+            descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
+            aptitudes: "Manipulation de l'esprit, télékinésie",
+            infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils thayri peu de temps avant la bataille de la cité car il avait tou t découvert de ses intentions et menaçait ses plans.",
             etat: "Mort"
         },
         {
