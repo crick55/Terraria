@@ -192,7 +192,7 @@ const CODEX_DATA = {
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
             details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
         },
-         {
+{ 
             nom: "Lymphea",
             categorie: "Lieux secondaire",
             sousTitre: "Berceau de la nature",
