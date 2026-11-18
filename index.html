@@ -202,9 +202,6 @@
             font-weight: 600;
             font-size: 1rem;
             margin-bottom: 2px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
         .item-sub {
@@ -323,6 +320,25 @@
             margin-bottom: 8px;
         }
 
+        .etat-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+
+        .etat-vivant {
+            background: rgba(34, 197, 94, 0.15);
+            color: #86efac;
+        }
+
+        .etat-mort {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+        }
+
         .modal-section {
             margin-top: 14px;
             padding-top: 12px;
@@ -331,7 +347,7 @@
 
         .modal-section h4 {
             margin: 0 0 6px 0;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: var(--text-muted);
@@ -428,7 +444,6 @@
                 groups[cat].push(item);
             });
 
-            // Replié par défaut, sauf si une recherche est en cours
             const isCollapsedByDefault = !searchQuery;
 
             groupOrder.forEach(cat => {
@@ -456,11 +471,15 @@
                         ? `<img src="${item.image}" class="avatar" alt="${item.nom}">`
                         : `<div class="avatar-placeholder">${item.nom.charAt(0).toUpperCase()}</div>`;
 
+                    const previewText = item.age
+                        ? `${item.age}${item.aptitudes ? ' • ' + item.aptitudes : ''}`
+                        : (item.sousTitre || item.description || '');
+
                     card.innerHTML = `
                         ${visual}
                         <div class="item-info">
                             <div class="item-title">${item.nom}</div>
-                            <div class="item-sub">${item.sousTitre || item.description || ''}</div>
+                            <div class="item-sub">${previewText}</div>
                         </div>
                     `;
                     content.appendChild(card);
@@ -501,21 +520,40 @@
 
         function openItemModal(item) {
             const body = document.getElementById('modalBody');
+
+            let etatBadge = '';
+            if (item.etat) {
+                const isMort = item.etat.toLowerCase().includes('mort');
+                etatBadge = `<span class="etat-badge ${isMort ? 'etat-mort' : 'etat-vivant'}">${item.etat}</span>`;
+            }
+
             let html = `
                 <span class="modal-tag">${item.categorie || ''}</span>
+                ${etatBadge}
                 <h2 style="margin: 4px 0 8px 0;">${item.nom}</h2>
-                ${item.sousTitre ? `<div style="color: var(--text-muted); font-size: 0.9rem;">${item.sousTitre}</div>` : ''}
                 ${item.image ? `<img src="${item.image}" class="modal-img" alt="${item.nom}">` : ''}
             `;
 
+            // Champs spécifiques Personnages
+            if (item.age) {
+                html += `<div class="modal-section"><h4>Âge</h4><p>${item.age}</p></div>`;
+            }
+            if (item.descriptionPhysique) {
+                html += `<div class="modal-section"><h4>Description physique</h4><p>${item.descriptionPhysique}</p></div>`;
+            }
+            if (item.aptitudes) {
+                html += `<div class="modal-section"><h4>Aptitude(s)</h4><p>${item.aptitudes}</p></div>`;
+            }
+            if (item.infosComplementaires) {
+                html += `<div class="modal-section"><h4>Informations complémentaires</h4><p>${item.infosComplementaires}</p></div>`;
+            }
+
+            // Champs génériques pour Lieux & Faune/Flore
             if (item.description) {
                 html += `<div class="modal-section"><h4>Description</h4><p>${item.description}</p></div>`;
             }
             if (item.details) {
-                html += `<div class="modal-section"><h4>Capacités / Particularités</h4><p>${item.details}</p></div>`;
-            }
-            if (item.evolution) {
-                html += `<div class="modal-section"><h4>Évolution récente</h4><p>${item.evolution}</p></div>`;
+                html += `<div class="modal-section"><h4>Particularités</h4><p>${item.details}</p></div>`;
             }
 
             body.innerHTML = html;
