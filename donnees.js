@@ -185,12 +185,28 @@ const CODEX_DATA = {
     // ==========================================
     lieux: [
         {
-            nom: "Terraria",
+            nom: "La cité",
             categorie: "Lieux importants",
             sousTitre: "La cité",
             image: "",
-            description: "La cité où vivent nos héros, sous le règne du Roi Thayri",
-            details: ""
+            description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
+            details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
+        }
+         {
+            nom: "Lymphea",
+            categorie: "Lieux secondaire",
+            sousTitre: "Berceau de la nature",
+            image: "",
+            description: "Lieu gouverné par la lymphe Ortylia et peuplée de créatures de la nature en tout genre",
+            details: "Un saule pleureur est caché au coeur de Lymphea et provoque parfois des miracles de la vie"
+        }
+ {
+            nom: "La Tour Nuage",
+            categorie: "Lieux importants",
+            sousTitre: "1er lieu où se cachait un codex",
+            image: "",
+            description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
+            details: "La tour est vivante, elle possède un coeur comme un être humain."
         }
     ],
 
