@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>Codex RP</title>
+    <title>Terraria</title>
     <style>
         :root {
             --bg-main: #000000;
@@ -381,7 +381,7 @@
 
     <header>
         <div class="header-top">
-            <h1 id="app-title">Codex RP</h1>
+            <h1 id="app-title">Terraria</h1>
         </div>
         <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher un perso, un lieu, un animal...">
         <nav id="navTabs">
@@ -406,7 +406,7 @@
         let currentTab = 'personnages';
         let searchQuery = '';
 
-        document.getElementById('app-title').textContent = CODEX_DATA.titre || 'Codex RP';
+        document.getElementById('app-title').textContent = CODEX_DATA.titre || 'Terraria';
 
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
