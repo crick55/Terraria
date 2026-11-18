@@ -16,7 +16,7 @@
             --border: #2a2a2e;
             --text-main: #f2f2f7;
             --text-muted: #98989f;
-            --accent: #8b5cf6; /* Violet fantasy sobre */
+            --accent: #8b5cf6;
             --accent-soft: rgba(139, 92, 246, 0.15);
         }
 
@@ -35,7 +35,6 @@
             padding-bottom: 40px;
         }
 
-        /* En-tête fixe */
         header {
             position: sticky;
             top: 0;
@@ -76,7 +75,6 @@
             border-color: var(--accent);
         }
 
-        /* Navigation par onglets */
         nav {
             display: flex;
             gap: 8px;
@@ -105,16 +103,14 @@
             color: #c4b5fd;
         }
 
-        /* Conteneur principal */
         main {
             max-width: 800px;
             margin: 0 auto;
             padding: 16px;
         }
 
-        /* Arborescence / Groupes dépliables */
         .tree-group {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             border: 1px solid var(--border);
             border-radius: 12px;
             background-color: var(--bg-card);
@@ -122,7 +118,7 @@
         }
 
         .tree-header {
-            padding: 12px 16px;
+            padding: 14px 16px;
             background-color: var(--bg-elevated);
             font-weight: 600;
             font-size: 0.95rem;
@@ -131,6 +127,10 @@
             align-items: center;
             cursor: pointer;
             user-select: none;
+        }
+
+        .tree-header:active {
+            background-color: #252529;
         }
 
         .tree-header span.count {
@@ -152,7 +152,6 @@
             display: none;
         }
 
-        /* Carte Élément (Perso / Lieu / Faune) */
         .item-card {
             display: flex;
             align-items: center;
@@ -216,7 +215,6 @@
             text-overflow: ellipsis;
         }
 
-        /* Galerie */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -253,7 +251,6 @@
             color: var(--text-muted);
         }
 
-        /* Fenêtre Modale (Fiche détaillée) */
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -370,7 +367,6 @@
 
     <main id="contentArea"></main>
 
-    <!-- Modale de détail -->
     <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
         <div class="modal-sheet" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal()">✕</button>
@@ -378,7 +374,6 @@
         </div>
     </div>
 
-    <!-- Chargement des données -->
     <script src="donnees.js"></script>
     <script>
         let currentTab = 'personnages';
@@ -386,7 +381,6 @@
 
         document.getElementById('app-title').textContent = CODEX_DATA.titre || 'Codex RP';
 
-        // Gestion des onglets
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -396,7 +390,6 @@
             });
         });
 
-        // Gestion de la recherche
         document.getElementById('searchInput').addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase().trim();
             render();
@@ -424,7 +417,6 @@
                 return;
             }
 
-            // Regroupement par catégorie (en conservant l'ordre exact d'apparition !)
             const groups = {};
             const groupOrder = [];
             items.forEach(item => {
@@ -436,13 +428,17 @@
                 groups[cat].push(item);
             });
 
+            // Replié par défaut, sauf si une recherche est en cours
+            const isCollapsedByDefault = !searchQuery;
+
             groupOrder.forEach(cat => {
                 const groupDiv = document.createElement('div');
-                groupDiv.className = 'tree-group';
+                groupDiv.className = 'tree-group' + (isCollapsedByDefault ? ' collapsed' : '');
 
                 const header = document.createElement('div');
                 header.className = 'tree-header';
-                header.innerHTML = `<span>▾ ${cat}</span><span class="count">${groups[cat].length}</span>`;
+                const arrow = isCollapsedByDefault ? '▸ ' : '▾ ';
+                header.innerHTML = `<span>${arrow}${cat}</span><span class="count">${groups[cat].length}</span>`;
                 header.onclick = () => {
                     groupDiv.classList.toggle('collapsed');
                     header.querySelector('span').textContent = (groupDiv.classList.contains('collapsed') ? '▸ ' : '▾ ') + cat;
