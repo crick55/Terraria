@@ -240,11 +240,37 @@ const CODEX_DATA = {
     // 4. GALERIE
     // ==========================================
     galerie: [
-        {
-            titre: "Titre de la scène",
-            scene: "Arc / Chapitre",
-            image: "https://placehold.co/600x400/1c1c1f/8b5cf6?text=Illustration",
-            description: "Contexte de l'illustration."
-        }
+        "images/galerie/Scene1.jpg",
+        "images/galerie/Scene2.jpg",
+        "images/galerie/Scene3.jpg",
+        "images/galerie/Scene4.jpg",
+        "images/galerie/Scene5.jpg",
+        "images/galerie/Scene6.jpg",
+        "images/galerie/Scene7.png",
+        "images/galerie/Scene8.png",
+        "images/galerie/Scene9.png",
+        "images/galerie/Scene10.png",
+        "images/galerie/Scene11.png",
+        "images/galerie/Scene13.png",
+        "images/galerie/Scene14.png",
+        "images/galerie/Scene15.jpg",
+        "images/galerie/Scene16.jpeg",
+        "images/galerie/Scene17.jpeg",
+        "images/galerie/Scene18.png",
+        "images/galerie/Scene19.png",
+        "images/galerie/Scene20.png",
+        "images/galerie/Scene21.png",
+        "images/galerie/Scene22.png",
+        "images/galerie/Scene23.mp4",
+        "images/galerie/Scène24.jpg",
+        "images/galerie/Scene25.jpg",
+        "images/galerie/Scene26.jpg",
+        "images/galerie/Scene27.jpg",
+        "images/galerie/Scene29.png",
+        "images/galerie/Scene30.jpg",
+        "images/galerie/Scene31.jpg",
+        "images/galerie/Scene32.png",
+        "images/galerie/Scene33.png",
+        "images/galerie/Scene34.jpg"
     ]
 };
