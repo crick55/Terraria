@@ -162,10 +162,10 @@ const CODEX_DATA = {
             nom: "Saphira",
             categorie: "2. Personnages secondaires",
             image: "images/persos/Saphira.jpg",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            age: "300 ans",
+            descriptionPhysique: "Femme qui en jette, cheveux noirs et longs, visage fin, séduisante mais mortelle",
+            aptitudes: "Rapidité, maniement des armes et redoutable au combat",
+            infosComplementaires: "Fille d'Asher, elle a maudit le monde de Lymphea",
             etat: "Mort"
         },
         {
