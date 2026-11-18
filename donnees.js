@@ -161,7 +161,7 @@ const CODEX_DATA = {
         {
             nom: "Scalia",
             categorie: "2. Personnages secondaires",
-            image: "scalia.jpg",
+            image: "images/persos/scalia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -191,13 +191,13 @@ const CODEX_DATA = {
         {
             nom: "Dragon Blanc aux Yeux bleus de Celes",
             description: "Description à compléter.",
-            image: "dragonblanc.jpg"
+            image: "images/faune/Dragonblanc.jpg",
             infosComplementaires: "À compléter.",
         },
         {
             nom: "Astro",
             description: "Description à compléter.",
-            image: "Astro.jpg"
+            image: "images/faune/Astro.jpg",
             infosComplementaires: "À compléter.",
         }
     ],
