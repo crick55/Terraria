@@ -152,16 +152,26 @@
             display: none;
         }
 
+        .simple-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         .item-card {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 10px;
             border-radius: 10px;
-            background-color: var(--bg-main);
+            background-color: var(--bg-card);
             border: 1px solid var(--border);
             cursor: pointer;
             transition: border-color 0.2s;
+        }
+
+        .tree-content .item-card {
+            background-color: var(--bg-main);
         }
 
         .item-card:active {
@@ -372,11 +382,11 @@
         <div class="header-top">
             <h1 id="app-title">Codex RP</h1>
         </div>
-        <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher un perso, un lieu, une créature...">
+        <input type="text" id="searchInput" class="search-bar" placeholder="Rechercher un perso, un lieu, un animal...">
         <nav id="navTabs">
             <button class="tab-btn active" data-tab="personnages">Personnages</button>
             <button class="tab-btn" data-tab="lieux">Lieux</button>
-            <button class="tab-btn" data-tab="fauneFlore">Faune & Flore</button>
+            <button class="tab-btn" data-tab="faune">Faune</button>
             <button class="tab-btn" data-tab="galerie">Galerie</button>
         </nav>
     </header>
@@ -417,6 +427,34 @@
             return text.includes(searchQuery);
         }
 
+        function createCard(item) {
+            const card = document.createElement('div');
+            card.className = 'item-card';
+            card.onclick = () => openItemModal(item);
+
+            const visual = item.image
+                ? `<img src="${item.image}" class="avatar" alt="${item.nom}">`
+                : `<div class="avatar-placeholder">${item.nom.charAt(0).toUpperCase()}</div>`;
+
+            let previewText = '';
+            if (item.age && item.age !== 'À compléter') {
+                previewText = item.age + (item.etat ? ' • ' + item.etat : '');
+            } else if (item.etat) {
+                previewText = item.etat;
+            } else {
+                previewText = item.sousTitre || item.description || '';
+            }
+
+            card.innerHTML = `
+                ${visual}
+                <div class="item-info">
+                    <div class="item-title">${item.nom}</div>
+                    <div class="item-sub">${previewText}</div>
+                </div>
+            `;
+            return card;
+        }
+
         function render() {
             const container = document.getElementById('contentArea');
             container.innerHTML = '';
@@ -433,6 +471,16 @@
                 return;
             }
 
+            // Affichage direct en liste simple pour la Faune (sans sous-tiroir)
+            if (currentTab === 'faune') {
+                const listDiv = document.createElement('div');
+                listDiv.className = 'simple-list';
+                items.forEach(item => listDiv.appendChild(createCard(item)));
+                container.appendChild(listDiv);
+                return;
+            }
+
+            // Regroupement en tiroirs pour Personnages et Lieux
             const groups = {};
             const groupOrder = [];
             items.forEach(item => {
@@ -461,29 +509,7 @@
 
                 const content = document.createElement('div');
                 content.className = 'tree-content';
-
-                groups[cat].forEach(item => {
-                    const card = document.createElement('div');
-                    card.className = 'item-card';
-                    card.onclick = () => openItemModal(item);
-
-                    const visual = item.image
-                        ? `<img src="${item.image}" class="avatar" alt="${item.nom}">`
-                        : `<div class="avatar-placeholder">${item.nom.charAt(0).toUpperCase()}</div>`;
-
-                    const previewText = item.age
-                        ? `${item.age}${item.aptitudes ? ' • ' + item.aptitudes : ''}`
-                        : (item.sousTitre || item.description || '');
-
-                    card.innerHTML = `
-                        ${visual}
-                        <div class="item-info">
-                            <div class="item-title">${item.nom}</div>
-                            <div class="item-sub">${previewText}</div>
-                        </div>
-                    `;
-                    content.appendChild(card);
-                });
+                groups[cat].forEach(item => content.appendChild(createCard(item)));
 
                 groupDiv.appendChild(header);
                 groupDiv.appendChild(content);
@@ -528,13 +554,12 @@
             }
 
             let html = `
-                <span class="modal-tag">${item.categorie || ''}</span>
+                ${item.categorie ? `<span class="modal-tag">${item.categorie}</span>` : ''}
                 ${etatBadge}
                 <h2 style="margin: 4px 0 8px 0;">${item.nom}</h2>
                 ${item.image ? `<img src="${item.image}" class="modal-img" alt="${item.nom}">` : ''}
             `;
 
-            // Champs spécifiques Personnages
             if (item.age) {
                 html += `<div class="modal-section"><h4>Âge</h4><p>${item.age}</p></div>`;
             }
@@ -547,8 +572,6 @@
             if (item.infosComplementaires) {
                 html += `<div class="modal-section"><h4>Informations complémentaires</h4><p>${item.infosComplementaires}</p></div>`;
             }
-
-            // Champs génériques pour Lieux & Faune/Flore
             if (item.description) {
                 html += `<div class="modal-section"><h4>Description</h4><p>${item.description}</p></div>`;
             }
