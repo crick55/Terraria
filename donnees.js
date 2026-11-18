@@ -2,41 +2,12 @@ const CODEX_DATA = {
     titre: "Terraria",
 
     // ==========================================
-    // 1. PERSONNAGES (Classés par ordre d'importance)
+    // 1. PERSONNAGES (Ordre alphabétique)
     // ==========================================
     personnages: [
+        // --- 1. Personnages principaux ---
         {
-            nom: "Liam",
-            categorie: "1. Personnages principaux",
-            image: "",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
-            etat: "Vivant"
-        },
-        {
-            nom: "Kael",
-            categorie: "1. Personnages principaux",
-            image: "",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
-            etat: "Vivant"
-        },
-        {
-            nom: "Thayri",
-            categorie: "1. Personnages principaux",
-            image: "",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
-            etat: "Vivant"
-        },
-        {
-            nom: "Galathea",
+            nom: "Azelion",
             categorie: "1. Personnages principaux",
             image: "",
             age: "À compléter",
@@ -56,6 +27,128 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
+            nom: "Dolios",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Galathéa",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Kael",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Liam",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Nyssara",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Tamara",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Thayri",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Valtor",
+            categorie: "1. Personnages principaux",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+
+        // --- 2. Personnages secondaires ---
+        {
+            nom: "Asher",
+            categorie: "2. Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Erydin",
+            categorie: "2. Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Le Grand Maître",
+            categorie: "2. Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Ortylia",
+            categorie: "2. Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "À compléter.",
+            aptitudes: "À compléter.",
+            infosComplementaires: "À compléter.",
+            etat: "Vivant"
+        },
+        {
             nom: "Saphira",
             categorie: "2. Personnages secondaires",
             image: "",
@@ -66,17 +159,7 @@ const CODEX_DATA = {
             etat: "Mort"
         },
         {
-            nom: "Dolios",
-            categorie: "2. Personnages secondaires",
-            image: "",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
-            etat: "Vivant"
-        },
-        {
-            nom: "Valtor",
+            nom: "Scalia",
             categorie: "2. Personnages secondaires",
             image: "",
             age: "À compléter",
@@ -102,24 +185,18 @@ const CODEX_DATA = {
     ],
 
     // ==========================================
-    // 3. FAUNE ET FLORE
+    // 3. FAUNE (Prénom, Description, Photo)
     // ==========================================
-    fauneFlore: [
+    faune: [
         {
-            nom: "Exemple de créature",
-            categorie: "Faune",
-            sousTitre: "À compléter",
-            image: "",
+            nom: "Dragon Blanc aux Yeux bleus de Celes",
             description: "Description à compléter.",
-            details: ""
+            image: ""
         },
         {
-            nom: "Exemple de plante",
-            categorie: "Flore",
-            sousTitre: "À compléter",
-            image: "",
+            nom: "Astro",
             description: "Description à compléter.",
-            details: ""
+            image: ""
         }
     ],
 
