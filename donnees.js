@@ -194,7 +194,7 @@ const CODEX_DATA = {
         },
 { 
             nom: "Lymphea",
-            categorie: "Lieux secondaire",
+            categorie: "Lieux secondaires",
             sousTitre: "Berceau de la nature",
             image: "",
             description: "Lieu gouverné par la lymphe Ortylia et peuplée de créatures de la nature en tout genre",
