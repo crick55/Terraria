@@ -187,7 +187,7 @@ const CODEX_DATA = {
         {
             nom: "La cité",
             categorie: "Lieux importants",
-            sousTitre: "La cité",
+            sousTitre: "La cité principale de Terraria",
             image: "",
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
             details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
@@ -211,7 +211,7 @@ const CODEX_DATA = {
 {
             nom: "Le Temple de la Vie",
             categorie: "Lieux importants",
-            sousTitre: "Temple-pyramide protégrant le coeur de verre, qui servira de coeur de substitution pour Thayri",
+            sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
             image: "",
             description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
             details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
