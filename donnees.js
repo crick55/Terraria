@@ -52,7 +52,7 @@ const CODEX_DATA = {
             image: "images/persos/Kael.jpg",
             age: "7,5 ans",
             descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
-            aptitudes: "Inconnu ou inexistant",
+            aptitudes: "Inconnu",
             infosComplementaires: "Terrarien - A été adopté par Liam et Thayri, juste après la bataille contre le Grand Maître. Fils d'Arden, mort au combat. Possède une très forte empathie. Intelligent et très débrouillard, n'a pas froid aux yeux... ce qui peut déplaire à Liam ou Thayri.",
             etat: "Vivant"
         },
@@ -60,7 +60,7 @@ const CODEX_DATA = {
             nom: "Liam",
             categorie: "1. Personnages principaux",
             image: "images/persos/Liam.jpg",
-            age: "19 ans",
+            age: "18 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
             infosComplementaires: "Conjoint de Thayri, prend le commandement de la cité en l'absence de Thayri.",
@@ -90,10 +90,10 @@ const CODEX_DATA = {
             nom: "Thayri",
             categorie: "1. Personnages principaux",
             image: "images/persos/Thayri.jpg",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            age: "19 ans",
+            descriptionPhysique: "Grand, cheveux bruns, belle ossature et relativement bien musclé.",
+            aptitudes: "Aptutides non dévoilées à ce jour, on sait cependant que depuis sa fusion avec la cité, il peut ressentir ce qui s'y passe, la manipuler, entrer en phase avec elle et bien d'autres choses. Ses pouvoirs persos ne sont pas encore dévoilés à ce jour.",
+            infosComplementaires: "Fils du Grand Maître, il a aidé Liam, Celes et Galathéa à le vaincre, celui-ci ayant décidé de prendre le contrôle de la cité et de tuer ses amis. Il finira d'ailleurs par tuer Thayri, son propre fils en le faisant absorber dans le moteur de la cité.",
             etat: "Vivant"
         },
         {
@@ -207,6 +207,14 @@ const CODEX_DATA = {
             image: "",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
             details: "La tour est vivante, elle possède un coeur comme un être humain."
+        }
+{
+            nom: "Le Temple de la Vie",
+            categorie: "Lieux importants",
+            sousTitre: "Temple-pyramide protégrant le coeur de verre, qui servira de coeur de substitution pour Thayri",
+            image: "",
+            description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
+            details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
         }
     ],
 
