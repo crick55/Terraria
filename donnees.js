@@ -9,7 +9,7 @@ const CODEX_DATA = {
         {
             nom: "Azelion",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Azelion.jpg",
             age: "Inconnu",
             descriptionPhysique: "A compléter.",
             aptitudes: "Contrôle des ombres.",
@@ -19,7 +19,7 @@ const CODEX_DATA = {
         {
             nom: "Celes",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Celes.jpg",
             age: "À compléter",
             descriptionPhysique: "Humaine - A compléter",
             aptitudes: "Medium qui peut contacter les morts. Contrôle la glace. Peut respirer sous l'eau, contrôler les animaux et créatures aquatiques et contrôle de l'eau",
@@ -29,7 +29,7 @@ const CODEX_DATA = {
         {
             nom: "Dolios",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Dolios.jpg",
             age: "À compléter",
             descriptionPhysique: "Homme Sirène.",
             aptitudes: "Contrôle de l'eau et des créatures marines.",
@@ -39,7 +39,7 @@ const CODEX_DATA = {
         {
             nom: "Galathéa",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Galathea.jpg",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Contrôle la nature",
@@ -69,7 +69,7 @@ const CODEX_DATA = {
         {
             nom: "Nyssara",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Nyssara.jpg",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Manipule les astres",
@@ -79,7 +79,7 @@ const CODEX_DATA = {
         {
             nom: "Tamara",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Tamara.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -99,7 +99,7 @@ const CODEX_DATA = {
         {
             nom: "Valtor",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Valtor.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -111,7 +111,7 @@ const CODEX_DATA = {
         {
             nom: "Asher",
             categorie: "2. Personnages secondaires",
-            image: "",
+            image: "Asher.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -141,7 +141,7 @@ const CODEX_DATA = {
         {
             nom: "Ortylia",
             categorie: "2. Personnages secondaires",
-            image: "",
+            image: "Ortylia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -151,7 +151,7 @@ const CODEX_DATA = {
         {
             nom: "Saphira",
             categorie: "2. Personnages secondaires",
-            image: "",
+            image: "Saphira.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -161,7 +161,7 @@ const CODEX_DATA = {
         {
             nom: "Scalia",
             categorie: "2. Personnages secondaires",
-            image: "",
+            image: "scalia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -176,10 +176,10 @@ const CODEX_DATA = {
     lieux: [
         {
             nom: "Terraria",
-            categorie: "Cités & Quartiers",
-            sousTitre: "La cité principale",
+            categorie: "Lieux importants",
+            sousTitre: "La cité",
             image: "",
-            description: "Description à compléter.",
+            description: "La cité où vivent nos héros, sous le règne du Roi Thayri",
             details: ""
         }
     ],
@@ -191,12 +191,14 @@ const CODEX_DATA = {
         {
             nom: "Dragon Blanc aux Yeux bleus de Celes",
             description: "Description à compléter.",
-            image: ""
+            image: "dragonblanc.jpg"
+            infosComplementaires: "À compléter.",
         },
         {
             nom: "Astro",
             description: "Description à compléter.",
-            image: ""
+            image: "Astro.jpg"
+            infosComplementaires: "À compléter.",
         }
     ],
 
