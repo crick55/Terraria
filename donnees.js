@@ -33,7 +33,7 @@ const CODEX_DATA = {
             age: "À compléter",
             descriptionPhysique: "Homme Sirène.",
             aptitudes: "Contrôle de l'eau et des créatures marines.",
-            infosComplementaires: "Est surnommé "l'homme poisson par Azelion",
+            infosComplementaires: "Est surnommé « l'homme poisson » par Azelion.",
             etat: "Vivant"
         },
         {
@@ -52,8 +52,8 @@ const CODEX_DATA = {
             image: "",
             age: "7,5 ans",
             descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
-            aptitudes: "inconnu ou inexistant",
-            infosComplementaires: "Terrarien - A été adopté par Lima et Thayri, juste après la bataille contre le Grand Maître. Fils D'arden, mort au combat. Possède une très forte empathie. intellignet et très débrouillard, n'a pas frois aux yeux... ce qui peut déplaire à Liam ou Thayri. ",
+            aptitudes: "Inconnu ou inexistant",
+            infosComplementaires: "Terrarien - A été adopté par Liam et Thayri, juste après la bataille contre le Grand Maître. Fils d'Arden, mort au combat. Possède une très forte empathie. Intelligent et très débrouillard, n'a pas froid aux yeux... ce qui peut déplaire à Liam ou Thayri.",
             etat: "Vivant"
         },
         {
@@ -61,9 +61,9 @@ const CODEX_DATA = {
             categorie: "1. Personnages principaux",
             image: "",
             age: "19 ans",
-            descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blond. Pas musclé mais pas gringalé pour autant.",
+            descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
-            infosComplementaires: "Conjoint de Thayri, prends le commandement de la cité en l'absence de Thayri.",
+            infosComplementaires: "Conjoint de Thayri, prend le commandement de la cité en l'absence de Thayri.",
             etat: "Vivant"
         },
         {
