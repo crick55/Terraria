@@ -49,7 +49,7 @@ const CODEX_DATA = {
         {
             nom: "Kael",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Kael.jpg",
             age: "7,5 ans",
             descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
             aptitudes: "Inconnu ou inexistant",
@@ -59,7 +59,7 @@ const CODEX_DATA = {
         {
             nom: "Liam",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Liam.jpg",
             age: "19 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
@@ -89,7 +89,7 @@ const CODEX_DATA = {
         {
             nom: "Thayri",
             categorie: "1. Personnages principaux",
-            image: "",
+            image: "Thayri.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
