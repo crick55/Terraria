@@ -55,7 +55,7 @@
 
         .header-top {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             margin-bottom: 10px;
         }
@@ -68,6 +68,7 @@
         }
 
         .search-bar {
+            display: block; max-width: 800px; margin-left: auto; margin-right: auto;
             width: 100%;
             background-color: var(--bg-card);
             border: 1px solid var(--border);
@@ -78,13 +79,14 @@
             margin-bottom: 12px;
             outline: none;
         }
-
+         
         .search-bar:focus {
             border-color: var(--accent);
         }
 
         nav {
             display: flex;
+            justify-content: center;
             gap: 8px;
             overflow-x: auto;
             scrollbar-width: none;
