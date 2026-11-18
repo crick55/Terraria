@@ -529,26 +529,25 @@
         }
 
         function renderGalerie(container) {
-            const items = (CODEX_DATA.galerie || []).filter(matchesSearch);
+            const items = CODEX_DATA.galerie || [];
             if (items.length === 0) {
-                container.innerHTML = '<div class="empty-state">Aucune illustration trouvée.</div>';
+                container.innerHTML = '<div class="empty-state">Aucune image dans la galerie.</div>';
                 return;
             }
-
             const grid = document.createElement('div');
-            grid.className = 'gallery-grid';
+            grid.style.cssText = 'display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px;';
 
-            items.forEach(item => {
+            items.forEach(src => {
                 const card = document.createElement('div');
-                card.className = 'gallery-card';
-                card.onclick = () => openGalleryModal(item);
-                card.innerHTML = `
-                    <img src="${item.image}" alt="${item.titre}">
-                    <div class="gallery-caption">
-                        <div class="gallery-title">${item.titre}</div>
-                        <div class="gallery-desc">${item.description || ''}</div>
-                    </div>
-                `;
+                card.style.cssText = 'border-radius: 12px; overflow: hidden; aspect-ratio: 1 / 1; cursor: pointer; border: 1px solid var(--border); background: #000;';
+                
+                if (src.endsWith('.mp4')) {
+                    card.innerHTML = `<video src="${src}" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>`;
+                } else {
+                    card.innerHTML = `<img src="${src}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">`;
+                }
+                
+                card.onclick = () => openGalleryModal(src);
                 grid.appendChild(card);
             });
 
@@ -594,14 +593,13 @@
             document.getElementById('detailModal').classList.add('open');
         }
 
-        function openGalleryModal(item) {
+        function openGalleryModal(src) {
             const body = document.getElementById('modalBody');
-            body.innerHTML = `
-                ${item.scene ? `<span class="modal-tag">${item.scene}</span>` : ''}
-                <h2 style="margin: 4px 0 8px 0;">${item.titre}</h2>
-                <img src="${item.image}" class="modal-img" style="max-height: 60vh; object-fit: contain; background: #000;" alt="${item.titre}">
-                ${item.description ? `<div class="modal-section"><h4>Contexte du post</h4><p>${item.description}</p></div>` : ''}
-            `;
+            if (src.endsWith('.mp4')) {
+                body.innerHTML = `<video src="${src}" class="modal-img" style="max-height: 80vh;" controls autoplay loop playsinline></video>`;
+            } else {
+                body.innerHTML = `<img src="${src}" class="modal-img" style="max-height: 80vh;">`;
+            }
             document.getElementById('detailModal').classList.add('open');
         }
 
