@@ -136,7 +136,7 @@ const CODEX_DATA = {
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
             infosComplementaires: "À compléter.",
-            etat: "Vivant"
+            etat: "Mort"
         },
         {
             nom: "Ortylia",
