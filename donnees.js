@@ -9,7 +9,7 @@ const CODEX_DATA = {
         {
             nom: "Azelion",
             categorie: "1. Personnages principaux",
-            image: "Azelion.jpg",
+            image: "images/persos/Azelion.jpg",
             age: "Inconnu",
             descriptionPhysique: "A compléter.",
             aptitudes: "Contrôle des ombres.",
@@ -19,7 +19,7 @@ const CODEX_DATA = {
         {
             nom: "Celes",
             categorie: "1. Personnages principaux",
-            image: "Celes.jpg",
+            image: "images/persos/Celes.jpg",
             age: "À compléter",
             descriptionPhysique: "Humaine - A compléter",
             aptitudes: "Medium qui peut contacter les morts. Contrôle la glace. Peut respirer sous l'eau, contrôler les animaux et créatures aquatiques et contrôle de l'eau",
@@ -29,7 +29,7 @@ const CODEX_DATA = {
         {
             nom: "Dolios",
             categorie: "1. Personnages principaux",
-            image: "Dolios.jpg",
+            image: "images/persos/Dolios.jpg",
             age: "À compléter",
             descriptionPhysique: "Homme Sirène.",
             aptitudes: "Contrôle de l'eau et des créatures marines.",
@@ -39,7 +39,7 @@ const CODEX_DATA = {
         {
             nom: "Galathéa",
             categorie: "1. Personnages principaux",
-            image: "Galathea.jpg",
+            image: "images/persos/Galathea.jpg",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Contrôle la nature",
@@ -49,7 +49,7 @@ const CODEX_DATA = {
         {
             nom: "Kael",
             categorie: "1. Personnages principaux",
-            image: "Kael.jpg",
+            image: "images/persos/Kael.jpg",
             age: "7,5 ans",
             descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
             aptitudes: "Inconnu ou inexistant",
@@ -59,7 +59,7 @@ const CODEX_DATA = {
         {
             nom: "Liam",
             categorie: "1. Personnages principaux",
-            image: "Liam.jpg",
+            image: "images/persos/Liam.jpg",
             age: "19 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
@@ -69,7 +69,7 @@ const CODEX_DATA = {
         {
             nom: "Nyssara",
             categorie: "1. Personnages principaux",
-            image: "Nyssara.jpg",
+            image: "images/persos/Nyssara.jpg",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Manipule les astres",
@@ -79,7 +79,7 @@ const CODEX_DATA = {
         {
             nom: "Tamara",
             categorie: "1. Personnages principaux",
-            image: "Tamara.jpg",
+            image: "images/persos/Tamara.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -89,7 +89,7 @@ const CODEX_DATA = {
         {
             nom: "Thayri",
             categorie: "1. Personnages principaux",
-            image: "Thayri.jpg",
+            image: "images/persos/Thayri.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -99,7 +99,7 @@ const CODEX_DATA = {
         {
             nom: "Valtor",
             categorie: "1. Personnages principaux",
-            image: "Valtor.jpg",
+            image: "images/persos/Valtor.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -111,7 +111,7 @@ const CODEX_DATA = {
         {
             nom: "Asher",
             categorie: "2. Personnages secondaires",
-            image: "Asher.jpg",
+            image: "images/persos/Asher.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -151,7 +151,7 @@ const CODEX_DATA = {
         {
             nom: "Saphira",
             categorie: "2. Personnages secondaires",
-            image: "Saphira.jpg",
+            image: "images/persos/Saphira.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
@@ -161,7 +161,7 @@ const CODEX_DATA = {
         {
             nom: "Scalia",
             categorie: "2. Personnages secondaires",
-            image: "images/persos/scalia.jpg",
+            image: "images/persos/Scalia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
