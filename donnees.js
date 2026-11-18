@@ -39,7 +39,7 @@ const CODEX_DATA = {
         {
             nom: "Galathéa",
             categorie: "1. Personnages principaux",
-            image: "images/persos/Galathea.jpg",
+            image: "images/persos/Galathea.png",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Contrôle la nature",
@@ -69,7 +69,7 @@ const CODEX_DATA = {
         {
             nom: "Nyssara",
             categorie: "1. Personnages principaux",
-            image: "images/persos/Nyssara.jpg",
+            image: "images/persos/Nyssara.png",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
             aptitudes: "Manipule les astres",
@@ -151,7 +151,7 @@ const CODEX_DATA = {
         {
             nom: "Ortylia",
             categorie: "2. Personnages secondaires",
-            image: "Ortylia.jpg",
+            image: "images/persos/Ortylia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
             aptitudes: "À compléter.",
