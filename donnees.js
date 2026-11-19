@@ -9,7 +9,7 @@ const CODEX_DATA = {
         {
             nom: "Azelion",
             categorie: "Personnages principaux",
-            image: "images/persos/Azelion.jpg",
+            image: "images/persos/Azelion2.jpg",
             age: "450 ans",
             descriptionPhysique: "Apparence humaine, masculin, mesure 1,90m. A des yeux rouges, de longs cheveux noirs et des mains griffues. Il possède des ailes noires semblables à celles des chauves-souris qu'il peut rétracter",
             aptitudes: "Contrôle des ombres et manipule l'energie maléfique",
@@ -29,7 +29,7 @@ const CODEX_DATA = {
         {
             nom: "Dolios",
             categorie: "Personnages principaux",
-            image: "images/persos/Dolios.jpg",
+            image: "images/persos/Dolios2.jpg",
             age: "18 ans",
             descriptionPhysique: "Jeune homme d'1,80m, au cheveux bruns courts et yeux marrons. Sous sa forme triton il a une queue de poisson de couleur bleue",
             aptitudes: "Contrôle de l'eau et communique avec les créatures marines.",
@@ -39,7 +39,7 @@ const CODEX_DATA = {
         {
             nom: "Galathea",
             categorie: "Personnages principaux",
-            image: "images/persos/Galathea.png",
+            image: "images/persos/Galathea2.jpg",
             age: "17 ans",
             descriptionPhysique: "Longue chevelure ondulée et violette aux mèches roses et blanches, yeux verts emeraude, visage délicat et légères tâches de rousseur.",
             aptitudes: "Manipulation de la faune et de la flore, métamorphose animale, invocations de créatures magique, manipulation des racines de bois de fer, guérison animale, création de protections végétales.",
@@ -69,7 +69,7 @@ const CODEX_DATA = {
         {
             nom: "Nyssara",
             categorie: "Personnages principaux",
-            image: "images/persos/Nyssara.png",
+            image: "images/persos/Nyssara2.jpg",
             age: "17 ans",
             descriptionPhysique: "Humaine, longue chevelure ondulée bleu cyan aux mèches bleu nuit, yeux bleus profonds, teint clair, visage fin et élégant, lèvres rouges.",
             aptitudes: "Manipulation de l'energie astrale et cosmique, divination et visions prémonitoires, utilisation de cartes divinatoires et magiques",
@@ -79,7 +79,7 @@ const CODEX_DATA = {
         {
             nom: "Tamara",
             categorie: "Personnages principaux",
-            image: "images/persos/Tamara.jpg",
+            image: "images/persos/Tamara2.jpg",
             age: "160 ans",
             descriptionPhysique: "Demi-elfe d'1,60m, avec des cheveux violets et des yeux verts. Elle a des oreilles pointues. Sur son abdomen elle a une brûlure d'un sceau qui lui a été marqué au fer rouge",
             aptitudes: " Roublarde, camouflage, espionnage, crochetage, détection et désamorçage de pièges",
@@ -99,7 +99,7 @@ const CODEX_DATA = {
         {
             nom: "Valtor",
             categorie: "Personnages principaux",
-            image: "images/persos/Valtor.jpg",
+            image: "images/persos/Valtor2.jpg",
             age: "Iconnu",
             descriptionPhysique: "Cheveux mi-longs vert emeraude, barbe noire épaisse, yeu verts perçants, silhouette athlétique et musculature prononcée. Il privilégie les tenues sombres et élégantes.",
             aptitudes: "maîtrise de la magie ancienne, création de sceaux et de runes ancestrales, manipulation de l'énergie magique, création de barrières de protection, connaissance des rituels et des anciennes incantations.",
@@ -121,7 +121,7 @@ const CODEX_DATA = {
         {
             nom: "Caleb",
             categorie: "Personnages secondaires",
-            image: "images/persos/Caleb.jpg",
+            image: "images/persos/Caleb 2.jpg",
             age: "mort à X ans",
             descriptionPhysique: "Petit enfant sous forme de fantôme",
             aptitudes: "aucune",
@@ -141,7 +141,7 @@ const CODEX_DATA = {
         {
             nom: "Erydin",
             categorie: "Personnages secondaires",
-            image: "images/persos/Erydin",
+            image: "images/persos/Erydin.jpg",
             age: "À compléter",
             descriptionPhysique: "De longs cheveux blancs et un bâton magique",
             aptitudes: "À compléter.",
@@ -211,7 +211,7 @@ const CODEX_DATA = {
         {
             nom: "Scalia",
             categorie: "Personnages secondaires",
-            image: "images/persos/Scalia.jpg",
+            image: "images/persos/Scalia2.jpg",
             age: "45 ans",
             descriptionPhysique: "Longue chevelure brune et bouclée, yeux verts, visage mature aux traits prononcés. Elle porte une tenue d'aventurière aux couleurs naturelles, une couronne de bois de cerf et une sceptre orné d'un cristal émeraude.",
             aptitudes: "Manipulation de la terre et de la roche, contrôle des minéraux et des cristaux, utilisation d'un sceptre magique.",
