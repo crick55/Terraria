@@ -30,10 +30,10 @@ const CODEX_DATA = {
             nom: "Dolios",
             categorie: "Personnages principaux",
             image: "images/persos/Dolios.jpg",
-            age: "À compléter",
-            descriptionPhysique: "Prince des mers. Est un triton (homme sirène)",
-            aptitudes: "Contrôle de l'eau et des créatures marines.",
-            infosComplementaires: "Est surnommé « l'homme poisson » par Azelion. Est le conjoint de Celes",
+            age: "18 ans",
+            descriptionPhysique: "Jeune homme d'1,80m, au cheveux bruns courts et yeux marrons. Sous sa forme triton il a une queue de poisson de couleur bleue",
+            aptitudes: "Contrôle de l'eau et communique avec les créatures marines.",
+            infosComplementaires: "Prince des mers et oceans. Fiancé à Celes. Est surnommé « le poisson » par Azelion. Sa mère est morte quand il était enfant. Son passe temps favoris et la peinture.",
             etat: "Vivant"
         },
         {
