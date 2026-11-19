@@ -202,7 +202,7 @@ const CODEX_DATA = {
         },
  {
             nom: "La Tour Nuage",
-            categorie: "Lieux importants",
+            categorie: "Lieux secondaires",
             sousTitre: "1er lieu où se cachait un codex",
             image: "",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
@@ -210,7 +210,7 @@ const CODEX_DATA = {
         },
 {
             nom: "Le Temple de la Vie",
-            categorie: "Lieux importants",
+            categorie: "Lieux secondaire",
             sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
             image: "",
             description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
@@ -226,7 +226,7 @@ const CODEX_DATA = {
             nom: "Dragon Blanc aux Yeux bleus de Celes",
             description: "Description à compléter.",
             image: "images/faune/Dragonblanc.jpg",
-            infosComplementaires: "À compléter.",
+            infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
         },
         {
             nom: "Astro",
