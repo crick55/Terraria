@@ -151,7 +151,7 @@ const CODEX_DATA = {
         {
             nom: "Le Grand Maître",
             categorie: "Personnages secondaires",
-            image: "",
+            image: "images/persos/Grandmaitre.jpg",
             age: "56 ans",
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
             aptitudes: "Manipulation de l'esprit, télékinésie",
@@ -244,7 +244,7 @@ const CODEX_DATA = {
             nom: "La Tour Nuage",
             categorie: "Lieux secondaires",
             sousTitre: "1er lieu où se cachait un codex",
-            image: "",
+            image: "images/lieux/Tournuage.jpg",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
             details: "La tour est vivante, elle possède un coeur comme un être humain."
         },
