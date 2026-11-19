@@ -212,7 +212,7 @@ const CODEX_DATA = {
             nom: "Le Temple de la Vie",
             categorie: "Lieux secondaire",
             sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
-            image: "",
+            image: "images/lieux/templedelavie.jpg",
             description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
             details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
         }
