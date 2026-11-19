@@ -10,10 +10,10 @@ const CODEX_DATA = {
             nom: "Azelion",
             categorie: "Personnages principaux",
             image: "images/persos/Azelion.jpg",
-            age: "A compléter",
-            descriptionPhysique: "A compléter.",
-            aptitudes: "Contrôle des ombres, projète de l'energie maléfique",
-            infosComplementaires: "Démon des ombres et des ténèbres. Est amoureux de Tamara",
+            age: "450 ans",
+            descriptionPhysique: "Apparence humaine, masculin, mesure 1,90m. A des yeux rouges, de longs cheveux noirs et des mains griffues. Il possède des ailes noires semblables à celles des chauves-souris qu'il peut rétracter",
+            aptitudes: "Contrôle des ombres et manipule l'energie maléfique",
+            infosComplementaires: "Démon des ombres et des ténèbres. Il éprouve de forts sentiments envers Tamara pour qui il a massacré plusieurs membres d'une secte pour la sauver",
             etat: "Vivant"
         },
         {
