@@ -12,8 +12,8 @@ const CODEX_DATA = {
             image: "images/persos/Azelion.jpg",
             age: "Inconnu",
             descriptionPhysique: "A compléter.",
-            aptitudes: "Contrôle des ombres.",
-            infosComplementaires: "Démon des ombres et des ténèbres.",
+            aptitudes: "Contrôle des ombres, projète de l'energie maléfique",
+            infosComplementaires: "Démon des ombres et des ténèbres. Est amoureux de Tamara",
             etat: "Vivant"
         },
         {
@@ -23,7 +23,7 @@ const CODEX_DATA = {
             age: "À compléter",
             descriptionPhysique: "Humaine - A compléter",
             aptitudes: "Medium qui peut contacter les morts. Contrôle la glace. Peut respirer sous l'eau, contrôler les animaux et créatures aquatiques et contrôle de l'eau",
-            infosComplementaires: "À compléter.",
+            infosComplementaires: "Est la conjointe de Dolios",
             etat: "Vivant"
         },
         {
@@ -31,9 +31,9 @@ const CODEX_DATA = {
             categorie: "Personnages principaux",
             image: "images/persos/Dolios.jpg",
             age: "À compléter",
-            descriptionPhysique: "Homme Sirène.",
+            descriptionPhysique: "Prince des mers. Est un triton (homme sirène)",
             aptitudes: "Contrôle de l'eau et des créatures marines.",
-            infosComplementaires: "Est surnommé « l'homme poisson » par Azelion.",
+            infosComplementaires: "Est surnommé « l'homme poisson » par Azelion. Est le conjoint de Celes",
             etat: "Vivant"
         },
         {
@@ -80,9 +80,9 @@ const CODEX_DATA = {
             nom: "Tamara",
             categorie: "Personnages principaux",
             image: "images/persos/Tamara.jpg",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
+            age: "160 ans",
+            descriptionPhysique: "Demi-elfe.",
+            aptitudes: "Roublarde",
             infosComplementaires: "À compléter.",
             etat: "Vivant"
         },
@@ -117,6 +117,16 @@ const CODEX_DATA = {
             aptitudes: "Rapide, hypnotise ses proies, très bon combattant",
             infosComplementaires: "Est le père de Saphira",
             etat: "Vivant"
+        },
+        {
+            nom: "Caleb",
+            categorie: "Personnages secondaires",
+            image: "images/persos/Caleb.jpg",
+            age: "mort à X ans",
+            descriptionPhysique: "Petit enfant sous forme de fantôme",
+            aptitudes: "aucune",
+            infosComplementaires: "A compléter",
+            etat: "Mort"
         },
         {
             nom: "Darch",
@@ -159,6 +169,26 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
+            nom: "Percy",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "inconnu",
+            descriptionPhysique: "Ressemble à un mort vivant.",
+            aptitudes: "Inconnu",
+            infosComplementaires: "Gouverne sur le Royaume des glaces avec Sansa, en l'absence de Celes",
+            etat: "Mort-Vivant"
+        },
+        {
+            nom: "Sansa",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "inconnu",
+            descriptionPhysique: "Ressemble à un mort vivant.",
+            aptitudes: "inconnu",
+            infosComplementaires: "Gouverne sur le Royaume des glaces avec Percy, en l'absence de Celes",
+            etat: "Mort-Vivant"
+        },
+        {
             nom: "Saphira",
             categorie: "Personnages secondaires",
             image: "images/persos/Saphira.jpg",
@@ -177,7 +207,17 @@ const CODEX_DATA = {
             aptitudes: "À compléter.",
             infosComplementaires: "À compléter.",
             etat: "Vivant"
-        }
+        },
+        {
+            nom: "Triton",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "inconnu",
+            descriptionPhysique: "A compléter",
+            aptitudes: "Vis sous l'eau",
+            infosComplementaires: "Est le père de Dolios",
+            etat: "Vivant"
+        },
     ],
 
     // ==========================================
@@ -207,6 +247,14 @@ const CODEX_DATA = {
             image: "",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
             details: "La tour est vivante, elle possède un coeur comme un être humain."
+        },
+        {
+            nom: "Le Royaume des Glaces",
+            categorie: "Lieux secondaires",
+            sousTitre: "2eme lieu où se cachait un codex",
+            image: "",
+            description: "lieu de glace, gouverné par Celes",
+            details: "C'est à cet endroit qu'apparaît pour la premiere fois le Dragon blanc aux yeux bleus de Celes"
         },
 {
             nom: "Le Temple de la Vie",
