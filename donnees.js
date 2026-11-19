@@ -8,7 +8,7 @@ const CODEX_DATA = {
         // --- 1. Personnages principaux ---
         {
             nom: "Azelion",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Azelion.jpg",
             age: "Inconnu",
             descriptionPhysique: "A compléter.",
@@ -18,7 +18,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Celes",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Celes.jpg",
             age: "À compléter",
             descriptionPhysique: "Humaine - A compléter",
@@ -28,7 +28,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Dolios",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Dolios.jpg",
             age: "À compléter",
             descriptionPhysique: "Homme Sirène.",
@@ -38,7 +38,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Galathéa",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Galathea.png",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
@@ -48,7 +48,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Kael",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Kael.jpg",
             age: "7,5 ans",
             descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
@@ -58,7 +58,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Liam",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Liam.jpg",
             age: "18 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
@@ -68,7 +68,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Nyssara",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Nyssara.png",
             age: "17 ans",
             descriptionPhysique: "À compléter.",
@@ -78,7 +78,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Tamara",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Tamara.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
@@ -88,7 +88,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Thayri",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Thayri.jpg",
             age: "19 ans",
             descriptionPhysique: "Grand, cheveux bruns, belle ossature et relativement bien musclé.",
@@ -98,7 +98,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Valtor",
-            categorie: "1. Personnages principaux",
+            categorie: "Personnages principaux",
             image: "images/persos/Valtor.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
@@ -110,7 +110,7 @@ const CODEX_DATA = {
         // --- 2. Personnages secondaires ---
         {
             nom: "Asher",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "images/persos/Asher.jpg",
             age: "500 ans environ",
             descriptionPhysique: "Vampire, habillé d'une tunique toujours noire et sombre",
@@ -120,7 +120,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Darch",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "images/persos/Darch.jpg",
             age: "Iconnu",
             descriptionPhysique: "Imposant, grand, décharné, dangereux",
@@ -130,7 +130,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Erydin",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
@@ -140,7 +140,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Le Grand Maître",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "",
             age: "56 ans",
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
@@ -150,7 +150,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Ortylia",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "images/persos/Ortylia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
@@ -160,7 +160,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Saphira",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "images/persos/Saphira.jpg",
             age: "300 ans",
             descriptionPhysique: "Femme qui en jette, cheveux noirs et longs, visage fin, séduisante mais mortelle",
@@ -170,7 +170,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Scalia",
-            categorie: "2. Personnages secondaires",
+            categorie: "Personnages secondaires",
             image: "images/persos/Scalia.jpg",
             age: "À compléter",
             descriptionPhysique: "À compléter.",
