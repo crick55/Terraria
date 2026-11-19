@@ -67,16 +67,6 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
-            nom: "Naelis",
-            categorie: "Personnages secondaires",
-            image: "images/persos/Naelis.jpg",
-            age: "pas encore né",
-            descriptionPhysique: "Enfant de Céles et Dolios, vu lors d'une vision futuriste, pas encore né",
-            aptitudes: "A compléter",
-            infosComplementaires: "A compléter",
-            etat: "pas né"
-        },
-        {
             nom: "Nyssara",
             categorie: "Personnages principaux",
             image: "images/persos/Nyssara.png",
@@ -167,6 +157,16 @@ const CODEX_DATA = {
             aptitudes: "Manipulation de l'esprit, télékinésie",
             infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils Thayri peu de temps avant la bataille de la cité car il avait tout découvert de ses intentions et menaçait ses plans.",
             etat: "Mort"
+        },
+        {
+            nom: "Naelis",
+            categorie: "Personnages secondaires",
+            image: "images/persos/Naelis.jpg",
+            age: "-9 mois",
+            descriptionPhysique: "Enfant de Céles et Dolios, vu lors d'une vision futuriste",
+            aptitudes: "A compléter",
+            infosComplementaires: "A compléter",
+            etat: "pas né"
         },
         {
             nom: "Ortylia",
