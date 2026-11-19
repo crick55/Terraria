@@ -242,6 +242,14 @@ const CODEX_DATA = {
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
             details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
         },
+        {
+            nom: "Esprit de Liam",
+            categorie: "Lieux secondaire",
+            sousTitre: "Voyage dans les cauchemards du trio",
+            image: "",
+            description: "3eme lieu abritant un codex.",
+            details: "Dans un état de faiblesse avancé, malade et evanouit, Liam incite ses amies à pénétrer dans son esprot par le biais de la magie. Tous les 3 doivent alors affronter leurs plus grandes peurs pour trouver un indice leur permettant de récupérer le 3eme codex. En parallèle, ils reçoivent des visions de Thayri, qui leur envoie des visions afin de l'aider à le retrouver et le sauver. En effet, Thayri avait disparu depuis un moment sans laisser de traces."
+        },
 { 
             nom: "Lymphea",
             categorie: "Lieux secondaires",
