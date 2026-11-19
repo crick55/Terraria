@@ -67,6 +67,16 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
+            nom: "Naelis",
+            categorie: "Personnages secondaires",
+            image: "images/persos/Naelis.jpg",
+            age: "pas encore né",
+            descriptionPhysique: "Enfant de Céles et Dolios, vu lors d'une vision futuriste, pas encore né",
+            aptitudes: "A compléter",
+            infosComplementaires: "A compléter",
+            etat: "pas né"
+        },
+        {
             nom: "Nyssara",
             categorie: "Personnages principaux",
             image: "images/persos/Nyssara.png",
