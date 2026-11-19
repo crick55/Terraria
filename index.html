@@ -8,6 +8,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Terraria</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon.jpg">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js');
+        }
+    </script>
     <style>
         :root {
             --bg-main: #000000;
