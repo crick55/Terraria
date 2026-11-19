@@ -272,7 +272,7 @@ const CODEX_DATA = {
     faune: [
         {
             nom: "Aether",
-            description: "Dragon Blanc aux Yeux bleus de Celes",
+            description: "Dragon blanc aux yeux bleus de Celes",
             image: "images/faune/Aether.jpg",
             infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
         },
@@ -284,7 +284,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Astro",
-            description: "Description à compléter.",
+            description: "Loup de Galathéa",
             image: "images/faune/Astro.jpg",
             infosComplementaires: "À compléter.",
         },
