@@ -100,7 +100,7 @@ const CODEX_DATA = {
             nom: "Valtor",
             categorie: "Personnages principaux",
             image: "images/persos/Valtor2.jpg",
-            age: "Iconnu",
+            age: "Age inconnu",
             descriptionPhysique: "Cheveux mi-longs vert emeraude, barbe noire épaisse, yeu verts perçants, silhouette athlétique et musculature prononcée. Il privilégie les tenues sombres et élégantes.",
             aptitudes: "maîtrise de la magie ancienne, création de sceaux et de runes ancestrales, manipulation de l'énergie magique, création de barrières de protection, connaissance des rituels et des anciennes incantations.",
             infosComplementaires: "Ancien disciple d'Erydin, Valtor a longtemps été victime d'une malédiction dont il a été libéré grâce à Galathea. Il entretien désormais une relation amoureuse avec elle et s'apprête à devenir père.",
