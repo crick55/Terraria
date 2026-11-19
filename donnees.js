@@ -304,7 +304,7 @@ const CODEX_DATA = {
             nom: "Completer avec le nom des 3 loups",
             description: "Loups",
             image: "",
-            infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement vers le domaine d'Asher ",
+            infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement par voix terrestre",
         },
     ],
 
