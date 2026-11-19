@@ -37,13 +37,13 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
-            nom: "Galathéa",
+            nom: "Galathea",
             categorie: "Personnages principaux",
             image: "images/persos/Galathea.png",
             age: "17 ans",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "Contrôle la nature",
-            infosComplementaires: "Parents décédés",
+            descriptionPhysique: "Longue chevelure ondulée et violette aux mèches roses et blanches, yeux verts emeraude, visage délicat et légères tâches de rousseur.",
+            aptitudes: "Manipulation de la faune et de la flore, métamorphose animale, invocations de créatures magique, manipulation des racines de bois de fer, guérison animale, création de protections végétales.",
+            infosComplementaires: "Parents décédés. Galathea entretient une relation amoureuse avec Valtor et attend son premier enfant.",
             etat: "Vivant"
         },
         {
@@ -71,9 +71,9 @@ const CODEX_DATA = {
             categorie: "Personnages principaux",
             image: "images/persos/Nyssara.png",
             age: "17 ans",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "Manipule les astres",
-            infosComplementaires: "Née de la convergence Astrale, (même si on sait pas ce que ça veut dire...)",
+            descriptionPhysique: "Humaine, longue chevelure ondulée bleu cyan aux mèches bleu nuit, yeux bleus profonds, teint clair, visage fin et élégant, lèvres rouges.",
+            aptitudes: "Manipulation de l'energie astrale et cosmique, divination et visions prémonitoires, utilisation de cartes divinatoires et magiques",
+            infosComplementaires: "Nyssara entretient un lien spirituel avec les astres et les constellations. Elle porte constamment un collier orné d'une pierre de lune et considère Galathea comme sa soeur de coeur.",
             etat: "Vivant"
         },
         {
@@ -81,9 +81,9 @@ const CODEX_DATA = {
             categorie: "Personnages principaux",
             image: "images/persos/Tamara.jpg",
             age: "160 ans",
-            descriptionPhysique: "Demi-elfe.",
-            aptitudes: "Roublarde",
-            infosComplementaires: "À compléter.",
+            descriptionPhysique: "Demi-elfe d'1,60m, avec des cheveux violets et des yeux verts. Elle a des oreilles pointues. Sur son abdomen elle a une brûlure d'un sceau qui lui a été marqué au fer rouge",
+            aptitudes: " Roublarde, camouflage, espionnage, crochetage, détection et désamorçage de pièges",
+            infosComplementaires: "Née d'un père humain et d'une mère elfe, a été torturée et battue par une secte puis devait être sacrifiée au démon Azélion qui l'a sauvé par amour. Est toujours accompagnée de Vax son corbeau. Son sceau sur l'abdomen chauffe quand Azelion s'approche d'elle. Pendant longtemps elle n'a eu que Dolios pour ami.",
             etat: "Vivant"
         },
         {
