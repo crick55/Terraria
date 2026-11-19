@@ -271,17 +271,41 @@ const CODEX_DATA = {
     // ==========================================
     faune: [
         {
-            nom: "Dragon Blanc aux Yeux bleus de Celes",
-            description: "Description à compléter.",
+            nom: "Aether",
+            description: "Dragon Blanc aux Yeux bleus de Celes",
             image: "images/faune/Dragonblanc.jpg",
             infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
+        },
+        {
+            nom: "Artax",
+            description: "Griffon de Celes",
+            image: "",
+            infosComplementaires: "à compléter",
         },
         {
             nom: "Astro",
             description: "Description à compléter.",
             image: "images/faune/Astro.jpg",
             infosComplementaires: "À compléter.",
-        }
+        },
+        {
+            nom: "Azzuria",
+            description: "Griffon de Galathéa",
+            image: "",
+            infosComplementaires: "à compléter",
+        },
+        {
+            nom: "Condor",
+            description: "Griffon de Liam",
+            image: "",
+            infosComplementaires: "à compléter",
+        },
+        {
+            nom: "Completer avec le nom des 3 loups",
+            description: "Loups",
+            image: "",
+            infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement vers le domaine d'Asher ",
+        },
     ],
 
     // ==========================================
