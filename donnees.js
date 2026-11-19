@@ -273,13 +273,13 @@ const CODEX_DATA = {
         {
             nom: "Aether",
             description: "Dragon Blanc aux Yeux bleus de Celes",
-            image: "images/faune/Dragonblanc.jpg",
+            image: "images/faune/Aether.jpg",
             infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
         },
         {
             nom: "Artax",
             description: "Griffon de Celes",
-            image: "",
+            image: "images/faune/Artax.jpg",
             infosComplementaires: "à compléter",
         },
         {
@@ -291,13 +291,13 @@ const CODEX_DATA = {
         {
             nom: "Azzuria",
             description: "Griffon de Galathéa",
-            image: "",
+            image: "images/faune/Azzuria.jpg",
             infosComplementaires: "à compléter",
         },
         {
             nom: "Condor",
             description: "Griffon de Liam",
-            image: "",
+            image: "images/faune/Condor.jpg",
             infosComplementaires: "à compléter",
         },
         {
