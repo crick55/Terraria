@@ -141,11 +141,11 @@ const CODEX_DATA = {
         {
             nom: "Erydin",
             categorie: "Personnages secondaires",
-            image: "",
+            image: "images/persos/Erydin",
             age: "À compléter",
-            descriptionPhysique: "À compléter.",
+            descriptionPhysique: "De longs cheveux blancs et un bâton magique",
             aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            infosComplementaires: "Mentor de Galathea et Valtor",
             etat: "Vivant"
         },
         {
