@@ -186,7 +186,7 @@ const CODEX_DATA = {
     lieux: [
         {
             nom: "La cité",
-            categorie: "Lieux importants",
+            categorie: "Lieux principaux",
             sousTitre: "La cité principale de Terraria",
             image: "",
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
