@@ -93,7 +93,7 @@ const CODEX_DATA = {
             age: "19 ans",
             descriptionPhysique: "Grand, cheveux bruns, belle ossature et relativement bien musclé.",
             aptitudes: "Aptutides non dévoilées à ce jour, on sait cependant que depuis sa fusion avec la cité, il peut ressentir ce qui s'y passe, la manipuler, entrer en phase avec elle et bien d'autres choses. Ses pouvoirs persos ne sont pas encore dévoilés à ce jour.",
-            infosComplementaires: "Fils du Grand Maître, il a aidé Liam, Celes et Galathéa à le vaincre, celui-ci ayant décidé de prendre le contrôle de la cité et de tuer ses amis. Il finira d'ailleurs par tuer Thayri, son propre fils en le faisant absorber dans le moteur de la cité.",
+            infosComplementaires: "Fils du Grand Maître, il a aidé Liam, Celes et Galathéa à le vaincre, celui-ci ayant décidé de prendre le contrôle de la cité et de tuer ses amis. Il finira d'ailleurs par tuer Thayri, son propre fils en le faisant absorber dans le moteur de la cité. Il est à ce jour le souverain de la cité et est reconnu par les habitants comme l'un des roi les plus bienfaiteurs qu'ils aient connus. Thayri est la personne ayant le sens moral le plus juste et cherchera à trouver systématiquement des solutions à tous celles et ceux qui en auront besoin. Il s'appuie beaucoup sur ses amis et a toute confiance en à Liam, Celes ou Galathéa, quitte à leur délégué des tâches importantes pour la survie de la cité, malgré qu'ils n'y sont pas originaires.",
             etat: "Vivant"
         },
         {
