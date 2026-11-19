@@ -171,7 +171,7 @@ const CODEX_DATA = {
         {
             nom: "Percy",
             categorie: "Personnages secondaires",
-            image: "",
+            image: "images/persos/Percy.jpg",
             age: "inconnu",
             descriptionPhysique: "Ressemble à un mort vivant.",
             aptitudes: "Inconnu",
@@ -181,7 +181,7 @@ const CODEX_DATA = {
         {
             nom: "Sansa",
             categorie: "Personnages secondaires",
-            image: "",
+            image: "images/persos/Sansa.jpg",
             age: "inconnu",
             descriptionPhysique: "Ressemble à un mort vivant.",
             aptitudes: "inconnu",
