@@ -20,7 +20,7 @@ const CODEX_DATA = {
             nom: "Celes",
             categorie: "Personnages principaux",
             image: "images/persos/Celes.jpg",
-            age: "À compléter",
+            age: "17 ans",
             descriptionPhysique: "Humaine - A compléter",
             aptitudes: "Medium qui peut contacter les morts. Contrôle la glace. Peut respirer sous l'eau, contrôler les animaux et créatures aquatiques et contrôle de l'eau",
             infosComplementaires: "Est la conjointe de Dolios",
@@ -61,9 +61,9 @@ const CODEX_DATA = {
             categorie: "Personnages principaux",
             image: "images/persos/Liam.jpg",
             age: "18 ans",
-            descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Pas musclé mais pas gringalet pour autant.",
+            descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Un peu musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
-            infosComplementaires: "Conjoint de Thayri, prend le commandement de la cité en l'absence de Thayri.",
+            infosComplementaires: "Conjoint de Thayri, prend le commandement de la cité en l'absence de Thayri. Certains pourrait dire qu'il est mr Catastrophe, mais en réalité pas du tout, c'est juste une déformation de l'esprit :)",
             etat: "Vivant"
         },
         {
