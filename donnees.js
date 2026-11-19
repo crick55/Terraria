@@ -17,13 +17,13 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
-            nom: "Celes",
+            nom: "Celestine (dit Celes)",
             categorie: "Personnages principaux",
-            image: "images/persos/Celes.jpg",
+            image: "images/persos/Celestine.jpg",
             age: "17 ans",
-            descriptionPhysique: "Humaine - A compléter",
-            aptitudes: "Medium qui peut contacter les morts. Contrôle la glace. Peut respirer sous l'eau, contrôler les animaux et créatures aquatiques et contrôle de l'eau",
-            infosComplementaires: "Est la conjointe de Dolios",
+            descriptionPhysique: "Jeune fille humaine d'1,65m. Elle a de longs cheveux blancs et des yeux bleus lumineux. Elle a un tatouage représentant un orque sur le poignet gauche",
+            aptitudes: "Elle peut voir et invoquer les esprits, possède le pouvoir de manipuler la glace et la neige. Peut respirer sous l'eau, communiquer avec les créatures aquatiques et manipuler l'eau",
+            infosComplementaires: "fiancée à Dolios, princesse des mers et reine du pays de glace. Elle porte toujours autour du cou une chaine avec une croix qui lui a été léguée par sa grand mère et porte un anneau offert par Dolios lui conférant le même pouvoir que lui. Possède un dragon. Sa grand mère, qui l'a pratiquement élevée est décédée",
             etat: "Vivant"
         },
         {
