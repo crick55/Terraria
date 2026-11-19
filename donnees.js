@@ -155,7 +155,7 @@ const CODEX_DATA = {
             age: "56 ans",
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
             aptitudes: "Manipulation de l'esprit, télékinésie",
-            infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils thayri peu de temps avant la bataille de la cité car il avait tou t découvert de ses intentions et menaçait ses plans.",
+            infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils Thayri peu de temps avant la bataille de la cité car il avait tout découvert de ses intentions et menaçait ses plans.",
             etat: "Mort"
         },
         {
