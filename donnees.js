@@ -51,7 +51,7 @@ const CODEX_DATA = {
             categorie: "Personnages principaux",
             image: "images/persos/Kael.jpg",
             age: "7,5 ans",
-            descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds",
+            descriptionPhysique: "Petit garçon haut d'à peine 1 mètre aux cheveux blonds. Mince et très agile",
             aptitudes: "Inconnu",
             infosComplementaires: "Terrarien - A été adopté par Liam et Thayri, juste après la bataille contre le Grand Maître. Fils d'Arden, mort au combat. Possède une très forte empathie. Intelligent et très débrouillard, n'a pas froid aux yeux... ce qui peut déplaire à Liam ou Thayri.",
             etat: "Vivant"
@@ -63,7 +63,7 @@ const CODEX_DATA = {
             age: "18 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Un peu musclé mais pas gringalet pour autant.",
             aptitudes: "Manipule la trame, ce qui lui permet de jouer sur la matière et sur tout ce qui l'entoure.",
-            infosComplementaires: "Conjoint de Thayri, prend le commandement de la cité en l'absence de Thayri. Certains pourrait dire qu'il est mr Catastrophe, mais en réalité pas du tout, c'est juste une déformation de l'esprit :)",
+            infosComplementaires: "Fait parti du trio d'origine avec Céles et Galathéa. Il avait un frère jumeau, Timio, qui est décédé lors d'un grave accident à la fête foraine, dont il s'est senti responsable longtemps. A tel point qu'il avait pris l'identité de son frère jumeau, ne pouvant se remettre de l'avoir perdu. Ce n'est que lors de la récupération du troisième codex, en entrant dans son propre esprit, qu'il comprit que Timio n'était pas mort de sa faute et il reprit alors sa véritable identité : Liam. Il aida à sauver la cité avec l'aide de ses amis et s'attacha telelment à Thayri, le fils du grand maître, qu'il fit tout pour le retrouver et le sauver quand son père décida de le tuer. A ce jour, il est le conjoint de Thayri, est le bras droit du roi et prend le commandement de la cité en l'absence de Thayri.",
             etat: "Vivant"
         },
         {
