@@ -33,7 +33,7 @@ const CODEX_DATA = {
             age: "18 ans",
             descriptionPhysique: "Jeune homme d'1,80m, au cheveux bruns courts et yeux marrons. Sous sa forme triton il a une queue de poisson de couleur bleue",
             aptitudes: "Contrôle de l'eau et communique avec les créatures marines.",
-            infosComplementaires: "Prince des mers et oceans. Fiancé à Celes. Est surnommé « le poisson » par Azelion. Sa mère est morte quand il était enfant. Son passe temps favoris et la peinture.",
+            infosComplementaires: "Prince des mers et oceans. Fiancé à Celes. Est surnommé « le poisson » par Azelion. Sa mère est morte quand il était enfant. Son passe temps favoris est la peinture.",
             etat: "Vivant"
         },
         {
