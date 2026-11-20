@@ -244,7 +244,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Esprit de Liam",
-            categorie: "Lieux secondaire",
+            categorie: "Lieux secondaires",
             sousTitre: "Voyage dans les cauchemards du trio",
             image: "images/lieux/Esprit de Liam.jpg",
             description: "3eme lieu abritant un codex.",
