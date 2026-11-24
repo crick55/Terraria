@@ -163,9 +163,11 @@ const CODEX_DATA = {
             categorie: "Personnages secondaires",
             image: "images/persos/Naelis.jpg",
             age: "-9 mois",
-            descriptionPhysique: "hyjj",
-            aptitudes: "Télékinésie",
-            infosComplementaires: "A compléter",
+            descriptionPhysique: "garçon de 5 ans cheveux châtains et yeux verts",
+            aptitudes: "Inconnu",
+            infosComplementaires: "Futur enfant de Dolios et Celes
+
+Une entité a pris son apparence lors d’une épreuve . Elle s’est sacrifiée pour leurs permettre de s’échapper .",
             etat: "pas né"
         },
         {
