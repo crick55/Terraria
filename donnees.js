@@ -171,7 +171,7 @@ const CODEX_DATA = {
         {
             nom: "Ortylia",
             categorie: "Personnages secondaires",
-            image: "images/persos/Ortylia.jpg",
+            image: "images/persos/Ortylia2.jpg",
             age: "Plus de 600 ans",
             descriptionPhysique: "Ortylia possède une longue chevelure argentée, des yeux dorés lumineux et une peau aux reflets légèrement bleutés. Ses majestueuses ailes translucides scintillent de nuances dorées et violettes. Elle porte une élégante tenue argentée ornée de motifs dorés et de pierres précieuses.",
             aptitudes: "Iconnu",
