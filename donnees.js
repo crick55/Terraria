@@ -172,10 +172,10 @@ const CODEX_DATA = {
             nom: "Ortylia",
             categorie: "Personnages secondaires",
             image: "images/persos/Ortylia.jpg",
-            age: "À compléter",
-            descriptionPhysique: "À compléter.",
-            aptitudes: "À compléter.",
-            infosComplementaires: "À compléter.",
+            age: "Plus de 600 ans",
+            descriptionPhysique: "Ortylia possède une longue chevelure argentée, des yeux dorés lumineux et une peau aux reflets légèrement bleutés. Ses majestueuses ailes translucides scintillent de nuances dorées et violettes. Elle porte une élégante tenue argentée ornée de motifs dorés et de pierres précieuses.",
+            aptitudes: "Iconnu",
+            infosComplementaires: "Sage, mystérieuse, bienveillante, majestueuse et profondément attachée à son royaume.Fondatrice de Limphea il y a plus de six siècles, Ortylia est une figure légendaire, respectée comme la mère spirituelle de son peuple.",
             etat: "Vivant"
         },
         {
