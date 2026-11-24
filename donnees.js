@@ -326,14 +326,13 @@ Une entité a pris son apparence lors d’une épreuve . Elle s’est sacrifiée
             image: "",
             infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement par voix terrestre",
         },
-{
+        {
             nom: "Vax",
-            description: "Animal de compagnie"
-            image: "image/faune/Vax.jpg",
+            description: "Animal de compagnie",
+            image: "images/faune/Vax.jpg",
             age: "3 ans",
-            Description : "Corbeau noir"
-            infosComplementaires: "Veille et protège sur Tamara",
-            etat: "Vivant"
+            infosComplementaires: "Corbeau noir, Veille et protège sur Tamara",
+            etat: "Vivant",
         },
     ],
 
