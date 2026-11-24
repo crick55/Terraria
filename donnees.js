@@ -247,7 +247,7 @@ const CODEX_DATA = {
             categorie: "Lieux secondaires",
             sousTitre: "Château du vampire Asher",
             image: "",
-            description: "Lieu gouverné par Asher et sa fille Saphira, et abritant des vampires",
+            description: "Lieu gouverné par Asher et sa fille Saphira, et abritant des vampires.",
             details: "Il y fait sombre et la lune rouge donne à ce lieu une allure ensanglantée."
         },
         {
@@ -264,7 +264,7 @@ const CODEX_DATA = {
             sousTitre: "Tunnels et grottes souterraines abritant les Wendigos",
             image: "",
             description: "Lieu gouverné par Darch, abritant la colonnies des Wendigos.",
-            details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capable de vous manger si vous vous y aventurez."
+            details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capables de vous manger si vous vous y aventurez."
         },
 { 
             nom: "Lymphea",
