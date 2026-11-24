@@ -242,6 +242,14 @@ const CODEX_DATA = {
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
             details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
         },
+{ 
+            nom: "Domaine d'Asher",
+            categorie: "Lieux secondaires",
+            sousTitre: "Chateau du vampire Asher",
+            image: "",
+            description: "Lieu gouverné par Asher et sa fille Saphira, et abritant des vampires",
+            details: "Il y fait sombre et la lune rouge donne à ce lieu une allure ensanglanté."
+        },
         {
             nom: "Esprit de Liam",
             categorie: "Lieux secondaires",
@@ -249,6 +257,14 @@ const CODEX_DATA = {
             image: "images/lieux/Esprit de Liam.jpg",
             description: "3eme lieu abritant un codex.",
             details: "Dans un état de faiblesse avancé, malade et evanouit, Liam incite ses amies à pénétrer dans son esprot par le biais de la magie. Tous les 3 doivent alors affronter leurs plus grandes peurs pour trouver un indice leur permettant de récupérer le 3eme codex. En parallèle, ils reçoivent des visions de Thayri, qui leur envoie des visions afin de l'aider à le retrouver et le sauver. En effet, Thayri avait disparu depuis un moment sans laisser de traces."
+        },
+{ 
+            nom: "Tunnel des Wendigos",
+            categorie: "Lieux secondaires",
+            sousTitre: "Tunnels et grottes souterraines abritant les Wendigos",
+            image: "",
+            description: "Lieu gouverné par Darch, abritant la colonnies des Wendigos.",
+            details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capable de vous manger si vous vous y aventurez."
         },
 { 
             nom: "Lymphea",
