@@ -123,7 +123,7 @@ const CODEX_DATA = {
             categorie: "Personnages secondaires",
             image: "images/persos/Caleb 2.jpg",
             age: "mort à 7 ans",
-            descriptionPhysique: "Garçon d’1m20 au cheveux et aux yeux bruns . Il a une apparence transparente de part sa nature.",
+            descriptionPhysique: "Garçon d’1m20 au cheveux et aux yeux bruns. Il a une apparence transparente de part sa nature.",
             aptitudes: "Télékinésie",
             infosComplementaires: "Est un fantome. À été enlevé sous les yeux de Celes puis tué par un psychopathe déguisé en clown. Très proche de Celes, il apparaît souvent sans qu’elle ne l’invoque pour l’aider.",
             etat: "Mort"
@@ -163,11 +163,9 @@ const CODEX_DATA = {
             categorie: "Personnages secondaires",
             image: "images/persos/Naelis.jpg",
             age: "-9 mois",
-            descriptionPhysique: "garçon de 5 ans cheveux châtains et yeux verts",
+            descriptionPhysique: "Garçon de 5 ans cheveux châtains et yeux verts",
             aptitudes: "Inconnu",
-            infosComplementaires: "Futur enfant de Dolios et Celes
-
-Une entité a pris son apparence lors d’une épreuve . Elle s’est sacrifiée pour leurs permettre de s’échapper .",
+            infosComplementaires: "Futur enfant de Dolios et Celes. Une entité a pris son apparence lors d’une épreuve. Elle s’est sacrifiée pour leurs permettre de s’échapper.",
             etat: "pas né"
         },
         {
