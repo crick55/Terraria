@@ -310,13 +310,13 @@ const CODEX_DATA = {
             nom: "Azzuria",
             description: "Griffon de Galathéa",
             image: "images/faune/Azzuria.jpg",
-            infosComplementaires: "à compléter",
+            infosComplementaires: "À compléter",
         },
         {
             nom: "Condor",
             description: "Griffon de Liam",
             image: "images/faune/Condor.jpg",
-            infosComplementaires: "à compléter",
+            infosComplementaires: " Condor est le premier animal de Liam. Il à su devenir ami et en phase avec cet animal alors que Liam déteste la hauteur. Condor a été blessé à l'aile lors d'une mission vers tour nuage,mais Galathea a réalisé un remède pour le soigner.",
         },
         {
             nom: "Completer avec le nom des 3 loups",
