@@ -218,7 +218,7 @@ const CODEX_DATA = {
             infosComplementaires: "Scalia possède une profonde connexion avec les entrailles de Terraria, elle canalise son energie élémentaire au travers de son sceptre.",
             etat: "Vivant"
         },
-        {
+{
             nom: "Triton",
             categorie: "Personnages secondaires",
             image: "",
@@ -323,6 +323,15 @@ const CODEX_DATA = {
             description: "Loups",
             image: "",
             infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement par voix terrestre",
+        },
+{
+            nom: "Vax",
+            description: "Animal de compagnie"
+            image: "image/faune/Vax.jpg",
+            age: "3 ans",
+            Description : Corbeau noir
+            infosComplementaires: "Veille et protège sur Tamara",
+            etat: "Vivant"
         },
     ],
 
