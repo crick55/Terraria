@@ -122,10 +122,10 @@ const CODEX_DATA = {
             nom: "Caleb",
             categorie: "Personnages secondaires",
             image: "images/persos/Caleb 2.jpg",
-            age: "mort à X ans",
-            descriptionPhysique: "Petit enfant sous forme de fantôme",
-            aptitudes: "aucune",
-            infosComplementaires: "A compléter",
+            age: "mort à 7 ans",
+            descriptionPhysique: "Garçon d’1m20 au cheveux et aux yeux bruns . Il a une apparence transparente de part sa nature.",
+            aptitudes: "Télékinésie",
+            infosComplementaires: "Est un fantome. À été enlevé sous les yeux de Celes puis tué par un psychopathe déguisé en clown. Très proche de Celes, il apparaît souvent sans qu’elle ne l’invoque pour l’aider.",
             etat: "Mort"
         },
         {
@@ -163,8 +163,8 @@ const CODEX_DATA = {
             categorie: "Personnages secondaires",
             image: "images/persos/Naelis.jpg",
             age: "-9 mois",
-            descriptionPhysique: "Enfant de Céles et Dolios, vu lors d'une vision futuriste",
-            aptitudes: "A compléter",
+            descriptionPhysique: "hyjj",
+            aptitudes: "Télékinésie",
             infosComplementaires: "A compléter",
             etat: "pas né"
         },
@@ -174,7 +174,7 @@ const CODEX_DATA = {
             image: "images/persos/Ortylia2.jpg",
             age: "Plus de 600 ans",
             descriptionPhysique: "Ortylia possède une longue chevelure argentée, des yeux dorés lumineux et une peau aux reflets légèrement bleutés. Ses majestueuses ailes translucides scintillent de nuances dorées et violettes. Elle porte une élégante tenue argentée ornée de motifs dorés et de pierres précieuses.",
-            aptitudes: "Iconnu",
+            aptitudes: "Inconnu",
             infosComplementaires: "Sage, mystérieuse, bienveillante, majestueuse et profondément attachée à son royaume.Fondatrice de Limphea il y a plus de six siècles, Ortylia est une figure légendaire, respectée comme la mère spirituelle de son peuple.",
             etat: "Vivant"
         },
