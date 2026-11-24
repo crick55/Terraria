@@ -329,7 +329,7 @@ const CODEX_DATA = {
             description: "Animal de compagnie"
             image: "image/faune/Vax.jpg",
             age: "3 ans",
-            Description : Corbeau noir
+            Description : "Corbeau noir"
             infosComplementaires: "Veille et protège sur Tamara",
             etat: "Vivant"
         },
