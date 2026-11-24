@@ -245,10 +245,10 @@ const CODEX_DATA = {
 { 
             nom: "Domaine d'Asher",
             categorie: "Lieux secondaires",
-            sousTitre: "Chateau du vampire Asher",
+            sousTitre: "Château du vampire Asher",
             image: "",
             description: "Lieu gouverné par Asher et sa fille Saphira, et abritant des vampires",
-            details: "Il y fait sombre et la lune rouge donne à ce lieu une allure ensanglanté."
+            details: "Il y fait sombre et la lune rouge donne à ce lieu une allure ensanglantée."
         },
         {
             nom: "Esprit de Liam",
