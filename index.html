@@ -561,16 +561,24 @@ data-tab="histoire">Histoire</button>
     <script src="donnees.js"></script>
     <script src="chapitres.js"></script>
     <script>
-        let currentTab = 'personnages';
+                let currentTab = localStorage.getItem('terraria_active_tab') || 'personnages';
         let searchQuery = '';
 
         document.getElementById('app-title').textContent = CODEX_DATA.titre || 'Terraria';
 
+        function setActiveTabButton(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.tab === tabName);
+            });
+        }
+
+        setActiveTabButton(currentTab);
+
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
                 currentTab = btn.dataset.tab;
+                localStorage.setItem('terraria_active_tab', currentTab);
+                setActiveTabButton(currentTab);
                 render();
             });
         });
