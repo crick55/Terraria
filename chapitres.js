@@ -11,7 +11,7 @@ const CHAPITRES_DATA = [
             {
                 type: "texte",
                 auteur: "Yann",
-                texte: "Test d'affichage en bleu pour Yann..."
+                texte: "Test d'affichage en rouge pour Yann..."
             },
             {
                 type: "texte",
@@ -21,7 +21,7 @@ const CHAPITRES_DATA = [
             {
                 type: "texte",
                 auteur: "Vio",
-                texte: "Test d'affichage en orange pour Vio..."
+                texte: "Test d'affichage en bleu pour Vio..."
             }
         ]
     },
