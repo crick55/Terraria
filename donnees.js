@@ -321,15 +321,15 @@ const CODEX_DATA = {
         {
             nom: "Astro",
             description: "Renard à neuf queues au pelage vert emeraude et blanc. Agile, affectueux et loyal, il ne possède aucune aptitude particulière.",
-            image: "images/faune/Astro.jpg",
+            image: "images/faune/Astro2.jpg",
             infosComplementaires: "Rencontré par Galathea dans la serre de Terraria, il fut sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
             etat: "Vivant",
         },
         {
             nom: "Azzuria",
-            description: "Griffon de Galathéa",
-            image: "images/faune/Azzuria.jpg",
-            infosComplementaires: "À compléter",
+            description: "Rapace gigantesque au plumage bleu saphir et aux reflets dorés, parcourus d'éclairs. Rapide comme la foudre, il possède une agilité exceptionnelle et des serres redoutables.",
+            image: "images/faune/Azzuria2.jpg",
+            infosComplementaires: "Fidèle compagnon de Galathea, Azzuria lui sert de monture aérienne et peut parcourir de grande distances en un temps record.",
             etat: "Vivant",
         },
         {
