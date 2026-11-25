@@ -320,9 +320,9 @@ const CODEX_DATA = {
         },
         {
             nom: "Astro",
-            description: "Loup de Galathéa",
+            description: "Renard à neuf queues au pelage vert emeraude et blanc. Agile, affectueux et loyal, il ne possède aucune aptitude particulière.",
             image: "images/faune/Astro.jpg",
-            infosComplementaires: "À compléter.",
+            infosComplementaires: "Rencontré par Galathea dans la serre de Terraria, il fut sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
             etat: "Vivant",
         },
         {
