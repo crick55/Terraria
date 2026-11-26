@@ -305,15 +305,58 @@
         }
 
         .modal-close {
+            position: sticky;
+            top: 0;
             float: right;
-            background: var(--bg-elevated);
+            z-index: 20;
+            background: rgba(28, 28, 31, 0.92);
             border: 1px solid var(--border);
             color: var(--text-main);
             border-radius: 50%;
-            width: 32px;
-            height: 32px;
+            width: 34px;
+            height: 34px;
             font-size: 1.1rem;
             cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .codex-ref {
+            border-bottom: 1px dotted rgba(243, 198, 95, 0.75);
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .codex-ref:hover, .codex-ref:active {
+            background-color: rgba(243, 198, 95, 0.18);
+            border-radius: 3px;
+        }
+
+        .quick-card-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 300;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .quick-card-overlay.open {
+            display: flex;
+        }
+
+        .quick-card-box {
+            background: rgba(22, 22, 26, 0.98);
+            border: 1px solid rgba(243, 198, 95, 0.45);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 440px;
+            max-height: 75dvh;
+            overflow-y: auto;
+            padding: 18px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.85);
+            animation: popIn 0.16s ease-out;
         }
 
         #detailModal.gallery-mode {
@@ -565,7 +608,12 @@
             <div id="modalBody"></div>
         </div>
     </div>
-
+<div class="quick-card-overlay" id="quickCardModal" onclick="closeQuickCard()">
+        <div class="quick-card-box" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeQuickCard()">✕</button>
+            <div id="quickCardBody"></div>
+        </div>
+    </div>
     <script src="donnees.js"></script>
     <script src="chapitres.js"></script>
    <script>
@@ -579,6 +627,126 @@
                 .toLowerCase()
                 .normalize('NFD')
                 .replace(/[\u0300-\u036f]/g, '');
+        }
+
+        // Index des mots-clés cliquables du Codex (personnages, lieux, faune, objets)
+        const CODEX_INDEX = [];
+        (function buildCodexIndex() {
+            const categories = ['personnages', 'lieux', 'faune', 'objets'];
+            const seenTerms = new Set();
+
+            categories.forEach(cat => {
+                (CODEX_DATA[cat] || []).forEach(item => {
+                    if (!item.nom || item.nom.toLowerCase().startsWith('completer')) return;
+
+                    const aliases = new Set([item.nom]);
+                    // Gérer les noms composés comme "Celestine (dit Celes)", "Liam/Timio", "Codex (4 fragments)"
+                    const baseName = item.nom.replace(/\s*\([^)]*\)/g, '').trim();
+                    if (baseName.length >= 4) aliases.add(baseName);
+
+                    if (baseName.includes('/')) {
+                        baseName.split('/').forEach(part => {
+                            if (part.trim().length >= 4) aliases.add(part.trim());
+                        });
+                    }
+
+                    const ditMatch = item.nom.match(/\(dit\s+([^)]+)\)/i);
+                    if (ditMatch && ditMatch[1].trim().length >= 4) {
+                        aliases.add(ditMatch[1].trim());
+                    }
+
+                    if (item.nom === 'Le Grand Maître') aliases.add('Grand Maître');
+
+                    aliases.forEach(term => {
+                        const key = term.toLowerCase();
+                        if (!seenTerms.has(key) && term.length >= 4) {
+                            seenTerms.add(key);
+                            CODEX_INDEX.push({ term, item });
+                        }
+                    });
+                });
+            });
+
+            // Trier du plus long au plus court pour éviter les collisions partielles
+            CODEX_INDEX.sort((a, b) => b.term.length - a.term.length);
+        })();
+
+        function escapeRegExp(str) {
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        // Rend les noms du Codex cliquables dans un texte (en excluant la fiche courante)
+        function linkifyCodexTerms(text, excludeItemName) {
+            if (!text || CODEX_INDEX.length === 0) return text || '';
+
+            const activeEntries = CODEX_INDEX.filter(entry => entry.item.nom !== excludeItemName);
+            if (activeEntries.length === 0) return text;
+
+            const pattern = new RegExp(
+                `(?<![\\p{L}\\p{N}])(${activeEntries.map(e => escapeRegExp(e.term)).join('|')})(?![\\p{L}\\p{N}])`,
+                'giu'
+            );
+
+            return text.replace(pattern, (matched) => {
+                const found = activeEntries.find(e => e.term.toLowerCase() === matched.toLowerCase());
+                if (!found) return matched;
+                const safeNom = found.item.nom.replace(/'/g, "\\'");
+                return `<span class="codex-ref" onclick="event.stopPropagation(); openQuickCardByName('${safeNom}')">${matched}</span>`;
+            });
+        }
+
+        function openQuickCardByName(nom) {
+            const categories = ['personnages', 'lieux', 'faune', 'objets'];
+            let foundItem = null;
+            for (const cat of categories) {
+                foundItem = (CODEX_DATA[cat] || []).find(i => i.nom === nom);
+                if (foundItem) break;
+            }
+            if (!foundItem) return;
+
+            const overlay = document.getElementById('quickCardModal');
+            const body = document.getElementById('quickCardBody');
+
+            let etatBadge = '';
+            if (foundItem.etat) {
+                const isMort = foundItem.etat.toLowerCase().includes('mort');
+                etatBadge = `<span class="etat-badge ${isMort ? 'etat-mort' : 'etat-vivant'}">${foundItem.etat}</span>`;
+            }
+
+            const resume = foundItem.descriptionPhysique || foundItem.description || foundItem.sousTitre || '';
+            const infos = foundItem.infosComplementaires || foundItem.details || '';
+            const safeNom = foundItem.nom.replace(/'/g, "\\'");
+
+            body.innerHTML = `
+                ${foundItem.categorie ? `<span class="modal-tag">${foundItem.categorie}</span>` : ''}
+                ${etatBadge}
+                <h3 style="margin: 4px 0 8px 0; font-size: 1.2rem;">${foundItem.nom}</h3>
+                ${foundItem.image ? `<img src="${foundItem.image}" class="modal-img" style="max-height: 220px;" alt="${foundItem.nom}">` : ''}
+                ${foundItem.age && foundItem.age !== 'À compléter' ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin: 4px 0 8px 0;">Âge : ${foundItem.age}</p>` : ''}
+                ${resume ? `<p style="font-size: 0.92rem; margin: 0 0 8px 0;">${resume}</p>` : ''}
+                ${infos ? `<p style="font-size: 0.88rem; color: var(--text-muted); margin: 0 0 12px 0;">${infos}</p>` : ''}
+                <button class="apparition-link" onclick="closeQuickCard(); openFullCardByName('${safeNom}')">
+                    Ouvrir la fiche complète →
+                </button>
+            `;
+
+            overlay.classList.add('open');
+        }
+
+        function openFullCardByName(nom) {
+            const categories = ['personnages', 'lieux', 'faune', 'objets'];
+            for (const cat of categories) {
+                const found = (CODEX_DATA[cat] || []).find(i => i.nom === nom);
+                if (found) {
+                    openItemModal(found);
+                    return;
+                }
+            }
+        }
+
+        function closeQuickCard() {
+            document.getElementById('quickCardModal').classList.remove('open');
+            document.getElementById('quickCardBody').innerHTML = '';
         }
 
         function setActiveTabButton(tabName) {
@@ -696,7 +864,6 @@
                 container.appendChild(groupDiv);
             });
 
-            // Recherche dans tous les posts de tous les chapitres
             const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
             const storyHits = [];
 
@@ -973,10 +1140,11 @@
                     `;
                 } else {
                     const colorClass = getAuthorClass(block.auteur);
+                    const linkedText = linkifyCodexTerms(block.texte || '', null);
                     blocksHtml += `
                         <div class="chapter-post" id="post-${blockIndex}">
                             ${block.auteur ? `<span class="chapter-author ${colorClass}">${block.auteur}</span>` : ''}
-                            <p class="chapter-paragraph ${colorClass}">${block.texte || ''}</p>
+                            <p class="chapter-paragraph ${colorClass}">${linkedText}</p>
                         </div>
                     `;
                 }
@@ -1054,19 +1222,19 @@
                 html += `<div class="modal-section"><h4>Âge</h4><p>${item.age}</p></div>`;
             }
             if (item.descriptionPhysique) {
-                html += `<div class="modal-section"><h4>Description physique</h4><p>${item.descriptionPhysique}</p></div>`;
+                html += `<div class="modal-section"><h4>Description physique</h4><p>${linkifyCodexTerms(item.descriptionPhysique, item.nom)}</p></div>`;
             }
             if (item.aptitudes) {
-                html += `<div class="modal-section"><h4>Aptitude(s)</h4><p>${item.aptitudes}</p></div>`;
+                html += `<div class="modal-section"><h4>Aptitude(s)</h4><p>${linkifyCodexTerms(item.aptitudes, item.nom)}</p></div>`;
             }
             if (item.description) {
-                html += `<div class="modal-section"><h4>Description</h4><p>${item.description}</p></div>`;
+                html += `<div class="modal-section"><h4>Description</h4><p>${linkifyCodexTerms(item.description, item.nom)}</p></div>`;
             }
             if (item.infosComplementaires) {
-                html += `<div class="modal-section"><h4>Informations complémentaires</h4><p>${item.infosComplementaires}</p></div>`;
+                html += `<div class="modal-section"><h4>Informations complémentaires</h4><p>${linkifyCodexTerms(item.infosComplementaires, item.nom)}</p></div>`;
             }
             if (item.details) {
-                html += `<div class="modal-section"><h4>Particularités</h4><p>${item.details}</p></div>`;
+                html += `<div class="modal-section"><h4>Particularités</h4><p>${linkifyCodexTerms(item.details, item.nom)}</p></div>`;
             }
             if (item.apparition) {
                 const labelChap = item.apparition.chapitre === 0
@@ -1115,6 +1283,7 @@
         }
 
         function closeModal() {
+            closeQuickCard();
             const modal = document.getElementById('detailModal');
             modal.classList.remove('open', 'gallery-mode');
             document.getElementById('modalBody').innerHTML = '';
