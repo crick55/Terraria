@@ -62,7 +62,7 @@ const CODEX_DATA = {
             image: "images/persos/Liam.jpg",
             age: "18 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Un peu musclé mais pas gringalet pour autant.",
-            aptitudes: "Liam choisi, à son arrivée sur Terraria un objet rare, une pierre magique, une pierre de l'esprit. Celle-ci lui permet de manipuler l'environnement qui l'entoure par la pensée et de jouer avec l'esprit de manière générale. Il appelle cela : Manipulation de la trame. Elle lui permet de manipuler son environnement, les éléments, et même de parler aux animaux. Liam n'a pas encore découvert l'entièreté des pouvoirs de cette pierre. Elle a fusionnée avec lui ce qui lui permet d'user de ses pouvoirs à volonté et ne peut jamais en être défait.",
+            aptitudes: "Liam choisi, à son arrivée sur Terraria un objet rare, une pierre magique, une pierre de l'esprit. Celle-ci lui permet de manipuler l'environnement qui l'entoure par la pensée et de jouer avec l'esprit de manière générale. Il appelle cela : Manipulation de la trame. Elle lui permet de manipuler son environnement, les éléments, et même de parler aux animaux. Liam n'a pas encore découvert l'entièreté des pouvoirs de cette pierre. Elle a fusionnée avec lui ce qui permet d'user de ses pouvoirs à volonté et ne peut jamais en être défait.",
             infosComplementaires: "Fait parti du trio d'origine avec Céles et Galathéa. Il avait un frère jumeau, Timio, qui est décédé très jeune, lors d'un grave accident à la fête foraine, dont il s'est senti responsable longtemps. A tel point qu'il avait pris l'identité de son frère jumeau Timio en se faisant passer pour lui. Il a fait croire que c'était Liam qui était mort, ne pouvant se remettre de l'avoir perdu. Ce n'est que lors de la récupération du troisième codex, en entrant dans son propre esprit, qu'il comprit que Timio n'était pas mort de sa faute et il reprit alors sa véritable identité : Liam. Il aida à sauver la cité avec l'aide de ses amis et s'attacha tellement à Thayri, le fils du grand maître, qu'il fit tout pour le retrouver et le sauver quand son père décida de le tuer. A ce jour, il est le conjoint de Thayri, est le bras droit du roi et prend le commandement de la cité en l'absence de Thayri.",
             etat: "Vivant"
         },
@@ -82,7 +82,7 @@ const CODEX_DATA = {
             image: "images/persos/Tamara2.jpg",
             age: "160 ans",
             descriptionPhysique: "Demi-elfe d'1,60m, avec des cheveux violets et des yeux verts. Elle a des oreilles pointues. Sur son abdomen elle a une brûlure d'un sceau qui lui a été marqué au fer rouge",
-            aptitudes: " Roublarde, camouflage, espionnage, crochetage, détection et désamorçage de pièges",
+            aptitudes: "Roublarde, camouflage, espionnage, crochetage, détection et désamorçage de pièges",
             infosComplementaires: "Née d'un père humain et d'une mère elfe, a été torturée et battue par une secte puis devait être sacrifiée au démon Azélion qui l'a sauvé par amour. Est toujours accompagnée de Vax son corbeau. Son sceau sur l'abdomen chauffe quand Azelion s'approche d'elle. Pendant longtemps elle n'a eu que Dolios pour ami.",
             etat: "Vivant"
         },
@@ -119,6 +119,16 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
+            nom: "Brutus",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "Grosse brute semi-humaine très imposante, armée d'un gourdin",
+            aptitudes: "Force brute colossale, sensibilité à la lumière vive",
+            infosComplementaires: "Gardien habituel de la cité de Terraria. Le trio le croise dès son arrivée dans une grotte souterraine alors qu'il prenait quelques vacances",
+            etat: "Vivant"
+        },
+        {
             nom: "Caleb",
             categorie: "Personnages secondaires",
             image: "images/persos/Caleb 2.jpg",
@@ -127,6 +137,16 @@ const CODEX_DATA = {
             aptitudes: "Télékinésie",
             infosComplementaires: "Est un fantome. À été enlevé sous les yeux de Celes puis tué par un psychopathe déguisé en clown. Très proche de Celes, il apparaît souvent sans qu’elle ne l’invoque pour l’aider.",
             etat: "Mort"
+        },
+        {
+            nom: "Catalina",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "Jeune femme d'une grande beauté résidant au palais de Terraria",
+            aptitudes: "Magie des artefacts et de l'esprit",
+            infosComplementaires: "L'une des trois mages du palais. Elle fusionne directement la Pierre de l'Esprit dans le front de Liam/Timio avant le départ de sa première quête",
+            etat: "Vivant"
         },
         {
             nom: "Darch",
@@ -146,6 +166,36 @@ const CODEX_DATA = {
             descriptionPhysique: "De longs cheveux blancs et un bâton magique",
             aptitudes: "À compléter.",
             infosComplementaires: "Mentor de Galathea et Valtor",
+            etat: "Vivant"
+        },
+        {
+            nom: "Griffin",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "Jeune femme d'une beauté divine résidant au palais de Terraria",
+            aptitudes: "Experte en magie, en survie et en connaissance des secrets de Terraria",
+            infosComplementaires: "L'une des trois mages du palais. Elle confie à Galathea le collier en roche de Terraria et plumes de plumards permettant de comprendre la faune et la flore",
+            etat: "Vivant"
+        },
+        {
+            nom: "Icy",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Plusieurs siècles",
+            descriptionPhysique: "Apparence jeune malgré ses centaines d'années (son corps et son esprit ne vieillissent pas)",
+            aptitudes: "Maîtrise du pouvoir de la glace",
+            infosComplementaires: "Cheffe des hors-la-loi bannis sur Omega. Assoiffée de vengeance envers Terraria, elle a envoyé ses sbires dérober le Cristal d'Obsidienne et enfermer la cité sous un dôme magique",
+            etat: "Vivant"
+        },
+        {
+            nom: "Iseult",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "Jeune femme d'une grande beauté résidant au palais de Terraria",
+            aptitudes: "Spécialiste de la magie de l'âme et de l'esprit",
+            infosComplementaires: "L'une des trois mages du palais. Elle remet à Celes le Bracelet de l'Esprit permettant la projection astrale (« Spiritus evasio » / « Spiritus redeo »)",
             etat: "Vivant"
         },
         {
@@ -169,13 +219,23 @@ const CODEX_DATA = {
             etat: "pas né"
         },
         {
+            nom: "Octavius",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Âgé",
+            descriptionPhysique: "Petit vieillard habillé de vert, semblant porter une carapace",
+            aptitudes: "Parle le langage des coccinelles géantes, grande vivacité malgré son âge",
+            infosComplementaires: "Messager fidèle du Grand Maître. Il accueille le trio à la sortie de la grotte sur le dos de sa coccinelle Esibela et sauve Timio d'une chute mortelle",
+            etat: "Vivant"
+        },
+        {
             nom: "Ortylia",
             categorie: "Personnages secondaires",
             image: "images/persos/Ortylia2.jpg",
             age: "Plus de 600 ans",
             descriptionPhysique: "Ortylia possède une longue chevelure argentée, des yeux dorés lumineux et une peau aux reflets légèrement bleutés. Ses majestueuses ailes translucides scintillent de nuances dorées et violettes. Elle porte une élégante tenue argentée ornée de motifs dorés et de pierres précieuses.",
             aptitudes: "Inconnu",
-            infosComplementaires: "Sage, mystérieuse, bienveillante, majestueuse et profondément attachée à son royaume.Fondatrice de Limphea il y a plus de six siècles, Ortylia est une figure légendaire, respectée comme la mère spirituelle de son peuple.",
+            infosComplementaires: "Sage, mystérieuse, bienveillante, majestueuse et profondément attachée à son royaume. Fondatrice de Limphea il y a plus de six siècles, Ortylia est une figure légendaire, respectée comme la mère spirituelle de son peuple.",
             etat: "Vivant"
         },
         {
@@ -218,7 +278,7 @@ const CODEX_DATA = {
             infosComplementaires: "Scalia possède une profonde connexion avec les entrailles de Terraria, elle canalise son energie élémentaire au travers de son sceptre.",
             etat: "Vivant"
         },
-{
+        {
             nom: "Triton",
             categorie: "Personnages secondaires",
             image: "",
@@ -227,13 +287,14 @@ const CODEX_DATA = {
             aptitudes: "Vis sous l'eau",
             infosComplementaires: "Est le père de Dolios",
             etat: "Vivant"
-        },
+        }
     ],
 
     // ==========================================
-    // 2. LIEUX
+    // 2. LIEUX (Ordre alphabétique)
     // ==========================================
     lieux: [
+        // --- 1. Lieux principaux ---
         {
             nom: "La cité",
             categorie: "Lieux principaux",
@@ -242,7 +303,9 @@ const CODEX_DATA = {
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
             details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
         },
-{ 
+
+        // --- 2. Lieux secondaires ---
+        {
             nom: "Domaine d'Asher",
             categorie: "Lieux secondaires",
             sousTitre: "Château du vampire Asher",
@@ -258,23 +321,7 @@ const CODEX_DATA = {
             description: "3eme lieu abritant un codex.",
             details: "Dans un état de faiblesse avancé, malade et evanouit, Liam incite ses amies à pénétrer dans son esprot par le biais de la magie. Tous les 3 doivent alors affronter leurs plus grandes peurs pour trouver un indice leur permettant de récupérer le 3eme codex. En parallèle, ils reçoivent des visions de Thayri, qui leur envoie des visions afin de l'aider à le retrouver et le sauver. En effet, Thayri avait disparu depuis un moment sans laisser de traces."
         },
-{ 
-            nom: "Tunnel des Wendigos",
-            categorie: "Lieux secondaires",
-            sousTitre: "Tunnels et grottes souterraines abritant les Wendigos",
-            image: "",
-            description: "Lieu gouverné par Darch, abritant la colonnies des Wendigos.",
-            details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capables de vous manger si vous vous y aventurez."
-        },
-{ 
-            nom: "Lymphea",
-            categorie: "Lieux secondaires",
-            sousTitre: "Berceau de la nature",
-            image: "",
-            description: "Lieu gouverné par la lymphe Ortylia et peuplée de créatures de la nature en tout genre",
-            details: "Un saule pleureur est caché au coeur de Lymphea et provoque parfois des miracles de la vie"
-        },
- {
+        {
             nom: "La Tour Nuage",
             categorie: "Lieux secondaires",
             sousTitre: "1er lieu où se cachait un codex",
@@ -283,114 +330,4 @@ const CODEX_DATA = {
             details: "La tour est vivante, elle possède un coeur comme un être humain."
         },
         {
-            nom: "Le Royaume des Glaces",
-            categorie: "Lieux secondaires",
-            sousTitre: "2eme lieu où se cachait un codex",
-            image: "",
-            description: "lieu de glace, gouverné par Celes",
-            details: "C'est à cet endroit qu'apparaît pour la premiere fois le Dragon blanc aux yeux bleus de Celes"
-        },
-{
-            nom: "Le Temple de la Vie",
-            categorie: "Lieux secondaires",
-            sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
-            image: "images/lieux/Le Temple de la Vie.jpg",
-            description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
-            details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
-        }
-    ],
-
-    // ==========================================
-    // 3. FAUNE (Prénom, Description, Photo)
-    // ==========================================
-    faune: [
-        {
-            nom: "Aether",
-            description: "Dragon blanc aux yeux bleus de Celes",
-            image: "images/faune/Aether.jpg",
-            infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
-            etat: "Vivant",
-        },
-        {
-            nom: "Artax",
-            description: "Griffon de Celes",
-            image: "images/faune/Artax.jpg",
-            infosComplementaires: "à compléter",
-            etat: "Vivant",
-        },
-        {
-            nom: "Astro",
-            description: "Renard à neuf queues au pelage vert emeraude et blanc. Agile, affectueux et loyal, il ne possède aucune aptitude particulière.",
-            image: "images/faune/Astro2.jpg",
-            infosComplementaires: "Rencontré par Galathea dans la serre de Terraria, il fut sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
-            etat: "Vivant",
-        },
-        {
-            nom: "Azzuria",
-            description: "Rapace gigantesque au plumage bleu saphir et aux reflets dorés, parcourus d'éclairs. Rapide comme la foudre, il possède une agilité exceptionnelle et des serres redoutables.",
-            image: "images/faune/Azzuria2.jpg",
-            infosComplementaires: "Fidèle compagnon de Galathea, Azzuria lui sert de monture aérienne et peut parcourir de grande distances en un temps record.",
-            etat: "Vivant",
-        },
-        {
-            nom: "Condor",
-            description: "Griffon de Liam",
-            image: "images/faune/Condor.jpg",
-            infosComplementaires: " Condor est le premier animal de Liam. Il à su devenir ami et en phase avec cet animal alors que Liam déteste la hauteur. Condor a été blessé à l'aile lors d'une mission vers tour nuage,mais Galathea a réalisé un remède pour le soigner.",
-            etat: "Vivant",
-        },
-        {
-            nom: "Completer avec le nom des 3 loups",
-            description: "Loups",
-            image: "",
-            infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement par voix terrestre",
-            etat: "Vivant",
-        },
-        {
-            nom: "Vax",
-            description: "Animal de compagnie",
-            image: "images/faune/Vax.jpg",
-            age: "3 ans",
-            infosComplementaires: "Corbeau noir, Veille et protège sur Tamara",
-            etat: "Vivant",
-        },
-    ],
-
-    // ==========================================
-    // 4. GALERIE
-    // ==========================================
-    galerie: [
-        "images/galerie/Scene1.jpg",
-        "images/galerie/Scene2.jpg",
-        "images/galerie/Scene3.jpg",
-        "images/galerie/Scene4.jpg",
-        "images/galerie/Scene5.jpg",
-        "images/galerie/Scene6.jpg",
-        "images/galerie/Scene7.png",
-        "images/galerie/Scene8.png",
-        "images/galerie/Scene9.png",
-        "images/galerie/Scene10.png",
-        "images/galerie/Scene11.png",
-        "images/galerie/Scene13.png",
-        "images/galerie/Scene14.png",
-        "images/galerie/Scene15.jpg",
-        "images/galerie/Scene16.jpeg",
-        "images/galerie/Scene17.jpeg",
-        "images/galerie/Scene18.png",
-        "images/galerie/Scene19.png",
-        "images/galerie/Scene20.png",
-        "images/galerie/Scene21.png",
-        "images/galerie/Scene22.png",
-        "images/galerie/Scene23.mp4",
-        "images/galerie/Scène24.jpg",
-        "images/galerie/Scene25.jpg",
-        "images/galerie/Scene26.jpg",
-        "images/galerie/Scene27.jpg",
-        "images/galerie/Scene29.png",
-        "images/galerie/Scene30.jpg",
-        "images/galerie/Scene31.jpg",
-        "images/galerie/Scene32.png",
-        "images/galerie/Scene33.png",
-        "images/galerie/Scene34.jpg"
-    ]
-};
+            nom: "Le Bois Brisé",
