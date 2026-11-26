@@ -126,7 +126,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Grosse brute semi-humaine très imposante, armée d'un gourdin",
             aptitudes: "Force brute colossale, sensibilité à la lumière vive",
             infosComplementaires: "Gardien habituel de la cité de Terraria. Le trio le croise dès son arrivée dans une grotte souterraine alors qu'il prenait quelques vacances",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "grosse brute épaisse" }
         },
         {
             nom: "Caleb",
@@ -146,7 +147,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Jeune femme d'une grande beauté résidant au palais de Terraria",
             aptitudes: "Magie des artefacts et de l'esprit",
             infosComplementaires: "L'une des trois mages du palais. Elle fusionne directement la Pierre de l'Esprit dans le front de Liam/Timio avant le départ de sa première quête",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "La troisième femme, du nom de Catalina" }
         },
         {
             nom: "Darch",
@@ -176,7 +178,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Jeune femme d'une beauté divine résidant au palais de Terraria",
             aptitudes: "Experte en magie, en survie et en connaissance des secrets de Terraria",
             infosComplementaires: "L'une des trois mages du palais. Elle confie à Galathea le collier en roche de Terraria et plumes de plumards permettant de comprendre la faune et la flore",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Les enfants je vous présente Griffin" }
         },
         {
             nom: "Icy",
@@ -186,7 +189,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Apparence jeune malgré ses centaines d'années (son corps et son esprit ne vieillissent pas)",
             aptitudes: "Maîtrise du pouvoir de la glace",
             infosComplementaires: "Cheffe des hors-la-loi bannis sur Omega. Assoiffée de vengeance envers Terraria, elle a envoyé ses sbires dérober le Cristal d'Obsidienne et enfermer la cité sous un dôme magique",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "La cheffe de Omega se prénomme Icy" }
         },
         {
             nom: "Iseult",
@@ -196,7 +200,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Jeune femme d'une grande beauté résidant au palais de Terraria",
             aptitudes: "Spécialiste de la magie de l'âme et de l'esprit",
             infosComplementaires: "L'une des trois mages du palais. Elle remet à Celes le Bracelet de l'Esprit permettant la projection astrale (« Spiritus evasio » / « Spiritus redeo »)",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Voici Iseult" }
         },
         {
             nom: "Le Grand Maître",
@@ -206,7 +211,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
             aptitudes: "Manipulation de l'esprit, télékinésie",
             infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils Thayri peu de temps avant la bataille de la cité car il avait tout découvert de ses intentions et menaçait ses plans.",
-            etat: "Mort"
+            etat: "Mort",
+            apparition: { chapitre: 1, recherche: "longue barbe blanche tout de bleu vêtu" }
         },
         {
             nom: "Naelis",
@@ -226,7 +232,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Petit vieillard habillé de vert, semblant porter une carapace",
             aptitudes: "Parle le langage des coccinelles géantes, grande vivacité malgré son âge",
             infosComplementaires: "Messager fidèle du Grand Maître. Il accueille le trio à la sortie de la grotte sur le dos de sa coccinelle Esibela et sauve Timio d'une chute mortelle",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Je m'appelle Octavius" }
         },
         {
             nom: "Ortylia",
@@ -301,7 +308,8 @@ const CODEX_DATA = {
             sousTitre: "La cité principale de Terraria",
             image: "",
             description: "La cité où vivent nos héros, sous le règne du Roi Thayri.",
-            details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci."
+            details: "La cité est vivante, elle possède un coeur, un moteur qui la maintient en état de fonctionner et est étroitement lié à Thayri depuis qu'il s'est fait aspirer à l'intérieur de celui-ci.",
+            apparition: { chapitre: 1, recherche: "Vous êtes à la cité de Terraria" }
         },
 
         // --- 2. Lieux secondaires ---
@@ -327,7 +335,8 @@ const CODEX_DATA = {
             sousTitre: "1er lieu où se cachait un codex",
             image: "images/lieux/Tournuage.jpg",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
-            details: "La tour est vivante, elle possède un coeur comme un être humain."
+            details: "La tour est vivante, elle possède un coeur comme un être humain.",
+            apparition: { chapitre: 1, recherche: "se trouve à la Tour Nuage" }
         },
         {
             nom: "Le Bois Brisé",
@@ -335,7 +344,8 @@ const CODEX_DATA = {
             sousTitre: "Forêt périlleuse menant à la Tour Nuage",
             image: "",
             description: "Forêt semée d'embûches que le trio doit traverser pour atteindre la Tour Nuage.",
-            details: "Lieu dangereux où rôdent des manipulateurs d'esprit."
+            details: "Lieu dangereux où rôdent des manipulateurs d'esprit.",
+            apparition: { chapitre: 1, recherche: "traverser le Bois Brisé" }
         },
         {
             nom: "Le Royaume des Glaces",
@@ -359,7 +369,8 @@ const CODEX_DATA = {
             sousTitre: "Territoire des pillards menaçant Terraria",
             image: "",
             description: "Contrée hostile d'où proviennent des pillards qui attaquent régulièrement la cité de Terraria.",
-            details: "Mentionnées par le Grand Maître comme l'une des menaces extérieures contre lesquelles il protège la cité."
+            details: "Mentionnées par le Grand Maître comme l'une des menaces extérieures contre lesquelles il protège la cité.",
+            apparition: { chapitre: 1, recherche: "pillards des Terres Noires" }
         },
         {
             nom: "Lymphea",
@@ -375,7 +386,8 @@ const CODEX_DATA = {
             sousTitre: "Monde glacial d'exil dirigé par Icy",
             image: "",
             description: "Univers glacial à l'atmosphère rude où un ancêtre du Grand Maître a banni tous les hors-la-loi ayant causé du tort à Terraria.",
-            details: "Gouverné par Icy, qui maîtrise la glace. C'est là que le Cristal d'Obsidienne a été emporté."
+            details: "Gouverné par Icy, qui maîtrise la glace. C'est là que le Cristal d'Obsidienne a été emporté.",
+            apparition: { chapitre: 1, recherche: "un univers nommé Omega" }
         },
         {
             nom: "Tunnel des Wendigos",
@@ -386,7 +398,6 @@ const CODEX_DATA = {
             details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capables de vous manger si vous vous y aventurez."
         }
     ],
-
     // ==========================================
     // 3. FAUNE (Ordre alphabétique)
     // ==========================================
@@ -403,7 +414,8 @@ const CODEX_DATA = {
             description: "Grand rapace vert de Celes (Thunder Bird)",
             image: "images/faune/Artax.jpg",
             infosComplementaires: "Puissant et rapide, il a choisi Celes dans la salle du trône du palais de Terraria pour l'accompagner dans sa quête",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Il semblerait qu'Artax t'apprécie beaucoup" }
         },
         {
             nom: "Astro",
@@ -417,7 +429,8 @@ const CODEX_DATA = {
             description: "Rapace gigantesque au plumage bleu saphir et aux reflets dorés, parcourus d'éclairs. Rapide comme la foudre, il possède une agilité exceptionnelle et des serres redoutables.",
             image: "images/faune/Azzuria2.jpg",
             infosComplementaires: "Fidèle compagnon de Galathea, Azzuria lui sert de monture aérienne et peut parcourir de grande distances en un temps record. Elle est très gourmande et raffole des cacahuètes et graines de tournesol.",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Azzuria se déplace en furtivité" }
         },
         {
             nom: "Completer avec le nom des 3 loups",
@@ -431,14 +444,16 @@ const CODEX_DATA = {
             description: "Griffon de Liam (Thunder Bird)",
             image: "images/faune/Condor.jpg",
             infosComplementaires: "Condor est le premier animal de Liam. Il a su devenir ami et en phase avec cet animal alors que Liam déteste la hauteur. Condor a été blessé à l'aile lors d'une mission vers tour nuage, mais Galathea a réalisé un remède pour le soigner.",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Tu as été choisi par Condor" }
         },
         {
             nom: "Esibela",
             description: "Coccinelle géante verte et orange",
             image: "",
             infosComplementaires: "Monture végétarienne d'Octavius, capable de voler sur de longues distances et d'attraper quelqu'un en plein vol",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 1, recherche: "Esibela est végétarienne" }
         },
         {
             nom: "Vax",
@@ -459,63 +474,72 @@ const CODEX_DATA = {
             categorie: "Équipement",
             image: "",
             description: "Armes choisies dans l'armurerie du palais avant la première mission : deux pointes serties de rubis verts reliées par une fine chaîne pour Timio, une arbalète pour Galathea et une dague pour Celes.",
-            infosComplementaires: "Les pointes de Timio se portent discrètement au bas du dos grâce à un harnais."
+            infosComplementaires: "Les pointes de Timio se portent discrètement au bas du dos grâce à un harnais.",
+            apparition: { chapitre: 1, recherche: "s'équipa d'une dague en attendant ses amis" }
         },
         {
             nom: "Bracelet de l'Esprit",
             categorie: "Artefact magique",
             image: "",
             description: "Bracelet orné d'une pierre lumineuse remis à Celes par Iseult.",
-            infosComplementaires: "Permet à son porteur de projeter son esprit hors de son corps via la formule « Spiritus evasio » et de revenir via « Spiritus redeo ». La pierre s'éteint tant que le corps reste inerte. Son port a blanchi les cheveux de Celes."
+            infosComplementaires: "Permet à son porteur de projeter son esprit hors de son corps via la formule « Spiritus evasio » et de revenir via « Spiritus redeo ». La pierre s'éteint tant que le corps reste inerte. Son port a blanchi les cheveux de Celes.",
+            apparition: { chapitre: 1, recherche: "Voici maintenant le Bracelet de l'Esprit" }
         },
         {
             nom: "Carte de Terraria",
             categorie: "Artefact magique",
             image: "",
             description: "Carte ancienne en bois bordée d'inscriptions méconnues, sertie de rubis.",
-            infosComplementaires: "Trouvée dans un coffre de la cabane en Bretagne par Timio, elle a ouvert le portail vers Terraria. Une version géante dans la bibliothèque du Grand Maître évolue en temps réel selon l'avancée de l'armée de l'Ombre."
+            infosComplementaires: "Trouvée dans un coffre de la cabane en Bretagne par Timio, elle a ouvert le portail vers Terraria. Une version géante dans la bibliothèque du Grand Maître évolue en temps réel selon l'avancée de l'armée de l'Ombre.",
+            apparition: { chapitre: 0, recherche: "Une sorte de carte en bois" }
         },
         {
             nom: "Codex (4 fragments)",
             categorie: "Artefact magique",
             image: "",
             description: "Livre ancien aux pages dorées et ornées d'or, divisé en quatre fragments dissimulés à travers Terraria.",
-            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique."
+            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique.",
+            apparition: { chapitre: 1, recherche: "récupérer 4 fragments d'un codex" }
         },
         {
             nom: "Collier de la faune et de la flore",
             categorie: "Artefact magique",
             image: "",
             description: "Collier façonné à partir de la roche de Terraria et orné de plumes de plumards, remis à Galathea par Griffin.",
-            infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes."
+            infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes.",
+            apparition: { chapitre: 1, recherche: "un collier fabriqué à partir de la roche de Terraria" }
         },
         {
             nom: "Cristal d'Obsidienne",
             categorie: "Relique majeure",
             image: "",
             description: "Cristal énergétique constituant le cœur même de la cité de Terraria.",
-            infosComplementaires: "Alimente les portails entre mondes ainsi que les systèmes de défense, d'armement et les boucliers de la cité. Dérobé par les sbires d'Icy."
+            infosComplementaires: "Alimente les portails entre mondes ainsi que les systèmes de défense, d'armement et les boucliers de la cité. Dérobé par les sbires d'Icy.",
+            apparition: { chapitre: 1, recherche: "Le Cristal d'Obsidienne qui donne l'énergie" }
         },
         {
             nom: "Encre d'Ingaoué",
             categorie: "Substance magique",
             image: "",
             description: "Liquide légèrement brillant qui tournoie de lui-même, conservé dans la salle des artefacts du palais.",
-            infosComplementaires: "Trempée au contact du Cristal d'Obsidienne, elle offre une protection accrue contre les blessures physiques, accélère la récupération contre la fatigue et la faim et peut parfois éviter la mort."
+            infosComplementaires: "Trempée au contact du Cristal d'Obsidienne, elle offre une protection accrue contre les blessures physiques, accélère la récupération contre la fatigue et la faim et peut parfois éviter la mort.",
+            apparition: { chapitre: 1, recherche: "C'est l'encre d'Ingaoué" }
         },
         {
             nom: "Pierre de l'Esprit",
             categorie: "Artefact magique",
             image: "",
             description: "Petite pierre brillante pas plus grande qu'une noisette remise à Timio/Liam par Catalina.",
-            infosComplementaires: "Fusionnée directement dans le front de Timio. Elle permet de percevoir et de contrôler son environnement et les esprits (« Manipulation de la trame »)."
+            infosComplementaires: "Fusionnée directement dans le front de Timio. Elle permet de percevoir et de contrôler son environnement et les esprits (« Manipulation de la trame »).",
+            apparition: { chapitre: 1, recherche: "La Pierre de l'Esprit, dit-elle" }
         },
         {
             nom: "Rubis d'alerte",
             categorie: "Objet magique",
             image: "",
             description: "Pierres précieuses confiées au trio par le Grand Maître avant leur départ pour la Tour Nuage.",
-            infosComplementaires: "Elles luisent automatiquement lorsque des ennemis approchent."
+            infosComplementaires: "Elles luisent automatiquement lorsque des ennemis approchent.",
+            apparition: { chapitre: 1, recherche: "je vous fournis des rubis qui luiront" }
         }
     ],
 
