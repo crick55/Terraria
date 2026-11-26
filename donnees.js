@@ -34,7 +34,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Jeune homme d'1,80m, au cheveux bruns courts et yeux marrons. Sous sa forme triton il a une queue de poisson de couleur bleue",
             aptitudes: "Contrôle de l'eau et communique avec les créatures marines.",
             infosComplementaires: "Prince des mers et oceans. Fiancé à Celes. Est surnommé « le poisson » par Azelion. Sa mère est morte quand il était enfant. Son passe temps favoris est la peinture.",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 2, recherche: "Je m'appelle Dolios et toi tu dois être Celès" }
         },
         {
             nom: "Galathea",
@@ -94,7 +95,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Grand, cheveux bruns, belle ossature et relativement bien musclé.",
             aptitudes: "Aptutides non dévoilées à ce jour, on sait cependant que depuis sa fusion avec la cité, il peut ressentir ce qui s'y passe, la manipuler, entrer en phase avec elle et bien d'autres choses. Ses pouvoirs persos ne sont pas encore dévoilés à ce jour.",
             infosComplementaires: "Fils du Grand Maître, il a aidé Liam, Celes et Galathéa à le vaincre, celui-ci ayant décidé de prendre le contrôle de la cité et de tuer ses amis. Il finira d'ailleurs par tuer Thayri, son propre fils en le faisant absorber dans le moteur de la cité. Il est à ce jour le souverain de la cité et est reconnu par les habitants comme l'un roi le plus bienfaiteur qu'ils aient connus. Thayri est la personne ayant le sens moral le plus juste et cherchera à trouver systématiquement des solutions à tous celles et ceux qui en auront besoin. Il s'appuie beaucoup sur ses amis et a toute confiance en Liam, Celes ou Galathéa, quitte à leur déléguer des tâches importantes pour la survie de la cité, malgré qu'ils n'y sont pas originaires.",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 2, recherche: "Thayri, je m'appelle Thayri" }
         },
         {
             nom: "Valtor",
@@ -103,8 +105,9 @@ const CODEX_DATA = {
             age: "Age inconnu",
             descriptionPhysique: "Cheveux mi-longs vert emeraude, barbe noire épaisse, yeu verts perçants, silhouette athlétique et musculature prononcée. Il privilégie les tenues sombres et élégantes.",
             aptitudes: "maîtrise de la magie ancienne, création de sceaux et de runes ancestrales, manipulation de l'énergie magique, création de barrières de protection, connaissance des rituels et des anciennes incantations.",
-            infosComplementaires: "Ancien disciple d'Erydin, Valtor a longtemps été victime d'une malédiction dont il a été libéré grâce à Galathea. Il entretien désormais une relation amoureuse avec elle et s'apprête à devenir père.",
-            etat: "Vivant"
+            infosComplementaires: "Ancien disciple d'Erydin, Valtor a longtemps été victime d'une malédiction dont il a été libéré grâce à Galathea. Il tient également le refuge animalier de Terraria où il a confié le bestiaire de la cité à Galathea. Il entretien désormais une relation amoureuse avec elle et s'apprête à devenir père.",
+            etat: "Vivant",
+            apparition: { chapitre: 2, recherche: "Bonjour je me prénomme Valtor" }
         },
 
         // --- 2. Personnages secondaires ---
@@ -215,6 +218,17 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "longue barbe blanche tout de bleu vêtu" }
         },
         {
+            nom: "Morla",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Âgée",
+            descriptionPhysique: "Sorcière âgée aux cheveux blancs et au regard perçant, portant un médaillon orné d'une citrine et un anneau runique",
+            aptitudes: "Surveillance et protection magique de la Tour Nuage depuis son portrait enchanté",
+            infosComplementaires: "Véritable gardienne de la Tour Nuage, dont l'identité avait été usurpée par une imposteuse. Ancienne alliée de Vanessa Wheeler, la grand-mère de Celes, qui lui avait jadis sauvé la vie. Elle remet le premier fragment du Codex au trio.",
+            etat: "Vivant",
+            apparition: { chapitre: 2, recherche: "la sorcière nommée Morla" }
+        },
+        {
             nom: "Naelis",
             categorie: "Personnages secondaires",
             image: "images/persos/Naelis.jpg",
@@ -234,6 +248,17 @@ const CODEX_DATA = {
             infosComplementaires: "Messager fidèle du Grand Maître. Il accueille le trio à la sortie de la grotte sur le dos de sa coccinelle Esibela et sauve Timio d'une chute mortelle",
             etat: "Vivant",
             apparition: { chapitre: 1, recherche: "Je m'appelle Octavius" }
+        },
+        {
+            nom: "Oritel et Marion",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "À compléter",
+            descriptionPhysique: "Parents biologiques de Galathea",
+            aptitudes: "Défenseurs de Terraria",
+            infosComplementaires: "Parents biologiques de Galathea. Marion est retournée sur Terre pour mettre Galathea au monde en sécurité et la confier à des amis proches. Tous deux sont ensuite partis en expédition dans les Terres Oubliées pour combattre les invasions ennemies et ne sont jamais revenus.",
+            etat: "Disparus",
+            apparition: { chapitre: 2, recherche: "Tes parents se nomment Oritel et Marion" }
         },
         {
             nom: "Ortylia",
@@ -294,6 +319,17 @@ const CODEX_DATA = {
             aptitudes: "Vis sous l'eau",
             infosComplementaires: "Est le père de Dolios",
             etat: "Vivant"
+        },
+        {
+            nom: "Vanessa Wheeler",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Décédée",
+            descriptionPhysique: "Grand-mère maternelle de Celes, apparue sous forme de brume spectrale",
+            aptitudes: "Ancienne voyageuse entre la Terre et Terraria, communication depuis l'au-delà via sa croix",
+            infosComplementaires: "Elle a élevé Celes et l'appelait affectueusement « ma petite sirène ». Jadis venue à Terraria au même âge que le trio, elle a sauvé la vie de Morla et œuvré comme conseillère auprès du Grand Maître. Depuis l'au-delà, elle guide Celes dans les moments critiques.",
+            etat: "Mort",
+            apparition: { chapitre: 2, recherche: "Célestine Wheeler, petite-fille de Vanessa Wheeler" }
         }
     ],
 
@@ -373,6 +409,15 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "pillards des Terres Noires" }
         },
         {
+            nom: "Les Terres Oubliées",
+            categorie: "Lieux secondaires",
+            sousTitre: "Contrée dangereuse où ont disparu les parents de Galathea",
+            image: "",
+            description: "Région reculée et périlleuse située au-delà des frontières habituelles de Terraria.",
+            details: "Oritel et Marion, les parents biologiques de Galathea, y sont partis en expédition pour lutter contre les invasions ennemies et n'en sont jamais revenus.",
+            apparition: { chapitre: 2, recherche: "expédition dans les Terres Oubliées" }
+        },
+        {
             nom: "Lymphea",
             categorie: "Lieux secondaires",
             sousTitre: "Berceau de la nature",
@@ -398,6 +443,7 @@ const CODEX_DATA = {
             details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capables de vous manger si vous vous y aventurez."
         }
     ],
+
     // ==========================================
     // 3. FAUNE (Ordre alphabétique)
     // ==========================================
@@ -421,8 +467,9 @@ const CODEX_DATA = {
             nom: "Astro",
             description: "Renard à neuf queues au pelage vert emeraude et blanc. Agile, affectueux et loyal, il ne possède aucune aptitude particulière.",
             image: "images/faune/Astro2.jpg",
-            infosComplementaires: "Rencontré par Galathea dans la serre de Terraria, il fut sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
-            etat: "Vivant"
+            infosComplementaires: "Rencontré par Galathea dans le refuge de Valtor (alors appelé Loup Épineux à Crinière Verte dont la famille avait été tuée par des braconniers) puis sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
+            etat: "Vivant",
+            apparition: { chapitre: 2, recherche: "Mit navn er Astro" }
         },
         {
             nom: "Azzuria",
@@ -478,12 +525,28 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "s'équipa d'une dague en attendant ses amis" }
         },
         {
+            nom: "Bestiaire de la cité",
+            categorie: "Grimoire",
+            image: "",
+            description: "Manuscrit ancien répertoriant toutes les créatures de Terraria, leurs fiches descriptives et les remèdes permettant de les soigner.",
+            infosComplementaires: "Rédigé dans une langue ancestrale proche du sanskrit que seul le collier de Galathea permet de déchiffrer. Confié par Valtor, il a permis de concocter la potion de guérison pour l'aile de Condor.",
+            apparition: { chapitre: 2, recherche: "Dans ma bibliothèque se trouve un bestiaire" }
+        },
+        {
             nom: "Bracelet de l'Esprit",
             categorie: "Artefact magique",
             image: "",
             description: "Bracelet orné d'une pierre lumineuse remis à Celes par Iseult.",
             infosComplementaires: "Permet à son porteur de projeter son esprit hors de son corps via la formule « Spiritus evasio » et de revenir via « Spiritus redeo ». La pierre s'éteint tant que le corps reste inerte. Son port a blanchi les cheveux de Celes.",
             apparition: { chapitre: 1, recherche: "Voici maintenant le Bracelet de l'Esprit" }
+        },
+        {
+            nom: "Bracelet holographique",
+            categorie: "Objet technologique",
+            image: "",
+            description: "Bracelet de communication remis à Galathea par Valtor.",
+            infosComplementaires: "En appuyant sur une zone précise du bracelet, le visage de Valtor apparaît en hologramme pour communiquer à distance à travers Terraria.",
+            apparition: { chapitre: 2, recherche: "Valtor lui donna alors un bracelet holographique" }
         },
         {
             nom: "Carte de Terraria",
@@ -498,7 +561,7 @@ const CODEX_DATA = {
             categorie: "Artefact magique",
             image: "",
             description: "Livre ancien aux pages dorées et ornées d'or, divisé en quatre fragments dissimulés à travers Terraria.",
-            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique.",
+            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique. Le premier fragment a été récupéré à la Tour Nuage auprès de Morla.",
             apparition: { chapitre: 1, recherche: "récupérer 4 fragments d'un codex" }
         },
         {
@@ -506,7 +569,7 @@ const CODEX_DATA = {
             categorie: "Artefact magique",
             image: "",
             description: "Collier façonné à partir de la roche de Terraria et orné de plumes de plumards, remis à Galathea par Griffin.",
-            infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes.",
+            infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes, ainsi que de déchiffrer des langues anciennes liées à la nature.",
             apparition: { chapitre: 1, recherche: "un collier fabriqué à partir de la roche de Terraria" }
         },
         {
@@ -516,6 +579,14 @@ const CODEX_DATA = {
             description: "Cristal énergétique constituant le cœur même de la cité de Terraria.",
             infosComplementaires: "Alimente les portails entre mondes ainsi que les systèmes de défense, d'armement et les boucliers de la cité. Dérobé par les sbires d'Icy.",
             apparition: { chapitre: 1, recherche: "Le Cristal d'Obsidienne qui donne l'énergie" }
+        },
+        {
+            nom: "Croix de Vanessa Wheeler",
+            categorie: "Relique familiale",
+            image: "",
+            description: "Chaîne ornée d'une croix léguée à Celes par sa grand-mère Vanessa Wheeler.",
+            infosComplementaires: "Sert d'ancrage spirituel permettant à Celes d'entendre la voix de sa grand-mère depuis l'au-delà lorsqu'elle la porte.",
+            apparition: { chapitre: 2, recherche: "La croix qu'elle ne quittait jamais se mit à luire" }
         },
         {
             nom: "Encre d'Ingaoué",
