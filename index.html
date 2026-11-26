@@ -401,6 +401,23 @@
             white-space: pre-line;
         }
 
+        .apparition-link {
+            display: inline-block;
+            margin-top: 6px;
+            background: var(--accent-soft);
+            border: 1px solid var(--accent);
+            color: #c4b5fd;
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .apparition-link:active {
+            opacity: 0.8;
+        }
+
         /* Styles du mode lecture Posts / Chapitres */
         .chapter-body {
             margin-top: 16px;
@@ -416,6 +433,12 @@
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.4s ease;
+        }
+
+        .chapter-post.highlight-post {
+            border-color: #f3c65f;
+            box-shadow: 0 0 14px rgba(243, 198, 95, 0.35);
         }
 
         .chapter-author {
@@ -502,7 +525,7 @@
             padding: 40px 20px;
         }
 
-                /* Masquer la barre de défilement sur mobile tout en gardant le scroll */
+        /* Masquer la barre de défilement sur mobile tout en gardant le scroll */
         * {
             scrollbar-width: none; /* Firefox */
             -ms-overflow-style: none; /* Edge / IE */
@@ -755,6 +778,31 @@
             return 'author-default';
         }
 
+        function goToApparition(chapNumero, texteRecherche) {
+            const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
+            const chapIndex = allChapters.findIndex(c => c.numero === chapNumero);
+            if (chapIndex === -1) return;
+
+            openChapterModal(chapIndex);
+
+            if (texteRecherche) {
+                const chap = allChapters[chapIndex];
+                const postIndex = (chap.contenu || []).findIndex(b =>
+                    (b.texte || '').toLowerCase().includes(texteRecherche.toLowerCase())
+                );
+                if (postIndex !== -1) {
+                    setTimeout(() => {
+                        const target = document.getElementById(`post-${postIndex}`);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            target.classList.add('highlight-post');
+                            setTimeout(() => target.classList.remove('highlight-post'), 2500);
+                        }
+                    }, 100);
+                }
+            }
+        }
+
         function openChapterModal(index) {
             const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
             const chap = allChapters[index];
@@ -766,7 +814,7 @@
             modal.classList.remove('gallery-mode');
 
             let blocksHtml = '';
-            (chap.contenu || []).forEach(block => {
+            (chap.contenu || []).forEach((block, blockIndex) => {
                 if (block.type === 'image') {
                     const mediaTag = block.src.endsWith('.mp4')
                         ? `<video src="${block.src}" controls loop playsinline></video>`
@@ -780,7 +828,7 @@
                 } else {
                     const colorClass = getAuthorClass(block.auteur);
                     blocksHtml += `
-                        <div class="chapter-post">
+                        <div class="chapter-post" id="post-${blockIndex}">
                             ${block.auteur ? `<span class="chapter-author ${colorClass}">${block.auteur}</span>` : ''}
                             <p class="chapter-paragraph ${colorClass}">${block.texte || ''}</p>
                         </div>
@@ -873,6 +921,20 @@
             }
             if (item.details) {
                 html += `<div class="modal-section"><h4>Particularités</h4><p>${item.details}</p></div>`;
+            }
+            if (item.apparition) {
+                const labelChap = item.apparition.chapitre === 0
+                    ? 'Prologue'
+                    : `Chapitre ${item.apparition.chapitre}`;
+                const texteRecherche = (item.apparition.recherche || '').replace(/'/g, "\\'");
+                html += `
+                    <div class="modal-section">
+                        <h4>Première apparition</h4>
+                        <button class="apparition-link" onclick="goToApparition(${item.apparition.chapitre}, '${texteRecherche}')">
+                            📖 Lire dans le ${labelChap} →
+                        </button>
+                    </div>
+                `;
             }
 
             body.innerHTML = html;
