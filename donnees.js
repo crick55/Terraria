@@ -331,3 +331,229 @@ const CODEX_DATA = {
         },
         {
             nom: "Le Bois Brisé",
+            categorie: "Lieux secondaires",
+            sousTitre: "Forêt périlleuse menant à la Tour Nuage",
+            image: "",
+            description: "Forêt semée d'embûches que le trio doit traverser pour atteindre la Tour Nuage.",
+            details: "Lieu dangereux où rôdent des manipulateurs d'esprit."
+        },
+        {
+            nom: "Le Royaume des Glaces",
+            categorie: "Lieux secondaires",
+            sousTitre: "2eme lieu où se cachait un codex",
+            image: "",
+            description: "lieu de glace, gouverné par Celes",
+            details: "C'est à cet endroit qu'apparaît pour la premiere fois le Dragon blanc aux yeux bleus de Celes"
+        },
+        {
+            nom: "Le Temple de la Vie",
+            categorie: "Lieux secondaires",
+            sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
+            image: "images/lieux/Le Temple de la Vie.jpg",
+            description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
+            details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
+        },
+        {
+            nom: "Les Terres Noires",
+            categorie: "Lieux secondaires",
+            sousTitre: "Territoire des pillards menaçant Terraria",
+            image: "",
+            description: "Contrée hostile d'où proviennent des pillards qui attaquent régulièrement la cité de Terraria.",
+            details: "Mentionnées par le Grand Maître comme l'une des menaces extérieures contre lesquelles il protège la cité."
+        },
+        {
+            nom: "Lymphea",
+            categorie: "Lieux secondaires",
+            sousTitre: "Berceau de la nature",
+            image: "",
+            description: "Lieu gouverné par la lymphe Ortylia et peuplée de créatures de la nature en tout genre",
+            details: "Un saule pleureur est caché au coeur de Lymphea et provoque parfois des miracles de la vie"
+        },
+        {
+            nom: "Omega",
+            categorie: "Lieux secondaires",
+            sousTitre: "Monde glacial d'exil dirigé par Icy",
+            image: "",
+            description: "Univers glacial à l'atmosphère rude où un ancêtre du Grand Maître a banni tous les hors-la-loi ayant causé du tort à Terraria.",
+            details: "Gouverné par Icy, qui maîtrise la glace. C'est là que le Cristal d'Obsidienne a été emporté."
+        },
+        {
+            nom: "Tunnel des Wendigos",
+            categorie: "Lieux secondaires",
+            sousTitre: "Tunnels et grottes souterraines abritant les Wendigos",
+            image: "",
+            description: "Lieu gouverné par Darch, abritant la colonnies des Wendigos.",
+            details: "Ce sont des tunnels où l'on peut s'y perdre, cachant des wendigos capables de vous manger si vous vous y aventurez."
+        }
+    ],
+
+    // ==========================================
+    // 3. FAUNE (Ordre alphabétique)
+    // ==========================================
+    faune: [
+        {
+            nom: "Aether",
+            description: "Dragon blanc aux yeux bleus de Celes",
+            image: "images/faune/Aether.jpg",
+            infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
+            etat: "Vivant"
+        },
+        {
+            nom: "Artax",
+            description: "Grand rapace vert de Celes (Thunder Bird)",
+            image: "images/faune/Artax.jpg",
+            infosComplementaires: "Puissant et rapide, il a choisi Celes dans la salle du trône du palais de Terraria pour l'accompagner dans sa quête",
+            etat: "Vivant"
+        },
+        {
+            nom: "Astro",
+            description: "Renard à neuf queues au pelage vert emeraude et blanc. Agile, affectueux et loyal, il ne possède aucune aptitude particulière.",
+            image: "images/faune/Astro2.jpg",
+            infosComplementaires: "Rencontré par Galathea dans la serre de Terraria, il fut sauvé de la mort par cette dernière grâce à la sève du saule pleureur de Lymphea. Depuis il est devenu son fidèle compagnon.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Azzuria",
+            description: "Rapace gigantesque au plumage bleu saphir et aux reflets dorés, parcourus d'éclairs. Rapide comme la foudre, il possède une agilité exceptionnelle et des serres redoutables.",
+            image: "images/faune/Azzuria2.jpg",
+            infosComplementaires: "Fidèle compagnon de Galathea, Azzuria lui sert de monture aérienne et peut parcourir de grande distances en un temps record. Elle est très gourmande et raffole des cacahuètes et graines de tournesol.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Completer avec le nom des 3 loups",
+            description: "Loups",
+            image: "",
+            infosComplementaires: "Ce sont les loups qui vont permettre à nos héros de se déplacer rapidement par voix terrestre",
+            etat: "Vivant"
+        },
+        {
+            nom: "Condor",
+            description: "Griffon de Liam (Thunder Bird)",
+            image: "images/faune/Condor.jpg",
+            infosComplementaires: "Condor est le premier animal de Liam. Il a su devenir ami et en phase avec cet animal alors que Liam déteste la hauteur. Condor a été blessé à l'aile lors d'une mission vers tour nuage, mais Galathea a réalisé un remède pour le soigner.",
+            etat: "Vivant"
+        },
+        {
+            nom: "Esibela",
+            description: "Coccinelle géante verte et orange",
+            image: "",
+            infosComplementaires: "Monture végétarienne d'Octavius, capable de voler sur de longues distances et d'attraper quelqu'un en plein vol",
+            etat: "Vivant"
+        },
+        {
+            nom: "Vax",
+            description: "Animal de compagnie",
+            image: "images/faune/Vax.jpg",
+            age: "3 ans",
+            infosComplementaires: "Corbeau noir, Veille et protège sur Tamara",
+            etat: "Vivant"
+        }
+    ],
+
+    // ==========================================
+    // 4. OBJETS & ARTEFACTS (Ordre alphabétique)
+    // ==========================================
+    objets: [
+        {
+            nom: "Armes du trio (Palais de Terraria)",
+            categorie: "Équipement",
+            image: "",
+            description: "Armes choisies dans l'armurerie du palais avant la première mission : deux pointes serties de rubis verts reliées par une fine chaîne pour Timio, une arbalète pour Galathea et une dague pour Celes.",
+            infosComplementaires: "Les pointes de Timio se portent discrètement au bas du dos grâce à un harnais."
+        },
+        {
+            nom: "Bracelet de l'Esprit",
+            categorie: "Artefact magique",
+            image: "",
+            description: "Bracelet orné d'une pierre lumineuse remis à Celes par Iseult.",
+            infosComplementaires: "Permet à son porteur de projeter son esprit hors de son corps via la formule « Spiritus evasio » et de revenir via « Spiritus redeo ». La pierre s'éteint tant que le corps reste inerte. Son port a blanchi les cheveux de Celes."
+        },
+        {
+            nom: "Carte de Terraria",
+            categorie: "Artefact magique",
+            image: "",
+            description: "Carte ancienne en bois bordée d'inscriptions méconnues, sertie de rubis.",
+            infosComplementaires: "Trouvée dans un coffre de la cabane en Bretagne par Timio, elle a ouvert le portail vers Terraria. Une version géante dans la bibliothèque du Grand Maître évolue en temps réel selon l'avancée de l'armée de l'Ombre."
+        },
+        {
+            nom: "Codex (4 fragments)",
+            categorie: "Artefact magique",
+            image: "",
+            description: "Livre ancien aux pages dorées et ornées d'or, divisé en quatre fragments dissimulés à travers Terraria.",
+            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique."
+        },
+        {
+            nom: "Collier de la faune et de la flore",
+            categorie: "Artefact magique",
+            image: "",
+            description: "Collier façonné à partir de la roche de Terraria et orné de plumes de plumards, remis à Galathea par Griffin.",
+            infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes."
+        },
+        {
+            nom: "Cristal d'Obsidienne",
+            categorie: "Relique majeure",
+            image: "",
+            description: "Cristal énergétique constituant le cœur même de la cité de Terraria.",
+            infosComplementaires: "Alimente les portails entre mondes ainsi que les systèmes de défense, d'armement et les boucliers de la cité. Dérobé par les sbires d'Icy."
+        },
+        {
+            nom: "Encre d'Ingaoué",
+            categorie: "Substance magique",
+            image: "",
+            description: "Liquide légèrement brillant qui tournoie de lui-même, conservé dans la salle des artefacts du palais.",
+            infosComplementaires: "Trempée au contact du Cristal d'Obsidienne, elle offre une protection accrue contre les blessures physiques, accélère la récupération contre la fatigue et la faim et peut parfois éviter la mort."
+        },
+        {
+            nom: "Pierre de l'Esprit",
+            categorie: "Artefact magique",
+            image: "",
+            description: "Petite pierre brillante pas plus grande qu'une noisette remise à Timio/Liam par Catalina.",
+            infosComplementaires: "Fusionnée directement dans le front de Timio. Elle permet de percevoir et de contrôler son environnement et les esprits (« Manipulation de la trame »)."
+        },
+        {
+            nom: "Rubis d'alerte",
+            categorie: "Objet magique",
+            image: "",
+            description: "Pierres précieuses confiées au trio par le Grand Maître avant leur départ pour la Tour Nuage.",
+            infosComplementaires: "Elles luisent automatiquement lorsque des ennemis approchent."
+        }
+    ],
+
+    // ==========================================
+    // 5. GALERIE
+    // ==========================================
+    galerie: [
+        "images/galerie/Scene1.jpg",
+        "images/galerie/Scene2.jpg",
+        "images/galerie/Scene3.jpg",
+        "images/galerie/Scene4.jpg",
+        "images/galerie/Scene5.jpg",
+        "images/galerie/Scene6.jpg",
+        "images/galerie/Scene7.png",
+        "images/galerie/Scene8.png",
+        "images/galerie/Scene9.png",
+        "images/galerie/Scene10.png",
+        "images/galerie/Scene11.png",
+        "images/galerie/Scene13.png",
+        "images/galerie/Scene14.png",
+        "images/galerie/Scene15.jpg",
+        "images/galerie/Scene16.jpeg",
+        "images/galerie/Scene17.jpeg",
+        "images/galerie/Scene18.png",
+        "images/galerie/Scene19.png",
+        "images/galerie/Scene20.png",
+        "images/galerie/Scene21.png",
+        "images/galerie/Scene22.png",
+        "images/galerie/Scene23.mp4",
+        "images/galerie/Scène24.jpg",
+        "images/galerie/Scene25.jpg",
+        "images/galerie/Scene26.jpg",
+        "images/galerie/Scene27.jpg",
+        "images/galerie/Scene29.png",
+        "images/galerie/Scene30.jpg",
+        "images/galerie/Scene31.jpg",
+        "images/galerie/Scene32.png",
+        "images/galerie/Scene33.png",
+        "images/galerie/Scene34.jpg"
+    ]
+};
