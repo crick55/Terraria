@@ -568,11 +568,18 @@
 
     <script src="donnees.js"></script>
     <script src="chapitres.js"></script>
-    <script>
+   <script>
         let currentTab = localStorage.getItem('terraria_active_tab') || 'personnages';
         let searchQuery = '';
 
         document.getElementById('app-title').textContent = CODEX_DATA.titre || 'Terraria';
+
+        function normalizeText(str) {
+            return String(str || '')
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+        }
 
         function setActiveTabButton(tabName) {
             document.querySelectorAll('.tab-btn').forEach(b => {
@@ -587,22 +594,30 @@
                 currentTab = btn.dataset.tab;
                 localStorage.setItem('terraria_active_tab', currentTab);
                 setActiveTabButton(currentTab);
+                if (searchQuery) {
+                    searchQuery = '';
+                    document.getElementById('searchInput').value = '';
+                }
                 render();
             });
         });
 
         document.getElementById('searchInput').addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase().trim();
+            searchQuery = normalizeText(e.target.value.trim());
             render();
         });
 
         function matchesSearch(item) {
             if (!searchQuery) return true;
-            const text = Object.values(item).join(' ').toLowerCase();
+            const text = normalizeText(
+                Object.values(item)
+                    .map(v => (typeof v === 'object' && v !== null) ? Object.values(v).join(' ') : v)
+                    .join(' ')
+            );
             return text.includes(searchQuery);
         }
 
-        function createCard(item) {
+        function createCard(item, badgeLabel) {
             const card = document.createElement('div');
             card.className = 'item-card';
             card.onclick = () => openItemModal(item);
@@ -612,7 +627,9 @@
                 : `<div class="avatar-placeholder">${item.nom.charAt(0).toUpperCase()}</div>`;
 
             let previewText = '';
-            if (item.age && item.age !== 'À compléter') {
+            if (badgeLabel) {
+                previewText = badgeLabel + (item.sousTitre ? ' • ' + item.sousTitre : '');
+            } else if (item.age && item.age !== 'À compléter') {
                 previewText = item.age + (item.etat ? ' • ' + item.etat : '');
             } else if (item.etat) {
                 previewText = item.etat;
@@ -630,9 +647,154 @@
             return card;
         }
 
+        function buildSnippet(text, query) {
+            const norm = normalizeText(text);
+            const idx = norm.indexOf(query);
+            if (idx === -1) return text.slice(0, 90) + (text.length > 90 ? '…' : '');
+            const start = Math.max(0, idx - 30);
+            const end = Math.min(text.length, idx + query.length + 55);
+            return (start > 0 ? '…' : '') + text.slice(start, end).trim() + (end < text.length ? '…' : '');
+        }
+
+        function renderGlobalSearch(container) {
+            const banner = document.createElement('div');
+            banner.className = 'section-banner';
+            banner.textContent = `Résultats de recherche`;
+            container.appendChild(banner);
+
+            const sections = [
+                { key: 'personnages', label: 'Personnages' },
+                { key: 'lieux', label: 'Lieux' },
+                { key: 'faune', label: 'Faune' },
+                { key: 'objets', label: 'Objets & Artefacts' }
+            ];
+
+            let totalCount = 0;
+
+            sections.forEach(sec => {
+                const matches = (CODEX_DATA[sec.key] || []).filter(matchesSearch);
+                if (matches.length === 0) return;
+                totalCount += matches.length;
+
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'tree-group';
+
+                const header = document.createElement('div');
+                header.className = 'tree-header';
+                header.innerHTML = `<span>▾ ${sec.label}</span><span class="count">${matches.length}</span>`;
+                header.onclick = () => {
+                    groupDiv.classList.toggle('collapsed');
+                    header.querySelector('span').textContent = (groupDiv.classList.contains('collapsed') ? '▸ ' : '▾ ') + sec.label;
+                };
+
+                const content = document.createElement('div');
+                content.className = 'tree-content';
+                matches.forEach(item => content.appendChild(createCard(item, item.categorie || sec.label)));
+
+                groupDiv.appendChild(header);
+                groupDiv.appendChild(content);
+                container.appendChild(groupDiv);
+            });
+
+            // Recherche dans tous les posts de tous les chapitres
+            const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
+            const storyHits = [];
+
+            allChapters.forEach((chap, chapIndex) => {
+                const titleMatch = normalizeText(`${chap.titre} ${chap.sousTitre || ''}`).includes(searchQuery);
+                let chapterAdded = false;
+
+                (chap.contenu || []).forEach((block, blockIndex) => {
+                    if (block.type === 'image') return;
+                    const textMatch = normalizeText(`${block.auteur || ''} ${block.texte || ''}`).includes(searchQuery);
+                    if (textMatch) {
+                        storyHits.push({
+                            chapIndex,
+                            chap,
+                            blockIndex,
+                            auteur: block.auteur,
+                            extrait: buildSnippet(block.texte || '', searchQuery)
+                        });
+                        chapterAdded = true;
+                    }
+                });
+
+                if (titleMatch && !chapterAdded) {
+                    storyHits.push({
+                        chapIndex,
+                        chap,
+                        blockIndex: null,
+                        auteur: null,
+                        extrait: chap.sousTitre || chap.acte
+                    });
+                }
+            });
+
+            if (storyHits.length > 0) {
+                totalCount += storyHits.length;
+
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'tree-group';
+
+                const header = document.createElement('div');
+                header.className = 'tree-header';
+                header.innerHTML = `<span>▾ Histoire (Chapitres & Passages)</span><span class="count">${storyHits.length}</span>`;
+                header.onclick = () => {
+                    groupDiv.classList.toggle('collapsed');
+                    header.querySelector('span').textContent = (groupDiv.classList.contains('collapsed') ? '▸ ' : '▾ ') + 'Histoire (Chapitres & Passages)';
+                };
+
+                const content = document.createElement('div');
+                content.className = 'tree-content';
+
+                storyHits.forEach(hit => {
+                    const card = document.createElement('div');
+                    card.className = 'item-card';
+                    card.onclick = () => {
+                        openChapterModal(hit.chapIndex);
+                        if (hit.blockIndex !== null) {
+                            setTimeout(() => {
+                                const target = document.getElementById(`post-${hit.blockIndex}`);
+                                if (target) {
+                                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                    target.classList.add('highlight-post');
+                                    setTimeout(() => target.classList.remove('highlight-post'), 2500);
+                                }
+                            }, 100);
+                        }
+                    };
+
+                    const chapLabel = hit.chap.numero === 0 ? 'Prologue' : `Chapitre ${hit.chap.numero}`;
+                    const authorPrefix = hit.auteur ? `${hit.auteur} : ` : '';
+
+                    card.innerHTML = `
+                        <div class="avatar-placeholder">${hit.chap.numero}</div>
+                        <div class="item-info">
+                            <div class="item-title">${chapLabel} — ${hit.chap.titre}</div>
+                            <div class="item-sub">${authorPrefix}${hit.extrait}</div>
+                        </div>
+                    `;
+                    content.appendChild(card);
+                });
+
+                groupDiv.appendChild(header);
+                groupDiv.appendChild(content);
+                container.appendChild(groupDiv);
+            }
+
+            if (totalCount === 0) {
+                container.innerHTML += '<div class="empty-state">Aucun résultat dans le codex ni dans l’histoire.</div>';
+            }
+        }
+
         function render() {
             const container = document.getElementById('contentArea');
             container.innerHTML = '';
+
+            if (searchQuery) {
+                renderGlobalSearch(container);
+                return;
+            }
 
             if (currentTab === 'galerie') {
                 renderGalerie(container);
@@ -644,7 +806,7 @@
                 return;
             }
 
-            const items = (CODEX_DATA[currentTab] || []).filter(matchesSearch);
+            const items = CODEX_DATA[currentTab] || [];
 
             if (items.length === 0) {
                 container.innerHTML = '<div class="empty-state">Aucun élément trouvé.</div>';
@@ -670,16 +832,13 @@
                 groups[cat].push(item);
             });
 
-            const isCollapsedByDefault = !searchQuery;
-
             groupOrder.forEach(cat => {
                 const groupDiv = document.createElement('div');
-                groupDiv.className = 'tree-group' + (isCollapsedByDefault ? ' collapsed' : '');
+                groupDiv.className = 'tree-group collapsed';
 
                 const header = document.createElement('div');
                 header.className = 'tree-header';
-                const arrow = isCollapsedByDefault ? '▸ ' : '▾ ';
-                header.innerHTML = `<span>${arrow}${cat}</span><span class="count">${groups[cat].length}</span>`;
+                header.innerHTML = `<span>▸ ${cat}</span><span class="count">${groups[cat].length}</span>`;
                 header.onclick = () => {
                     groupDiv.classList.toggle('collapsed');
                     header.querySelector('span').textContent = (groupDiv.classList.contains('collapsed') ? '▸ ' : '▾ ') + cat;
@@ -702,25 +861,15 @@
             container.appendChild(banner);
 
             const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
-            const filtered = allChapters.filter(chap => {
-                if (!searchQuery) return true;
-                const fullText = [
-                    chap.acte,
-                    chap.titre,
-                    chap.sousTitre || '',
-                    ...(chap.contenu || []).map(b => (b.auteur || '') + ' ' + (b.texte || '') + ' ' + (b.legende || ''))
-                ].join(' ').toLowerCase();
-                return fullText.includes(searchQuery);
-            });
 
-            if (filtered.length === 0) {
+            if (allChapters.length === 0) {
                 container.innerHTML += '<div class="empty-state">Aucun chapitre trouvé.</div>';
                 return;
             }
 
             const acts = {};
             const actOrder = [];
-            filtered.forEach(chap => {
+            allChapters.forEach(chap => {
                 const actName = chap.acte || 'Récit';
                 if (!acts[actName]) {
                     acts[actName] = [];
@@ -729,16 +878,13 @@
                 acts[actName].push(chap);
             });
 
-            const isCollapsedByDefault = !searchQuery;
-
             actOrder.forEach(actName => {
                 const groupDiv = document.createElement('div');
-                groupDiv.className = 'tree-group' + (isCollapsedByDefault ? ' collapsed' : '');
+                groupDiv.className = 'tree-group collapsed';
 
                 const header = document.createElement('div');
                 header.className = 'tree-header';
-                const arrow = isCollapsedByDefault ? '▸ ' : '▾ ';
-                header.innerHTML = `<span>${arrow}${actName}</span><span class="count">${acts[actName].length}</span>`;
+                header.innerHTML = `<span>▸ ${actName}</span><span class="count">${acts[actName].length}</span>`;
                 header.onclick = () => {
                     groupDiv.classList.toggle('collapsed');
                     header.querySelector('span').textContent = (groupDiv.classList.contains('collapsed') ? '▸ ' : '▾ ') + actName;
@@ -788,7 +934,7 @@
             if (texteRecherche) {
                 const chap = allChapters[chapIndex];
                 const postIndex = (chap.contenu || []).findIndex(b =>
-                    (b.texte || '').toLowerCase().includes(texteRecherche.toLowerCase())
+                    normalizeText(b.texte || '').includes(normalizeText(texteRecherche))
                 );
                 if (postIndex !== -1) {
                     setTimeout(() => {
