@@ -502,23 +502,16 @@
             padding: 40px 20px;
         }
 
-        /* Ascenseur personnalisé fin et discret */
+                /* Masquer la barre de défilement sur mobile tout en gardant le scroll */
+        * {
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Edge / IE */
+        }
+
         ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: rgba(139, 92, 246, 0.45);
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(139, 92, 246, 0.8);
+            display: none; /* Chrome, Safari, Android */
+            width: 0;
+            height: 0;
         }
     </style>
 </head>
