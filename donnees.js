@@ -121,7 +121,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Vampire, habillé d'une tunique toujours noire et sombre",
             aptitudes: "Rapide, hypnotise ses proies, très bon combattant",
             infosComplementaires: "Est le père de Saphira",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "Là où toi et Asher ne risquez pas de la trouver" }
         },
         {
             nom: "Brutus",
@@ -221,6 +222,17 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "longue barbe blanche tout de bleu vêtu" }
         },
         {
+            nom: "Marina",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Décédée",
+            descriptionPhysique: "Âme spectrale de l'ancienne reine des mers, grand-mère de Dolios et mère de Triton",
+            aptitudes: "Communication depuis l'au-delà via l'anneau familial et l'énergie de médium de Celes",
+            infosComplementaires: "Ancienne propriétaire de l'anneau marin transmis de génération en génération. Elle apparaît devant son fils Triton pour lui prouver que Dolios a lui-même offert la bague à Celes par amour.",
+            etat: "Mort",
+            apparition: { chapitre: 3, recherche: "Celès, je suis Marina, la mère de Triton" }
+        },
+        {
             nom: "Morla",
             categorie: "Personnages secondaires",
             image: "",
@@ -281,7 +293,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Ressemble à un mort vivant.",
             aptitudes: "Inconnu",
             infosComplementaires: "Gouverne sur le Royaume des glaces avec Sansa, en l'absence de Celes",
-            etat: "Mort-Vivant"
+            etat: "Mort-Vivant",
+            apparition: { chapitre: 3, recherche: "Percy et Sansa resteront ici" }
         },
         {
             nom: "Sansa",
@@ -291,7 +304,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Ressemble à un mort vivant.",
             aptitudes: "inconnu",
             infosComplementaires: "Gouverne sur le Royaume des glaces avec Percy, en l'absence de Celes",
-            etat: "Mort-Vivant"
+            etat: "Mort-Vivant",
+            apparition: { chapitre: 3, recherche: "Percy et Sansa resteront ici" }
         },
         {
             nom: "Saphira",
@@ -301,7 +315,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Femme qui en jette, cheveux noirs et longs, visage fin, séduisante mais mortelle",
             aptitudes: "Rapidité, maniement des armes et redoutable au combat",
             infosComplementaires: "Fille d'Asher, elle a maudit le monde de Lymphea",
-            etat: "Mort"
+            etat: "Mort",
+            apparition: { chapitre: 3, recherche: "Elle se nomme Saphira" }
         },
         {
             nom: "Scalia",
@@ -321,7 +336,8 @@ const CODEX_DATA = {
             descriptionPhysique: "A compléter",
             aptitudes: "Vis sous l'eau",
             infosComplementaires: "Est le père de Dolios",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "mon père est Triton, le roi des mers" }
         },
         {
             nom: "Vanessa Wheeler",
@@ -333,6 +349,17 @@ const CODEX_DATA = {
             infosComplementaires: "Elle a élevé Celes et l'appelait affectueusement « ma petite sirène ». Jadis venue à Terraria au même âge que le trio, elle a sauvé la vie de Morla et œuvré comme conseillère auprès du Grand Maître. Depuis l'au-delà, elle guide Celes dans les moments critiques.",
             etat: "Mort",
             apparition: { chapitre: 2, recherche: "Célestine Wheeler, petite-fille de Vanessa Wheeler" }
+        },
+        {
+            nom: "Zayne",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Âge inconnu",
+            descriptionPhysique: "Homme aux yeux d'un bleu luminescent, enchaîné sur le trône du palais des glaces",
+            aptitudes: "Ancien maître du royaume des glaces et du dragon Aether",
+            infosComplementaires: "Condamné et enchaîné pour avoir trahi les habitants de son monde par avidité, perdant ainsi sa femme et son fils. Il demande à Celes de le tuer avec le poignard de glace afin de la désigner comme nouvelle maîtresse des lieux et de le libérer de sa malédiction.",
+            etat: "Mort",
+            apparition: { chapitre: 3, recherche: "Je suis le maître des lieux. Mon nom est Zayne" }
         }
     ],
 
@@ -392,7 +419,8 @@ const CODEX_DATA = {
             sousTitre: "2eme lieu où se cachait un codex",
             image: "",
             description: "lieu de glace, gouverné par Celes",
-            details: "C'est à cet endroit qu'apparaît pour la premiere fois le Dragon blanc aux yeux bleus de Celes"
+            details: "C'est à cet endroit qu'apparaît pour la premiere fois le Dragon blanc aux yeux bleus de Celes",
+            apparition: { chapitre: 3, recherche: "au pays de l'hiver éternel" }
         },
         {
             nom: "Le Temple de la Vie",
@@ -401,6 +429,15 @@ const CODEX_DATA = {
             image: "images/lieux/Le Temple de la Vie.jpg",
             description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
             details: "En récupérant le coeur de verre, l'écosystème tout entier de ce lieu a été... détruit."
+        },
+        {
+            nom: "Les Eaux Interdites",
+            categorie: "Lieux secondaires",
+            sousTitre: "Territoire maritime périlleux menant au Royaume des Glaces",
+            image: "",
+            description: "Zone maritime dangereuse peuplée de créatures marines hostiles aux habitants de la terre ferme suite à d'anciennes trahisons.",
+            details: "Gouvernées par le roi Triton et surveillées par les sirènes maudites, les Selbries et le Kraken.",
+            apparition: { chapitre: 3, recherche: "atteindre les eaux interdites" }
         },
         {
             nom: "Les Terres Noires",
@@ -456,7 +493,8 @@ const CODEX_DATA = {
             description: "Dragon blanc aux yeux bleus de Celes",
             image: "images/faune/Aether.jpg",
             infosComplementaires: "Probablement volé a Kaïba, mais on ne dira rien...",
-            etat: "Vivant"
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "un immense dragon blanc aux yeux bleus" }
         },
         {
             nom: "Artax",
@@ -506,12 +544,44 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "Esibela est végétarienne" }
         },
         {
+            nom: "Kraken",
+            description: "Créature marine colossale dotée de tentacules géantes et d'énormes yeux",
+            image: "",
+            infosComplementaires: "Monture et gardien du roi Triton dans les eaux interdites. Il sauve Timio et Celes de la noyade en les déposant sur le pont du navire.",
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "elle était devant le Kraken" }
+        },
+        {
+            nom: "Selbrie",
+            description: "Entité marine féroce mi-homme, mi-pieuvre qui commande les sirènes",
+            image: "",
+            infosComplementaires: "Son cri strident est capable de faire perdre l'audition, mais peut être neutralisé pendant une dizaine de minutes à l'aide d'un micro parabolique.",
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "C'est un Selbrie" }
+        },
+        {
+            nom: "Sirènes maudites",
+            description: "Créatures marines vivant en banc dans les eaux interdites",
+            image: "images/faune/Sirenes.jpg",
+            infosComplementaires: "Leur chant mélodieux et sensuel envoûte les hommes pour les attirer au fond de l'eau et les noyer.",
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "dans le domaine des sirènes maudites" }
+        },
+        {
             nom: "Vax",
             description: "Animal de compagnie",
             image: "images/faune/Vax.jpg",
             age: "3 ans",
             infosComplementaires: "Corbeau noir, Veille et protège sur Tamara",
             etat: "Vivant"
+        },
+        {
+            nom: "Willy",
+            description: "Orque des eaux interdites",
+            image: "",
+            infosComplementaires: "Ami fidèle du prince Dolios. Il prévient Timio de l'embuscade des sirènes par télépathie, le sauve de la noyade et reçoit l'ordre du roi Triton d'escorter le navire du trio.",
+            etat: "Vivant",
+            apparition: { chapitre: 3, recherche: "je laisse Willy l'orque avec vous" }
         }
     ],
 
@@ -520,12 +590,28 @@ const CODEX_DATA = {
     // ==========================================
     objets: [
         {
+            nom: "Anneau de Triton",
+            categorie: "Relique",
+            image: "",
+            description: "Anneau familial ayant appartenu à Marina, la grand-mère de Dolios, et transmis de génération en génération chez les souverains des mers.",
+            infosComplementaires: "Confié par Dolios à Celes sur sa chaîne pour prouver au peuple de la mer qu'elle est sous sa protection et lui permettre d'invoquer l'esprit de Marina.",
+            apparition: { chapitre: 3, recherche: "Dolios sortit un anneau de sa poche" }
+        },
+        {
             nom: "Armes du trio (Palais de Terraria)",
             categorie: "Équipement",
             image: "",
             description: "Armes choisies dans l'armurerie du palais avant la première mission : deux pointes serties de rubis verts reliées par une fine chaîne pour Timio, une arbalète pour Galathea et une dague pour Celes.",
             infosComplementaires: "Les pointes de Timio se portent discrètement au bas du dos grâce à un harnais.",
             apparition: { chapitre: 1, recherche: "s'équipa d'une dague en attendant ses amis" }
+        },
+        {
+            nom: "Bateau des pirates maudits",
+            categorie: "Équipement",
+            image: "",
+            description: "Navire affrété par le Grand Maître pour traverser les eaux interdites jusqu'au pays de l'hiver éternel.",
+            infosComplementaires: "Son équipage est composé de pirates maudits après avoir volé un trésor : plus morts que vivants, ils n'ont plus d'ADN et peuvent franchir le dôme, mais ne peuvent jamais poser le pied sur la terre ferme.",
+            apparition: { chapitre: 3, recherche: "Votre équipage sera constitué de pauvres pirates maudits" }
         },
         {
             nom: "Bestiaire de la cité",
@@ -600,6 +686,14 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "C'est l'encre d'Ingaoué" }
         },
         {
+            nom: "Pendentif d'essence de Valtor",
+            categorie: "Objet magique",
+            image: "",
+            description: "Petit bijou dissimulé dans le chignon de Galathea, renfermant une essence confiée par Valtor lors de sa visite dans sa serre.",
+            infosComplementaires: "Permet d'allumer un feu par simple friction au contact du bois, même lorsque celui-ci est humide.",
+            apparition: { chapitre: 3, recherche: "Utilise mon pendentif qui se trouve dans mon chignon" }
+        },
+        {
             nom: "Pierre de l'Esprit",
             categorie: "Objet magique",
             image: "",
@@ -608,12 +702,36 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "La Pierre de l'Esprit, dit-elle" }
         },
         {
+            nom: "Poignard de glace",
+            categorie: "Relique",
+            image: "",
+            description: "Dague forgée dans une glace magique, conservée dans le coffre de la salle du trône du palais des glaces aux côtés du deuxième fragment du Codex.",
+            infosComplementaires: "Seule arme capable de tuer le maître des glaces pour le libérer de sa malédiction et transmettre le titre ainsi que les pouvoirs du royaume à celui qui porte le coup.",
+            apparition: { chapitre: 3, recherche: "un poignard de glace" }
+        },
+        {
+            nom: "Remède pour Condor",
+            categorie: "Potion",
+            image: "",
+            description: "Potion de guérison concoctée par Galathea et Valtor à partir d'une plume de Kuruku, de trois baies de Nymphus et d'eau sacrée de la vallée.",
+            infosComplementaires: "Permet de soigner l'aile blessée de Condor suite à l'attaque de la Harpie près de la Tour Nuage.",
+            apparition: { chapitre: 3, recherche: "concevoir le remède qui permettra de guérir Condor" }
+        },
+        {
             nom: "Rubis d'alerte",
             categorie: "Objet magique",
             image: "",
             description: "Pierres précieuses confiées au trio par le Grand Maître avant leur départ pour la Tour Nuage.",
             infosComplementaires: "Elles luisent automatiquement lorsque des ennemis approchent.",
             apparition: { chapitre: 1, recherche: "je vous fournis des rubis qui luiront" }
+        },
+        {
+            nom: "Sceptre de glace",
+            categorie: "Relique",
+            image: "",
+            description: "Magnifique sceptre lumineux découvert par Celes dans un coffre gelé du salon du palais des glaces.",
+            infosComplementaires: "Gèle quiconque le touche sans être reconnu comme maître des lieux (à l'exception des hommes sur lesquels le château n'agit pas). Une fois devenue maîtresse du royaume, Celes l'utilise pour briser la glace emprisonnant Galathea.",
+            apparition: { chapitre: 3, recherche: "un magnifique sceptre de glace" }
         }
     ],
 
