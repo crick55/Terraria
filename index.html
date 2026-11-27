@@ -498,7 +498,18 @@
             line-height: 1.68;
             white-space: pre-line;
         }
-
+        
+        .auteur-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-left: 6px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+        }
+        
         /* Couleurs par auteur (prénom + texte) */
         .author-yann {
             color: #f87171; /* Rouge lumineux */
@@ -728,6 +739,10 @@
                 etatBadge = `<span class="etat-badge ${isMort ? 'etat-mort' : 'etat-vivant'}">${foundItem.etat}</span>`;
             }
 
+            const auteurBadge = foundItem.auteur
+                ? `<span class="auteur-badge ${getAuthorClass(foundItem.auteur)}">Joué par ${foundItem.auteur}</span>`
+                : '';
+
             const resume = foundItem.descriptionPhysique || foundItem.description || foundItem.sousTitre || '';
             const infos = foundItem.infosComplementaires || foundItem.details || '';
             const safeNom = foundItem.nom.replace(/'/g, "\\'");
@@ -735,6 +750,7 @@
             body.innerHTML = `
                 ${foundItem.categorie ? `<span class="modal-tag">${foundItem.categorie}</span>` : ''}
                 ${etatBadge}
+                ${auteurBadge}
                 <h3 style="margin: 4px 0 8px 0; font-size: 1.2rem;">${foundItem.nom}</h3>
                 ${foundItem.image ? `<img src="${foundItem.image}" class="modal-img" style="max-height: 220px;" alt="${foundItem.nom}">` : ''}
                 ${foundItem.age && foundItem.age !== 'À compléter' ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin: 4px 0 8px 0;">Âge : ${foundItem.age}</p>` : ''}
@@ -819,12 +835,16 @@
             } else {
                 previewText = item.sousTitre || item.description || '';
             }
-
+            
+            const authorBadge = item.auteur
+                ? `<span class="${getAuthorClass(item.auteur)}" style="font-weight: 600;"> • ${item.auteur}</span>`
+                : '';
+            
             card.innerHTML = `
                 ${visual}
                 <div class="item-info">
                     <div class="item-title">${item.nom}</div>
-                    <div class="item-sub">${previewText}</div>
+                    <div class="item-sub">${previewText}${authorBadge}</div>
                 </div>
             `;
             return card;
@@ -1226,9 +1246,14 @@
                 etatBadge = `<span class="etat-badge ${isMort ? 'etat-mort' : 'etat-vivant'}">${item.etat}</span>`;
             }
 
+            const auteurBadge = item.auteur
+                ? `<span class="auteur-badge ${getAuthorClass(item.auteur)}">Joué par ${item.auteur}</span>`
+                : '';
+
             let html = `
                 ${item.categorie ? `<span class="modal-tag">${item.categorie}</span>` : ''}
                 ${etatBadge}
+                ${auteurBadge}
                 <h2 style="margin: 4px 0 8px 0;">${item.nom}</h2>
                 ${item.image ? `<img src="${item.image}" class="modal-img" alt="${item.nom}">` : ''}
             `;
