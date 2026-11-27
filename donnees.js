@@ -116,6 +116,7 @@ const CODEX_DATA = {
         {
             nom: "Asher",
             categorie: "Personnages secondaires",
+            auteur: "Vio",
             image: "images/persos/Asher.jpg",
             age: "500 ans environ",
             descriptionPhysique: "Vampire, habillé d'une tunique toujours noire et sombre",
@@ -138,6 +139,7 @@ const CODEX_DATA = {
         {
             nom: "Caleb",
             categorie: "Personnages secondaires",
+            auteur: "Vio",
             image: "images/persos/Caleb 2.jpg",
             age: "mort à 7 ans",
             descriptionPhysique: "Garçon d’1m20 au cheveux et aux yeux bruns. Il a une apparence transparente de part sa nature.",
@@ -149,6 +151,7 @@ const CODEX_DATA = {
         {
             nom: "Catalina",
             categorie: "Personnages secondaires",
+            auteur: "Vio",
             image: "",
             age: "À compléter",
             descriptionPhysique: "Jeune femme d'une grande beauté résidant au palais de Terraria",
@@ -170,6 +173,7 @@ const CODEX_DATA = {
         {
             nom: "Erydin",
             categorie: "Personnages secondaires",
+            auteur: "Brice",
             image: "images/persos/Erydin.jpg",
             age: "À compléter",
             descriptionPhysique: "De longs cheveux blancs et un bâton magique",
@@ -191,6 +195,7 @@ const CODEX_DATA = {
         {
             nom: "Icy",
             categorie: "Personnages secondaires",
+            auteur: "Brice",
             image: "",
             age: "Plusieurs siècles",
             descriptionPhysique: "Apparence jeune malgré ses centaines d'années (son corps et son esprit ne vieillissent pas)",
@@ -213,7 +218,7 @@ const CODEX_DATA = {
         {
             nom: "Le Grand Maître",
             categorie: "Personnages secondaires",
-            auteur: "Commun",
+            auteur: "Vio",
             image: "images/persos/Grandmaitre.jpg",
             age: "65 ans",
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
@@ -226,7 +231,7 @@ const CODEX_DATA = {
             nom: "Leon",
             categorie: "Personnages secondaires",
             image: "",
-            age: "Jeune adulte",
+            age: "Adulte",
             descriptionPhysique: "Homme aux cheveux blonds, vêtu d'une tenue tactique sombre avec un écusson sur l'épaule et armé d'un pistolet muni d'une lampe torche.",
             aptitudes: "Tir de précision, survie en milieu hostile et combat contre les morts-vivants.",
             infosComplementaires: "Survivant issu de l'imaginaire vidéo-ludique de Liam (inspiré de Resident Evil), apparu dans la cathédrale lors de l'épreuve post-apocalyptique de l'esprit de Liam pour aider le trio face aux rôdeurs.",
@@ -290,6 +295,7 @@ const CODEX_DATA = {
         {
             nom: "Ortylia",
             categorie: "Personnages secondaires",
+            auteur: "Brice",
             image: "images/persos/Ortylia2.jpg",
             age: "Plus de 600 ans",
             descriptionPhysique: "Ortylia possède une longue chevelure argentée, des yeux dorés lumineux et une peau aux reflets légèrement bleutés. Ses majestueuses ailes translucides scintillent de nuances dorées et violettes. Elle porte une élégante tenue argentée ornée de motifs dorés et de pierres précieuses.",
@@ -354,11 +360,12 @@ const CODEX_DATA = {
         {
             nom: "Timio",
             categorie: "Personnages secondaires",
+            auteur: "Yann",
             image: "",
             age: "Mort à 10 ans",
             descriptionPhysique: "Frère jumeau identique de Liam, portant un pull rayé rouge et bleu le soir de l'accident.",
             aptitudes: "Aucune",
-            infosComplementaires: "Frère jumeau de Liam, d'un tempérament plus doux. Le soir où ils ont échangé leurs pulls à la fête foraine pour tromper des harceleurs, la barre de sécurité de leur manège a cédé et il a fait une chute mortelle. Son spectre a hanté l'esprit de Liam pendant dix ans jusqu'à ce que ce dernier avoue la vérité et trouve la rédemption.",
+            infosComplementaires: "Frère jumeau de Liam, d'un tempérament plus doux. Le soir où ils ont échangé leurs pulls à la fête foraine pour tromper des harceleurs, la barre de sécurité de leur manège a cédé et il a fait une chute mortelle. Son spectre a hanté l'esprit de Liam jusqu'à ce que ce dernier avoue la vérité et trouve la rédemption.",
             etat: "Mort",
             apparition: { chapitre: 4, recherche: "Timio avait un frère, un frère jumeau, Liam" }
         },
