@@ -656,48 +656,9 @@
         }
 
         // Index des mots-clés cliquables du Codex (personnages, lieux, faune, objets)
-        const CODEX_INDEX = [];
-        (function buildCodexIndex() {
-            const categories = ['personnages', 'lieux', 'faune', 'objets'];
-            const seenTerms = new Set();
+     let CODEX_INDEX = [];
 
-            categories.forEach(cat => {
-                (CODEX_DATA[cat] || []).forEach(item => {
-                    if (!item.nom || item.nom.toLowerCase().startsWith('completer')) return;
-
-                    const aliases = new Set([item.nom]);
-                    // Gérer les noms composés comme "Celestine (dit Celes)", "Liam/Timio", "Codex (4 fragments)"
-                    const baseName = item.nom.replace(/\s*\([^)]*\)/g, '').trim();
-                    if (baseName.length >= 4) aliases.add(baseName);
-
-                    if (baseName.includes('/')) {
-                        baseName.split('/').forEach(part => {
-                            if (part.trim().length >= 4) aliases.add(part.trim());
-                        });
-                    }
-
-                    const ditMatch = item.nom.match(/\(dit\s+([^)]+)\)/i);
-                    if (ditMatch && ditMatch[1].trim().length >= 4) {
-                        aliases.add(ditMatch[1].trim());
-                    }
-
-                    if (item.nom === 'Le Grand Maître') aliases.add('Grand Maître');
-
-                    aliases.forEach(term => {
-                        const key = term.toLowerCase();
-                        if (!seenTerms.has(key) && term.length >= 4) {
-                            seenTerms.add(key);
-                            CODEX_INDEX.push({ term, item });
-                        }
-                    });
-                });
-            });
-
-            // Trier du plus long au plus court pour éviter les collisions partielles
-            CODEX_INDEX.sort((a, b) => b.term.length - a.term.length);
-        })();
-
-        function escapeRegExp(str) {
+          function escapeRegExp(str) {
             return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         }
 
@@ -1126,6 +1087,77 @@
             return 'author-default';
         }
 
+// 1. Construction de l'index des mots-clés du Codex
+        (function buildCodexIndex() {
+            const categories = ['personnages', 'lieux', 'faune', 'objets'];
+            const seenTerms = new Set();
+
+            categories.forEach(cat => {
+                (CODEX_DATA[cat] || []).forEach(item => {
+                    if (!item.nom || item.nom.toLowerCase().startsWith('completer')) return;
+
+                    const aliases = new Set([item.nom]);
+                    const baseName = item.nom.replace(/\s*\([^)]*\)/g, '').trim();
+                    if (baseName.length >= 4) aliases.add(baseName);
+
+                    if (baseName.includes('/')) {
+                        baseName.split('/').forEach(part => {
+                            if (part.trim().length >= 4) aliases.add(part.trim());
+                        });
+                    }
+
+                    const ditMatch = item.nom.match(/\(dit\s+([^)]+)\)/i);
+                    if (ditMatch && ditMatch[1].trim().length >= 4) {
+                        aliases.add(ditMatch[1].trim());
+                    }
+
+                    if (item.nom === 'Le Grand Maître') aliases.add('Grand Maître');
+
+                    aliases.forEach(term => {
+                        const key = term.toLowerCase();
+                        if (!seenTerms.has(key) && term.length >= 4) {
+                            seenTerms.add(key);
+                            CODEX_INDEX.push({ term, item });
+                        }
+                    });
+                });
+            });
+
+            CODEX_INDEX.sort((a, b) => b.term.length - a.term.length);
+        })();
+
+        // 2. Détection automatique du créateur (1ère apparition dans les chapitres)
+        (function detectCharacterAuthors() {
+            const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
+            const persoEntries = CODEX_INDEX.filter(entry =>
+                (CODEX_DATA.personnages || []).includes(entry.item)
+            );
+
+            persoEntries.forEach(entry => {
+                // Si un auteur est déjà défini manuellement dans donnees.js, on le garde
+                if (entry.item.auteur) return;
+
+                const pattern = new RegExp(
+                    `(?<![\\p{L}\\p{N}])${escapeRegExp(entry.term)}(?![\\p{L}\\p{N}])`,
+                    'iu'
+                );
+
+                for (const chap of allChapters) {
+                    let foundAuthor = null;
+                    for (const block of (chap.contenu || [])) {
+                        if (block.type !== 'image' && block.auteur && pattern.test(block.texte || '')) {
+                            foundAuthor = block.auteur;
+                            break;
+                        }
+                    }
+                    if (foundAuthor) {
+                        entry.item.auteur = foundAuthor;
+                        break;
+                    }
+                }
+            });
+        })();
+       
         function goToApparition(chapNumero, texteRecherche) {
             const allChapters = (typeof CHAPITRES_DATA !== 'undefined' ? CHAPITRES_DATA : []);
             const chapIndex = allChapters.findIndex(c => c.numero === chapNumero);
