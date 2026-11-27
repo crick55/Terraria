@@ -351,7 +351,7 @@ const CODEX_DATA = {
         // --- 2. Lieux secondaires ---
         {
             nom: "Domaine d'Asher",
-            categorie: "Lieux secondaires",
+            categorie: "Lieux principaux",
             sousTitre: "Château du vampire Asher",
             image: "",
             description: "Lieu gouverné par Asher et sa fille Saphira, et abritant des vampires.",
@@ -359,7 +359,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Esprit de Liam",
-            categorie: "Lieux secondaires",
+            categorie: "Lieux principaux",
             sousTitre: "3eme lieu où se cachait un codex. Voyage dans les cauchemars du trio",
             image: "images/lieux/Esprit de Liam.jpg",
             description: "3eme lieu abritant un codex.",
@@ -367,7 +367,7 @@ const CODEX_DATA = {
         },
         {
             nom: "La Tour Nuage",
-            categorie: "Lieux secondaires",
+            categorie: "Lieux principaux",
             sousTitre: "1er lieu où se cachait un codex",
             image: "images/lieux/Tournuage.jpg",
             description: "C'est un chateau volant dans les nuages qui abritent des sorcieres",
@@ -385,7 +385,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Le Royaume des Glaces",
-            categorie: "Lieux secondaires",
+            categorie: "Lieux principaux",
             sousTitre: "2eme lieu où se cachait un codex",
             image: "",
             description: "lieu de glace, gouverné par Celes",
@@ -393,7 +393,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Le Temple de la Vie",
-            categorie: "Lieux secondaires",
+            categorie: "Lieux principaux",
             sousTitre: "A son centre se trouve le Temple Pyramide protégeant le coeur de verre, qui servira de coeur de substitution pour Thayri",
             image: "images/lieux/Le Temple de la Vie.jpg",
             description: "Lieu sous terre, à de grandes profondeurs abritant une vie disparue depuis des millénaires à la surface : des dinosaures. Un golem de glace protège le coeur de verre, qui se trouve dans le temple Pyramide.",
