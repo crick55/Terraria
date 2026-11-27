@@ -44,9 +44,9 @@ const CODEX_DATA = {
             auteur: "Brice",
             image: "images/persos/Galathea2.jpg",
             age: "17 ans",
-            descriptionPhysique: "Longue chevelure ondulée et violette aux mèches roses et blanches, yeux verts emeraude, visage délicat et légères tâches de rousseur.",
+            descriptionPhysique: "Longue chevelure ondulée et violette aux mèches roses et blanches, yeux verts emeraude, visage délicat et légères tâches de rousseur. Porte sur le cou la marque d'un pentacle représentant une tortue noire, un dragon, un vermillon et un tigre blanc depuis le voyage dans l'esprit de Liam.",
             aptitudes: "Manipulation de la faune et de la flore, métamorphose animale, invocations de créatures magique, manipulation des racines de bois de fer, guérison animale, création de protections végétales.",
-            infosComplementaires: "Parents décédés. Galathea entretient une relation amoureuse avec Valtor et attend son premier enfant.",
+            infosComplementaires: "Parents décédés. Galathea entretient une relation amoureuse avec Valtor et attend son premier enfant. Elle débloque sa métamorphose animale à la sortie de l'esprit de Liam grâce au sceau du pentacle.",
             etat: "Vivant"
         },
         {
@@ -65,7 +65,7 @@ const CODEX_DATA = {
             image: "images/persos/Liam.jpg",
             age: "17 ans",
             descriptionPhysique: "Jeune homme, grand de 1.8m, cheveux blonds. Un peu musclé mais pas gringalet pour autant.",
-            aptitudes: "Liam choisi, à son arrivée sur Terraria un objet rare, une pierre magique, une pierre de l'esprit. Celle-ci lui permet de manipuler l'environnement qui l'entoure par la pensée et de jouer avec l'esprit de manière générale. Il appelle cela : Manipulation de la trame. Elle lui permet de manipuler son environnement, les éléments, et même de parler aux animaux. Liam n'a pas encore découvert l'entièreté des pouvoirs de cette pierre. Elle a fusionnée avec lui ce qui permet d'user de ses pouvoirs à volonté et ne peut jamais en être défait.",
+            aptitudes: "Liam choisi, à son arrivée sur Terraria un objet rare, une pierre magique, une pierre de l'esprit. Celle-ci lui permet de manipuler l'environnement qui l'entoure par la pensée et de jouer avec l'esprit de manière générale. Il appelle cela : Manipulation de la trame. Elle lui permet de manipuler son environnement, les éléments, et même de parler aux animaux. En acceptant sa véritable identité, il découvre qu'il est un altérateur de réalité capable de matérialiser des objets et de remodeler le réel par sa seule volonté. Elle a fusionnée avec lui ce qui permet d'user de ses pouvoirs à volonté et ne peut jamais en être défait.",
             infosComplementaires: "Fait parti du trio d'origine avec Celes et Galathea. Il avait un frère jumeau, Timio, qui est décédé très jeune, lors d'un grave accident à la fête foraine, dont il s'est senti responsable longtemps. A tel point qu'il avait pris l'identité de son frère jumeau Timio en se faisant passer pour lui. Il a fait croire que c'était Liam qui était mort, ne pouvant se remettre de l'avoir perdu. Ce n'est que lors de la récupération du troisième codex, en entrant dans son propre esprit, qu'il comprit que Timio n'était pas mort de sa faute et il reprit alors sa véritable identité : Liam. Il aida à sauver la cité avec l'aide de ses amis et s'attacha tellement à Thayri, le fils du grand maître, qu'il fit tout pour le retrouver et le sauver quand son père décida de le tuer. A ce jour, il est le conjoint de Thayri, est le bras droit du roi et prend le commandement de la cité en l'absence de Thayri.",
             etat: "Vivant"
         },
@@ -143,7 +143,8 @@ const CODEX_DATA = {
             descriptionPhysique: "Garçon d’1m20 au cheveux et aux yeux bruns. Il a une apparence transparente de part sa nature.",
             aptitudes: "Télékinésie",
             infosComplementaires: "Est un fantome. À été enlevé sous les yeux de Celes puis tué par un psychopathe déguisé en clown. Très proche de Celes, il apparaît souvent sans qu’elle ne l’invoque pour l’aider.",
-            etat: "Mort"
+            etat: "Mort",
+            apparition: { chapitre: 4, recherche: "Doucement, un petit garçon sortit de l’ombre, vêtu d’un short jaune" }
         },
         {
             nom: "Catalina",
@@ -220,6 +221,17 @@ const CODEX_DATA = {
             infosComplementaires: "Il était le grand chef de la cité depuis des décennies jusqu'à sa chute, provoqué par nos amis terriens et accompagné de son fils Thayri. Est le père de Thayri. A tué son fils Thayri peu de temps avant la bataille de la cité car il avait tout découvert de ses intentions et menaçait ses plans.",
             etat: "Mort",
             apparition: { chapitre: 1, recherche: "longue barbe blanche tout de bleu vêtu" }
+        },
+        {
+            nom: "Leon",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Jeune adulte",
+            descriptionPhysique: "Homme aux cheveux blonds, vêtu d'une tenue tactique sombre avec un écusson sur l'épaule et armé d'un pistolet muni d'une lampe torche.",
+            aptitudes: "Tir de précision, survie en milieu hostile et combat contre les morts-vivants.",
+            infosComplementaires: "Survivant issu de l'imaginaire vidéo-ludique de Liam (inspiré de Resident Evil), apparu dans la cathédrale lors de l'épreuve post-apocalyptique de l'esprit de Liam pour aider le trio face aux rôdeurs.",
+            etat: "Illusion",
+            apparition: { chapitre: 4, recherche: "Je m'appelle Leon" }
         },
         {
             nom: "Marina",
@@ -329,6 +341,28 @@ const CODEX_DATA = {
             etat: "Vivant"
         },
         {
+            nom: "Thomas",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Enfant",
+            descriptionPhysique: "Petit garçon fantomatique à l'ombre semi-transparente, enterré sous un grand arbre avec son jouet en bois représentant un cerf et un chasseur.",
+            aptitudes: "Communication via la Spirit Box et interaction physique limitée avec l'environnement",
+            infosComplementaires: "Esprit rencontré dans la maison hantée de l'esprit de Liam. Victime d'un accident de chasse mortel causé par son père qui a ensuite invoqué un démon à crâne de cerf pour tenter de le ramener à la vie. Il aide le trio à accomplir l'exorcisme avant de trouver la paix.",
+            etat: "Mort",
+            apparition: { chapitre: 4, recherche: "Au dos de la photo, une écriture tremblante avait inscrit : « Petit Thomas »" }
+        },
+        {
+            nom: "Timio",
+            categorie: "Personnages secondaires",
+            image: "",
+            age: "Mort à 10 ans",
+            descriptionPhysique: "Frère jumeau identique de Liam, portant un pull rayé rouge et bleu le soir de l'accident.",
+            aptitudes: "Aucune",
+            infosComplementaires: "Frère jumeau de Liam, d'un tempérament plus doux. Le soir où ils ont échangé leurs pulls à la fête foraine pour tromper des harceleurs, la barre de sécurité de leur manège a cédé et il a fait une chute mortelle. Son spectre a hanté l'esprit de Liam pendant dix ans jusqu'à ce que ce dernier avoue la vérité et trouve la rédemption.",
+            etat: "Mort",
+            apparition: { chapitre: 4, recherche: "Timio avait un frère, un frère jumeau, Liam" }
+        },
+        {
             nom: "Triton",
             categorie: "Personnages secondaires",
             image: "",
@@ -392,8 +426,9 @@ const CODEX_DATA = {
             categorie: "Lieux principaux",
             sousTitre: "3eme lieu où se cachait un codex. Voyage dans les cauchemars du trio",
             image: "images/lieux/Esprit de Liam.jpg",
-            description: "3eme lieu abritant un codex.",
-            details: "Dans un état de faiblesse avancé, malade et evanouit, Liam incite ses amies à pénétrer dans son esprot par le biais de la magie. Tous les 3 doivent alors affronter leurs plus grandes peurs pour trouver un indice leur permettant de récupérer le 3eme codex. En parallèle, ils reçoivent des visions de Thayri, qui leur envoie des visions afin de l'aider à le retrouver et le sauver. En effet, Thayri avait disparu depuis un moment sans laisser de traces."
+            description: "3eme lieu abritant un codex, divisé en trois strates cauchemardesques : un grenier hanté par le clown de Ça, une maison de chasse aux fantômes (Phasmophobia) et une ville post-apocalyptique infestée de rôdeurs menant à une fête foraine abandonnée.",
+            details: "Dans un état de faiblesse avancé, malade et évanoui, Liam incite ses amies à pénétrer dans son esprit par le biais de la magie. Tous les 3 doivent alors affronter leurs plus grandes peurs jusqu'à l'aveu final de Liam au pied du grand huit, permettant de récupérer le 3ème Codex et de recevoir les appels à l'aide de Thayri.",
+            apparition: { chapitre: 4, recherche: "Votre corps restera ici mais vos esprits rejoindront Timio" }
         },
         {
             nom: "La Tour Nuage",
@@ -475,6 +510,15 @@ const CODEX_DATA = {
             apparition: { chapitre: 1, recherche: "un univers nommé Omega" }
         },
         {
+            nom: "The Rocalus",
+            categorie: "Lieux secondaires",
+            sousTitre: "Taverne et lac situés sur la place centrale de Terraria",
+            image: "",
+            description: "Petit bar de la place centrale bordant le lac de Rocalus au cœur de Terraria.",
+            details: "C'est devant cet établissement que Galathea et Celes ressentent l'onde de choc émise par l'esprit de Timio et voient apparaître une silhouette menaçante dans les nuages au-dessus du lac.",
+            apparition: { chapitre: 4, recherche: "elle observa un petit bar nommé The Rocalus" }
+        },
+        {
             nom: "Tunnel des Wendigos",
             categorie: "Lieux secondaires",
             sousTitre: "Tunnels et grottes souterraines abritant les Wendigos",
@@ -534,6 +578,14 @@ const CODEX_DATA = {
             infosComplementaires: "Condor est le premier animal de Liam. Il a su devenir ami et en phase avec cet animal alors que Liam déteste la hauteur. Condor a été blessé à l'aile lors d'une mission vers tour nuage, mais Galathea a réalisé un remède pour le soigner.",
             etat: "Vivant",
             apparition: { chapitre: 1, recherche: "Tu as été choisi par Condor" }
+        },
+        {
+            nom: "Corbeaux des ténèbres",
+            description: "Nuée de corbeaux surnaturels aux plumes absorbant la lumière et aux yeux brillants.",
+            image: "",
+            infosComplementaires: "Invoqués par Galathea grâce à son pacte de sang et de silence (« Corvi tenebrarum ») pour repérer et ralentir la horde de rôdeurs.",
+            etat: "Vivant",
+            apparition: { chapitre: 4, recherche: "Une dizaine de corbeaux surgirent" }
         },
         {
             nom: "Esibela",
@@ -650,7 +702,7 @@ const CODEX_DATA = {
             categorie: "Objet magique",
             image: "",
             description: "Livre ancien aux pages dorées et ornées d'or, divisé en quatre fragments dissimulés à travers Terraria.",
-            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique. Le premier fragment a été récupéré à la Tour Nuage auprès de Morla.",
+            infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique. Le 1er fragment a été récupéré à la Tour Nuage auprès de Morla, le 2e au Royaume des Glaces et le 3e matérialisé directement par la volonté de Liam dans son propre esprit.",
             apparition: { chapitre: 1, recherche: "récupérer 4 fragments d'un codex" }
         },
         {
@@ -694,6 +746,14 @@ const CODEX_DATA = {
             apparition: { chapitre: 3, recherche: "Utilise mon pendentif qui se trouve dans mon chignon" }
         },
         {
+            nom: "Pendentif-pentacle des quatre bêtes sacrées",
+            categorie: "Relique",
+            image: "",
+            description: "Pendentif en forme de pentacle découvert autour d'un crucifix dans la cave de l'épreuve mentale de Liam.",
+            infosComplementaires: "En le passant autour de son cou, le pentacle s'est gravé sur la peau de Galathea avec les symboles d'une tortue noire, d'un dragon, d'un vermillon et d'un tigre blanc, lui conférant le pouvoir de métamorphose animale.",
+            apparition: { chapitre: 4, recherche: "un pendentif en forme de pentacle qui était autour du crucifix" }
+        },
+        {
             nom: "Pierre de l'Esprit",
             categorie: "Objet magique",
             image: "",
@@ -708,6 +768,14 @@ const CODEX_DATA = {
             description: "Dague forgée dans une glace magique, conservée dans le coffre de la salle du trône du palais des glaces aux côtés du deuxième fragment du Codex.",
             infosComplementaires: "Seule arme capable de tuer le maître des glaces pour le libérer de sa malédiction et transmettre le titre ainsi que les pouvoirs du royaume à celui qui porte le coup.",
             apparition: { chapitre: 3, recherche: "un poignard de glace" }
+        },
+        {
+            nom: "Potion de projection astrale de Dolios",
+            categorie: "Potion",
+            image: "",
+            description: "Breuvage fumant préparé en urgence par Dolios dans deux verres pour Celes et Galathea.",
+            infosComplementaires: "Plonge le corps physique dans un sommeil profond tout en projetant l'esprit des buveuses directement dans l'esprit tourmenté de Liam.",
+            apparition: { chapitre: 4, recherche: "Dolios revint avec deux verres fumants" }
         },
         {
             nom: "Remède pour Condor",
