@@ -271,7 +271,11 @@ Finalement, la décision fut prise par cette armoire à glace : Timio courut en 
 — GROOOAAAAAAAAAAH ! recria une nouvelle fois l'homme des cavernes, tellement fort que la coccinelle prit peur et s'envola avant que Timio ne pût s'y agripper !
 Sans que Timio ne s'y attende réellement, il loupa la coccinelle et entama une chute vertigineuse du haut de cette gigantesque falaise...`
       },
-      // [IMAGE_A_IMPORTER : Timio en chute libre depuis la falaise]
+      {
+        type: "image",
+        src: "images/histoire/Liamdessin.jpg",
+        legende: "Timio en chute libre du haut de la falaise"
+      },
       {
         type: "texte",
         auteur: "Brice",
@@ -304,7 +308,11 @@ Derrière eux un rire se fit entendre.
 Celès se retourna précipitamment et découvrit un vieil homme avec une longue barbe blanche tout de bleu vêtu. Il portait un sceptre à la main qui luisait d'une lumière bleue et dans l'autre tenait un gros livre.
 — Enfin vous voilà, dit-il, je vous attendais.`
       },
-      // [IMAGE_A_IMPORTER : Le Grand Maître dans la bibliothèque]
+      {
+        type: "image",
+        src: "images/persos/Grandmaitre.jpg",
+        legende: "Le Grand Maître de la cité de Terraria"
+      },
       {
         type: "texte",
         auteur: "Yann",
@@ -387,7 +395,7 @@ Pendant qu'elle examinait les objets la troisième femme se plaça devant Timio.
 — Mais pourquoi qu'un seul ? C'est de la triche ! rétorqua Timio.
 Comme si elle n'avait rien entendu, Catalina présenta à Timio une petite pierre toute brillante pas plus grande qu'une noisette.
 — La Pierre de l'Esprit, dit-elle. Elle renferme le pouvoir de l'esprit. Celui de voir et contrôler les choses qui nous entourent. À elle seule, elle pourrait valoir plus que votre vie, prenez-en soin !
-Sans même que Timio n'ait le temps de dire quoi que ce soit, Catalina mit la pierre dans le creux de sa paume et l'appliqua sur le front de Timio. Une grande et éblouissante lumière bleue et blanche couvrit l'entièreté de la pièce avant de disparaître.
+Sans même que Timio n'ait ressenti de quoi que ce soit, Catalina mit la pierre dans le creux de sa paume et l'appliqua sur le front de Timio. Une grande et éblouissante lumière bleue et blanche couvrit l'entièreté de la pièce avant de disparaître.
 La pierre avait disparu de la main de Catalina. Celle-ci recula et retourna à sa place.
 — Euuuh, elle est où la pierre ? demanda Timio en regardant ses amies, qui, par leur regard, toutes savaient très bien ce qui s'était passé.
 Et ça, qu'est-ce que c'est ? demanda Timio en montrant un vase rempli d'un liquide légèrement brillant qui semblait tournoyer tout seul.
@@ -431,7 +439,7 @@ Il alla à son tour dans la salle des armes, le temps que Galathea soit changée
 Timio remarqua deux objets étranges. Des sortes de pointes serties de rubis verts, attachées entre elles par une longue mais très fine chaîne. Il les prit dans sa main, les pointes étaient très légères mais ultra solides, tout autant que la chaîne. À proximité se trouvait la sangle d'attache qui lui permettait de porter ses pointes au bas de son dos. « Facile et très discret ! » pensa Timio. C'est parfait.
 Il ne restait plus que Galathea.`
       },
-      // [IMAGE_A_IMPORTER : Arme de Timio / Liam (pointes serties de rubis reliées par une chaîne)]
+      // [IMAGE_A_IMPORTER : Arme de Timio / Liam]
       {
         type: "texte",
         auteur: "Brice",
@@ -497,7 +505,11 @@ Après quelques minutes passées à profiter du repas, le Grand Maître reprit l
 — Bonne question mon enfant, je vois que vous êtes perspicace ! Le codex nous permettra d'affaiblir le dôme et nous permettra de le franchir sans problème. Nous pourrons ainsi nous rendre sur Omega pour récupérer le cristal !
 D'autres questions ?...`
       },
-      // [IMAGE_A_IMPORTER : La Tour Nuage]
+      {
+        type: "image",
+        src: "images/lieux/Tournuage.jpg",
+        legende: "La Tour Nuage, première étape de la quête"
+      },
       {
         type: "texte",
         auteur: "Vio",
@@ -506,7 +518,7 @@ Le Grand Maître sourit.
 — Tu as raison Celès mais par chance tu as fait un excellent choix. Toi tu pourras me contacter ou aller chercher de l'aide si besoin grâce à ton bracelet. Si tu le souhaites nous pouvons faire un test. Octavius est dans la cuisine au troisième étage. Utilise ton pouvoir et demande-lui de venir nous rejoindre.
 Celès regarda ses amis avec inquiétude. Elle soupira, ferma les yeux et prononça la formule :
 — Spiritus evasio, dit-elle.
-Aussitôt la pierre s'éteignit et sa tête se baissa sur sa poitrine comme si elle s'était endormie debout.
+Aussitôt la pierre s'éteignit et sa tête se baissa sur sa porine comme si elle s'était endormie debout.
 Celès se sentit légère comme de l'air. Elle pensa à l'endroit qu'elle devait atteindre et quand elle ouvrit les yeux elle était dans la cuisine derrière Octavius.
 — Octavius, dit-elle, ce qui fit bondir le pauvre homme.
 — Seigneur Celès comment… ? commença-t-il mais Celès le coupa.
@@ -562,7 +574,11 @@ Les amis je vous laisse faire votre choix !`
 — Magnifique, dit le Grand Maître. Il semblerait qu'Artax t'apprécie beaucoup. Il est puissant et rapide. Il saura te protéger.
 Celès sourit et continua à caresser Artax en attendant que les deux autres fassent leur choix.`
       },
-      // [IMAGE_A_IMPORTER : Artax]
+      {
+        type: "image",
+        src: "images/faune/Artax.jpg",
+        legende: "Artax, le compagnon ailé de Celès"
+      },
       {
         type: "texte",
         auteur: "Yann",
@@ -572,7 +588,11 @@ Tout le monde se mit à rire, sauf Timio, enfin quelques instants seulement puis
 — Amusant, dit le Grand Maître. Tu as été choisi par Condor.
 Au tour de Galathea de voir si le dernier animal allait l'accepter.`
       },
-      // [IMAGE_A_IMPORTER : Condor]
+      {
+        type: "image",
+        src: "images/faune/Condor.jpg",
+        legende: "Condor, le compagnon ailé de Timio"
+      },
       {
         type: "texte",
         auteur: "Brice",
@@ -588,8 +608,8 @@ La connexion fut parfaite entre les deux et Galathea dirigea Azzuria avec aisanc
       },
       {
         type: "image",
-        src: "images/histoire/Azzuria.jpg",
-        legende: "Galathea et Azzuria prêtes pour le départ"
+        src: "images/faune/Azzuria2.jpg",
+        legende: "Azzuria, la compagne ailée de Galathea"
       }
     ]
 });
