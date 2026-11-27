@@ -19,6 +19,7 @@ const CODEX_DATA = {
         {
             nom: "Celestine (dit Celes)",
             categorie: "Personnages principaux",
+            auteur: "Vio",
             image: "images/persos/Celestine.jpg",
             age: "17 ans",
             descriptionPhysique: "Jeune fille humaine d'1,65m. Elle a de longs cheveux blancs et des yeux bleus lumineux. Elle a un tatouage représentant un orque sur le poignet gauche",
@@ -209,6 +210,7 @@ const CODEX_DATA = {
         {
             nom: "Le Grand Maître",
             categorie: "Personnages secondaires",
+            auteur: "Commun",
             image: "images/persos/Grandmaitre.jpg",
             age: "65 ans",
             descriptionPhysique: "Homme d'âge mûr, légèrement embompoint, toujours très bien habillé et se tient parfaitement droit en permanence",
