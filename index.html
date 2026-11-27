@@ -1106,7 +1106,7 @@
                         });
                     }
 
-                    const ditMatch = item.nom.match(/\(dit\s+([^)]+)\)/i);
+                    const ditMatch = item.nom.match(/\(dite?\s+([^)]+)\)/i);
                     if (ditMatch && ditMatch[1].trim().length >= 4) {
                         aliases.add(ditMatch[1].trim());
                     }
@@ -1137,15 +1137,16 @@
                 // Si un auteur est déjà défini manuellement dans donnees.js, on le garde
                 if (entry.item.auteur) return;
 
+                const normTerm = normalizeText(entry.term);
                 const pattern = new RegExp(
-                    `(?<![\\p{L}\\p{N}])${escapeRegExp(entry.term)}(?![\\p{L}\\p{N}])`,
-                    'iu'
+                    `(?<![a-z0-9])${escapeRegExp(normTerm)}(?![a-z0-9])`,
+                    'i'
                 );
 
                 for (const chap of allChapters) {
                     let foundAuthor = null;
                     for (const block of (chap.contenu || [])) {
-                        if (block.type !== 'image' && block.auteur && pattern.test(block.texte || '')) {
+                        if (block.type !== 'image' && block.auteur && pattern.test(normalizeText(block.texte || ''))) {
                             foundAuthor = block.auteur;
                             break;
                         }
