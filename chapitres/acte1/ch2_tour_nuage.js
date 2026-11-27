@@ -56,6 +56,11 @@ Je suggère qu'on fasse une pause dans le Bois Brisé qui se trouve non loin en 
 Qu'est-ce que tu en penses Timio ? »`
         },
         {
+            type: "image",
+            src: "images/histoire/Boisjoli.jpg",
+            legende: "Le Bois Brisé survolé par les trois compagnons"
+        },
+        {
             type: "texte",
             auteur: "Yann",
             texte: `« Attends Galathea, je vais tenter quelque chose. »
@@ -192,6 +197,11 @@ La Harpie ne lâcha cependant pas l'affaire et se mit à lancer un nouvel assaut
 — Timio, il s'agit d'une Harpie me dit Azzuria ! Son point faible se situe au niveau de son dos. Mais je ne sais comment l'atteindre ! Je possède un arc mais il faudrait que Celès et toi fassiez diversion à notre amie volante pour que je puisse tenter de viser dans le mille !`
         },
         {
+            type: "image",
+            src: "images/histoire/Harpie.jpg",
+            legende: "La Harpie surgit pour attaquer Galathea et Azzuria"
+        },
+        {
             type: "texte",
             auteur: "Yann",
             texte: `— Euhhhh je ne suis pas beaucoup plus rassuré que toi Galathea ! répondit Timio.
@@ -216,6 +226,16 @@ Timio entra en contact avec la Harpie, non pas pour discuter mais il lui envoya 
 
 La Harpie remua la tête à plusieurs reprises et elle semblait avoir compris ce qu'il se passait… On dirait même qu'elle n'avait pas apprécié ce qu'elle venait de voir…
 Ainsi elle se retourna face à Timio et lui envoya un cri de la mort qui tue (bon un grand cri monstrueux et qui fout les boules), ce qui désarçonna Timio. Celui-ci, qui se trouvait à trois mètres à peine de la bête, tomba en arrière. Il était totalement à la merci de la Harpie…`
+        },
+        {
+            type: "image",
+            src: "images/histoire/Harpie1.jpg",
+            legende: "La Harpie se retourne contre Timio"
+        },
+        {
+            type: "image",
+            src: "images/histoire/Harpie2.jpg",
+            legende: "Timio face à la fureur de la créature"
         },
         {
             type: "texte",
@@ -388,6 +408,11 @@ Elle inspecta le mur en face de cette plume, il y avait un tableau représentant
 « Un livre en feu semblant jeter une malédiction. Et si le codex était là », se demanda-t-elle.
 
 Elle tendit la main pour vérifier mais interrompit son geste quand elle entendit son nom.`
+        },
+        {
+            type: "image",
+            src: "images/histoire/Morla.jpg",
+            legende: "Le portrait de Morla dans le laboratoire"
         },
         {
             type: "texte",
@@ -677,6 +702,11 @@ Timio observa les tableaux qui représentaient tous, sans exception, une ou plus
 — Euh… Vous croyez qu'on doit se cacher d'eux pour sortir de là ? demanda Timio en montrant tous les portraits au petit groupe.`
         },
         {
+            type: "image",
+            src: "images/histoire/Couloirinfini.jpg",
+            legende: "Le couloir sans fin aux portraits"
+        },
+        {
             type: "texte",
             auteur: "Brice",
             texte: `Galathea fut tout aussi déboussolée dès l'instant où elle franchit la porte que Timio avait choisie.
@@ -877,7 +907,7 @@ Puis, sans que le groupe s'y attende, la sorcière débarqua de nulle part et le
 
 « Elle a dû mettre une potion de vitesse sur son balai c'est pas possible ! Même un Nimbus 2000 n'est pas aussi performant ! »
 
-La sorcière était énormément en colère, en plus de lâcher des cris d'effroi, venant d'on ne sait où, elle se mit à envoyer des sorts en direction de nos amis. Les sorts, vert émeraude, les frôlaient de peu, et ça juste parce que la sorcière était encore trop loin.
+La sorcière était énormément en colère, en plus de lâcher des cris d'effroi, venant d'on ne sait où, elle se mit à envoyer des sorts en direction de nos amis. Les sorts, vert émeraude, les frôlaient de peu, et ça juste parce à la sorcière était encore trop loin.
 
 Si elle gagnait encore du terrain, ce qui était sur le point d'arriver, un de ses prochains tirs allait toucher un membre du groupe.
 
@@ -887,7 +917,7 @@ La confrontation est inévitable.
 
 Le majestueux griffon de Timio fit un demi-tour en arc de cercle et Timio sortit son arme qu'il n'avait encore jamais pu utiliser, sa fine chaîne et sa pointe sertie de rubis.
 
-Il fit tourner la chaîne dans les airs pour lui faire prendre de la vitesse, et tout en évitant des tirs grâce à des embardées brusques qui faillirent faire tomber Timio, il la lança en direction de la sorcière.
+Il fit tourner la chaîne dans les airs pour lui faire prendre de vitesse, et tout en évitant des tirs grâce à des embardées brusques qui faillirent faire tomber Timio, il la lança en direction de la sorcière.
 Celle-ci l'évita de peu, mais la pointe sectionna plusieurs branches du balai magique.
 
 — Mince je l'ai loupée ! lança Timio à ses amis, attention elle se rapproche de vous ! C'est à vous !`
@@ -1033,6 +1063,11 @@ Ne s'y attendant pas, elle se le prit de plein fouet.
 Elle se transforma alors en petit chat tout mimi.`
         },
         {
+            type: "image",
+            src: "images/histoire/Chatmimi.jpg",
+            legende: "L'usurpatrice transformée en petit chat"
+        },
+        {
             type: "texte",
             auteur: "Brice",
             texte: `— Oh quelle mignonne chatounette. Elle va rester gentille la chatounette. J'ai bien cru qu'on allait tous y passer !
@@ -1075,7 +1110,7 @@ Et toi Celès comment vas-tu ?`
             texte: `— Physiquement je vais bien, répondit Celès, à part une migraine. Émotionnellement c'est pas la joie. Ça fait beaucoup là. Quand je pense qu'il y a deux jours on décorait une cabane et aujourd'hui on a tous failli y passer. J'ai qu'une envie : rentrer, prendre un bain et dormir jusqu'à l'année prochaine.
 De plus je pense que Timio doit avoir une conversation avec le Grand Maître et moi aussi, ajouta Celès.
 
-Elle devait avoir des réponses sur cette voix qu'elle entendait. Elle ne voulait pas en parler à ses amis avant d'en savoir plus. Pas la peine qu'ils s'inquiètent et la croient bonne pour l'asile. D'ailleurs Timio semblait lui aussi ressentir des changements.
+Elle devait avoir des réponses sur cette voix qu'elle entendait. Elle ne voulait pas en parler à ses amis avant en savoir plus. Pas la peine qu'ils s'inquiètent et la croient bonne pour l'asile. D'ailleurs Timio semblait lui aussi ressentir des changements.
 
 — Je propose qu'on lève le camp, ne traînons pas ici plus longtemps, dit-elle. Condor est blessé, il ne pourra pas te porter. Par conséquent Timio, je te propose de monter avec moi sur Artax si ça te va ?`
         },
@@ -1251,6 +1286,11 @@ Quelques secondes s'écoulèrent où les deux jeunes gens se regardèrent puis T
 — Promis, motus et bouche cousue, termina Thayri, avec un clin d'œil et un grand sourire, avant de sortir de la chambre de Timio.`
         },
         {
+            type: "image",
+            src: "images/histoire/Moteurcite.jpg",
+            legende: "La salle du générateur au cœur de la cité de Terraria"
+        },
+        {
             type: "texte",
             auteur: "Brice",
             texte: `Valtor fut surpris par la gentillesse et la bienveillance que montrait Galathea envers la créature.
@@ -1372,7 +1412,7 @@ Elle rentra rapidement au palais et retourna dans sa chambre. Elle se rafraîchi
             texte: `Thayri venait tout juste de refermer la porte de la chambre de Timio. Il resta, tel une statue, immobile, dans ses pensées.
 Il avait comme des fourmillements dans le ventre. Il n'avait jamais ressenti cette sensation auparavant mais il savait sans problème ce que cela signifiait.
 « Et si… Non je ne pense pas. Il n'avait pas l'air de… quoique… Il y a eu des petits signes quand même. »
-Thayri se posa dos contre la porte de la chambre, pour réfléchir.
+Thayri se posa dos contre la porte de la chambre de Timio, pour réfléchir.
 « Tout est magnifique ici », se rappela Thayri. « Peut-être que Timio faisait référence à plus que la salle du générateur. Et puis, il l'avait surpris à le dévisager à plusieurs reprises aussi. Enfin, je n'ai pas été très subtil aussi », rigola Thayri intérieurement.
 « Mais il n'est de passage que quelque temps et est-ce le bon moment pour tenter un truc ? » se demanda Thayri.
 Thayri resta quelques longues minutes à réfléchir et à se poser plein de questions. Des questions qui, peut-être, lui semblaient trop compliquées pour trouver une réponse aussi vite. Pourtant, quelque chose au fond de lui lui disait d'aborder le sujet. Mais il n'y arriverait pas. Il était trop timide pour oser faire le premier pas. Il ne savait pas comment aborder le sujet, ni même si Timio était sur la même longueur d'onde. S'il entamait le sujet et qu'il se plantait totalement, ça pourrait compromettre une potentielle belle amitié. Voulait-il prendre le risque ?
@@ -1579,7 +1619,7 @@ Elle se tourna de nouveau vers Timio.
             type: "texte",
             auteur: "Yann",
             texte: `— Ne t'en fais pas Celès, je te comprends tout à fait. On a le droit chacun à… son jardin secret.
-Cependant, c'est plutôt vous que je ne comprends pas, dit Timio en direction du Grand Maître. Pourquoi nous avoir caché ces informations ? Jamais vous ne vous êtes dit que si nous l'apprenions d'une autre manière, ça pourrait être pire ?
+Cependant, c'est plutôt vous que je ne comprends pas, dit Timio en direction du Grand Maître. Pourquoi nous avoir caché ces informations ? Jamais vous ne vous êtes dit que si nous l'apprenions d'une autre manière, ça pourrait pire ?
 — Vous n'étiez pas prêts pour l'entendre. C'était bien trop tôt, répondit le Grand Maître.
 — Qu'est-ce qui vous donnait le droit de décider pour nous ? Ces choix ne vous appartenaient pas !
 — Non en effet, mais c'étaient les choix de vos proches. Et ils m'ont demandé de procéder ainsi. Ce sont leurs volontés, pour vous protéger.
