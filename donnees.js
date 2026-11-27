@@ -41,6 +41,7 @@ const CODEX_DATA = {
         {
             nom: "Galathea",
             categorie: "Personnages principaux",
+            auteur: "Brice",
             image: "images/persos/Galathea2.jpg",
             age: "17 ans",
             descriptionPhysique: "Longue chevelure ondulée et violette aux mèches roses et blanches, yeux verts emeraude, visage délicat et légères tâches de rousseur.",
