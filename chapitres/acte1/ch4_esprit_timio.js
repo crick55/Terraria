@@ -1,4 +1,5 @@
-const CHAPITRE_4 = {
+CHAPITRES_DATA.push({
+    acte: "Acte I",
     numero: 4,
     titre: "L’esprit de Timio",
     contenu: [
@@ -1460,4 +1461,4 @@ Il jeta un dernier regard vers le lit vide, une résolution froide brillant dans
 — « De mon côté, je dois partir. Quelque chose ne va pas avec l'énergie de cette ville… et je ne partirai pas sans Thayri. Je vais le retrouver, coûte que coûte. »`
         }
     ]
-};
+});
