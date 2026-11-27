@@ -4,7 +4,7 @@ CHAPITRES_DATA.push({
     titre: "Arrivée sur Terraria",
     contenu: [
       {
-type: "texte",
+        type: "texte",
         auteur: "Brice",
         texte: `— Mais où sommes-nous ?! Que se passe-t-il ? Est-ce que tout le monde va bien ?`
       },
@@ -202,11 +202,36 @@ Elle recula pour voir le haut de l'insecte et découvrit un petit vieillard habi
 — Euh bonjour, dit Celès au vieillard.`
       },
       {
+        type: "image",
+        src: "images/histoire/Hommecoccinelle.jpg",
+        legende: "Octavius sur le dos de sa coccinelle géante"
+      },
+      {
         type: "texte",
         auteur: "Yann",
         texte: `— On nage en plein remake d'Arthur et les Minimoys ! lança Timio à ses amis.
 Arrêtez-vous deux secondes. Vous pensez que c'est une bonne idée de suivre une coccinelle et un vieillard ? On ne sait pas où on est, on ne sait pas comment on a atterri ici, on a failli servir de repas, on se retrouve devant une ville genre les Cités d'Or et maintenant vous voulez qu'on suive un vieillard qui chevauche une coccinelle plutôt qu'un cheval ??? Manquerait plus qu'une licorne à paillettes débarque !
 Non je suis désolé, mais les filles, dites-moi qu'est-ce qu'il se passe ? Je ne bougerai pas tant qu'on n'aura pas de réponses.`
+      },
+      {
+        type: "image",
+        src: "images/histoire/Coc1.jpg",
+        legende: "Les coccinelles géantes de Terraria"
+      },
+      {
+        type: "image",
+        src: "images/histoire/Coc2.jpg",
+        legende: "En route vers la cité à dos de coccinelle"
+      },
+      {
+        type: "image",
+        src: "images/histoire/Coc3.jpg",
+        legende: "Survol de la cité de Terraria"
+      },
+      {
+        type: "image",
+        src: "images/histoire/Coc4.jpg",
+        legende: "Arrivée devant la cité"
       },
       {
         type: "texte",
@@ -246,6 +271,7 @@ Finalement, la décision fut prise par cette armoire à glace : Timio courut en 
 — GROOOAAAAAAAAAAH ! recria une nouvelle fois l'homme des cavernes, tellement fort que la coccinelle prit peur et s'envola avant que Timio ne pût s'y agripper !
 Sans que Timio ne s'y attende réellement, il loupa la coccinelle et entama une chute vertigineuse du haut de cette gigantesque falaise...`
       },
+      // [IMAGE_A_IMPORTER : Timio en chute libre depuis la falaise]
       {
         type: "texte",
         auteur: "Brice",
@@ -260,8 +286,7 @@ Galathea n'est pas hyper rassurée et regarde Celès d'un air effaré et intrigu
 Après plus d'une heure à voyager sur des dos de coccinelles, ils arrivèrent devant un splendide palais ! Il ressemblait fortement aux vieux palais impériaux datant de la dynastie des Han !
 — Hey les amis regardez ce magnifique palais !
 — Silence ! Le silence est de rigueur maintenant !
-Galathea mit sa main devant la bouche et se mit à chuchoter un message à Celès, quand tout à coup une immense sublime créature fit son apparition ! On aurait dit un griffon.
-[IMAGE : Des coccinelles arrivant à la cité]`
+Galathea mit sa main devant la bouche et se mit à chuchoter un message à Celès, quand tout à coup une immense sublime créature fit son apparition ! On aurait dit un griffon.`
       },
       {
         type: "texte",
@@ -277,9 +302,9 @@ Celès ne put s'empêcher de laisser échapper un « Oh la vache ça en fait des
 Derrière eux un rire se fit entendre.
 — Ne vous inquiétez pas mon enfant, ici le silence n'est pas requis.
 Celès se retourna précipitamment et découvrit un vieil homme avec une longue barbe blanche tout de bleu vêtu. Il portait un sceptre à la main qui luisait d'une lumière bleue et dans l'autre tenait un gros livre.
-— Enfin vous voilà, dit-il, je vous attendais.
-[IMAGE : Du Grand Maître]`
+— Enfin vous voilà, dit-il, je vous attendais.`
       },
+      // [IMAGE_A_IMPORTER : Le Grand Maître dans la bibliothèque]
       {
         type: "texte",
         auteur: "Yann",
@@ -336,6 +361,11 @@ Ses amis se retinrent de rire.
 — Ça commence bien !
 — Approchez s'il vous plaît ! Je vais vous présenter des objets qui vous seront utiles pendant votre périple ! Alors dans ma main gauche se trouve un collier fabriqué à partir de la roche de Terraria et des plumes de plumards y sont représentées. Ce collier offre la particularité à la personne qui le portera de comprendre le langage de la faune et la flore. Cela vous sera très utile croyez-moi. Dans ma main droite se trouve un talisman permettant à la personne le portant de devenir invisible. Enfin dans ma poche se trouvent des graines de lumière permettant de vaincre les monstres de l'Ombre. Mais attention je n'en possède que 3 ! Alors faites vos choix !
 — Bon les amis je vous propose qu'on prenne quelques minutes pour y réfléchir !`
+      },
+      {
+        type: "image",
+        src: "images/histoire/3sorcieres.jpg",
+        legende: "Griffin, Iseult et Catalina dans la salle des artefacts"
       },
       {
         type: "texte",
@@ -399,9 +429,9 @@ Timio allait se risquer à poser la question à Catalina quand il se retint... C
 Une fois rhabillé, il constata que ses nouveaux vêtements semblaient bien résistants et chauds, sans pour autant l'alourdir et le grossir (oui c'est important de faire attention à son apparence même dans un autre monde).
 Il alla à son tour dans la salle des armes, le temps que Galathea soit changée et il vit Celès dans un coin au fond de la salle, qui regardait les poignards, couteaux et dagues.
 Timio remarqua deux objets étranges. Des sortes de pointes serties de rubis verts, attachées entre elles par une longue mais très fine chaîne. Il les prit dans sa main, les pointes étaient très légères mais ultra solides, tout autant que la chaîne. À proximité se trouvait la sangle d'attache qui lui permettait de porter ses pointes au bas de son dos. « Facile et très discret ! » pensa Timio. C'est parfait.
-Il ne restait plus que Galathea.
-[IMAGE : Arme Timio]`
+Il ne restait plus que Galathea.`
       },
+      // [IMAGE_A_IMPORTER : Arme de Timio / Liam (pointes serties de rubis reliées par une chaîne)]
       {
         type: "texte",
         auteur: "Brice",
@@ -418,6 +448,11 @@ Ses amis avaient déjà fait leur choix d'armes et étaient déjà prêts, tandi
 — Waouh elle est magnifique ! Je vais prendre ça !
 Les amis je suis prête ! Quand partons-nous ?
 Le Grand Maître était de retour...`
+      },
+      {
+        type: "image",
+        src: "images/histoire/Arbalete.jpg",
+        legende: "L'arbalète choisie par Galathea"
       },
       {
         type: "texte",
@@ -462,6 +497,7 @@ Après quelques minutes passées à profiter du repas, le Grand Maître reprit l
 — Bonne question mon enfant, je vois que vous êtes perspicace ! Le codex nous permettra d'affaiblir le dôme et nous permettra de le franchir sans problème. Nous pourrons ainsi nous rendre sur Omega pour récupérer le cristal !
 D'autres questions ?...`
       },
+      // [IMAGE_A_IMPORTER : La Tour Nuage]
       {
         type: "texte",
         auteur: "Vio",
@@ -493,8 +529,12 @@ Il me semblait qu'on devait récupérer le Cristal d'Obsidienne. Si j'ai bien co
 — Très bien, merci pour cette réponse Grand Maître.
 — Et maintenant, allez vous reposer, clôturera le Grand Maître.
 La nuit fut de courte durée pour Timio, agitée et pleine de rêves intenses, de batailles, de cris et de bruits d'épées. Puis très tôt, un jeune homme, probablement un apprenti du Grand Maître, vint réveiller Timio, pour lui annoncer que c'était l'heure de partir. L'apprenti alla chercher ensuite les deux filles et tous furent réunis dans la salle du trône.
-C'était le départ.
-[IMAGE : De la salle du trône]`
+C'était le départ.`
+      },
+      {
+        type: "image",
+        src: "images/histoire/Hallcite.jpg",
+        legende: "La salle du trône de la cité de Terraria"
       },
       {
         type: "texte",
@@ -520,9 +560,9 @@ Les amis je vous laisse faire votre choix !`
         auteur: "Vio",
         texte: `Celès passa devant chaque compagnon. Elle essaya de voir avec lequel elle avait le plus de feeling. Quand elle passa devant le grand rapace vert celui-ci baissa la tête. Celès s'arrêta devant lui et pencha la tête pour mieux l'observer. Elle fut amusée quand elle vit l'animal l'imiter. Alors elle prit son courage à deux mains et tendit la main vers lui pour le caresser. L'oiseau se laissa faire en fermant les yeux.
 — Magnifique, dit le Grand Maître. Il semblerait qu'Artax t'apprécie beaucoup. Il est puissant et rapide. Il saura te protéger.
-Celès sourit et continua à caresser Artax en attendant que les deux autres fassent leur choix.
-[IMAGE : Artax]`
+Celès sourit et continua à caresser Artax en attendant que les deux autres fassent leur choix.`
       },
+      // [IMAGE_A_IMPORTER : Artax]
       {
         type: "texte",
         auteur: "Yann",
@@ -530,9 +570,9 @@ Celès sourit et continua à caresser Artax en attendant que les deux autres fas
 À peine voulut-il essayer de le caresser que la majestueuse bête passa sa tête sous les jambes de Timio pour le hisser sur son dos. Il le fit tellement vite qu'il fit sauter Timio en l'air (il ne s'y attendait pas vraiment d'ailleurs car Timio fit une petite moue que personne n'avait vue) et Timio atterrit sur le dos de son animal, sens inverse.
 Tout le monde se mit à rire, sauf Timio, enfin quelques instants seulement puis il esquissa un sourire.
 — Amusant, dit le Grand Maître. Tu as été choisi par Condor.
-Au tour de Galathea de voir si le dernier animal allait l'accepter.
-[IMAGE : Condor]`
+Au tour de Galathea de voir si le dernier animal allait l'accepter.`
       },
+      // [IMAGE_A_IMPORTER : Condor]
       {
         type: "texte",
         auteur: "Brice",
@@ -544,8 +584,12 @@ Galathea sortit de sa poche un sachet de graines de tournesol. Elle en fit goût
 Elle est très gourmande.
 — Ça tombe bien moi aussi ! Allez on fait un tour ma belle !
 La connexion fut parfaite entre les deux et Galathea dirigea Azzuria avec aisance. On aurait pu croire qu'elle avait fait ça toute sa vie. Peut-être que le collier qu'elle porte l'aide à mieux comprendre Azzuria.
-— C'est parti les amis on peut y aller !
-[IMAGE : Azzuria]`
+— C'est parti les amis on peut y aller !`
+      },
+      {
+        type: "image",
+        src: "images/histoire/Azzuria.jpg",
+        legende: "Galathea et Azzuria prêtes pour le départ"
       }
     ]
- });
+});
