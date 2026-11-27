@@ -542,6 +542,11 @@
             border: 1px solid var(--border);
             display: block;
         }
+        .chapter-figure audio {
+            width: 100%;
+            margin-top: 8px;
+            border-radius: 10px;
+        }
 
         .chapter-caption {
             font-size: 0.8rem;
@@ -868,7 +873,7 @@
                 let chapterAdded = false;
 
                 (chap.contenu || []).forEach((block, blockIndex) => {
-                    if (block.type === 'image') return;
+                    if (block.type === 'image' || block.type === 'media') return;
                     const textMatch = normalizeText(`${block.auteur || ''} ${block.texte || ''}`).includes(searchQuery);
                     if (textMatch) {
                         storyHits.push({
@@ -1195,24 +1200,38 @@
             modal.classList.remove('gallery-mode');
 
             let blocksHtml = '';
+            const renderMediaHtml = (mediaItem) => {
+                const src = mediaItem.src || '';
+                let mediaTag = '';
+                if (mediaItem.type === 'audio' || /\.(mp3|wav|ogg|m4a)$/i.test(src)) {
+                    mediaTag = `<audio src="${src}" controls preload="metadata"></audio>`;
+                } else if (mediaItem.type === 'video' || src.endsWith('.mp4')) {
+                    mediaTag = `<video src="${src}" controls loop playsinline></video>`;
+                } else {
+                    mediaTag = `<img src="${src}" alt="${mediaItem.legende || chap.titre}">`;
+                }
+                return `
+                    <div class="chapter-figure">
+                        ${mediaTag}
+                        ${mediaItem.legende ? `<div class="chapter-caption">${mediaItem.legende}</div>` : ''}
+                    </div>
+                `;
+            };
+
             (chap.contenu || []).forEach((block, blockIndex) => {
-                if (block.type === 'image') {
-                    const mediaTag = block.src.endsWith('.mp4')
-                        ? `<video src="${block.src}" controls loop playsinline></video>`
-                        : `<img src="${block.src}" alt="${block.legende || chap.titre}">`;
-                    blocksHtml += `
-                        <div class="chapter-figure">
-                            ${mediaTag}
-                            ${block.legende ? `<div class="chapter-caption">${block.legende}</div>` : ''}
-                        </div>
-                    `;
+                if (block.type === 'image' || block.type === 'media') {
+                    blocksHtml += renderMediaHtml(block);
                 } else {
                     const colorClass = getAuthorClass(block.auteur);
                     const linkedText = linkifyCodexTerms(block.texte || '', null);
+                    const attachedMediaHtml = Array.isArray(block.media)
+                        ? block.media.map(renderMediaHtml).join('')
+                        : '';
                     blocksHtml += `
                         <div class="chapter-post" id="post-${blockIndex}">
                             ${block.auteur ? `<span class="chapter-author ${colorClass}">${block.auteur}</span>` : ''}
                             <p class="chapter-paragraph ${colorClass}">${linkedText}</p>
+                            ${attachedMediaHtml}
                         </div>
                     `;
                 }
