@@ -2,7 +2,6 @@ CHAPITRES_DATA.push({
     acte: "Acte I",
     numero: 3,
     titre: "Le royaume des glaces",
-    sousTitre: "Traversée des eaux interdites et secret du palais gelé",
     contenu: [
         {
             auteur: "Vio",
