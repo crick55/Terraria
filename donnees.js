@@ -534,7 +534,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Bracelet de l'Esprit",
-            categorie: "Artefact magique",
+            categorie: "Objet magique",
             image: "",
             description: "Bracelet orné d'une pierre lumineuse remis à Celes par Iseult.",
             infosComplementaires: "Permet à son porteur de projeter son esprit hors de son corps via la formule « Spiritus evasio » et de revenir via « Spiritus redeo ». La pierre s'éteint tant que le corps reste inerte. Son port a blanchi les cheveux de Celes.",
@@ -542,7 +542,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Bracelet holographique",
-            categorie: "Objet technologique",
+            categorie: "Objet magique",
             image: "",
             description: "Bracelet de communication remis à Galathea par Valtor.",
             infosComplementaires: "En appuyant sur une zone précise du bracelet, le visage de Valtor apparaît en hologramme pour communiquer à distance à travers Terraria.",
@@ -550,7 +550,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Carte de Terraria",
-            categorie: "Artefact magique",
+            categorie: "Objet magique",
             image: "",
             description: "Carte ancienne en bois bordée d'inscriptions méconnues, sertie de rubis.",
             infosComplementaires: "Trouvée dans un coffre de la cabane en Bretagne par Timio, elle a ouvert le portail vers Terraria. Une version géante dans la bibliothèque du Grand Maître évolue en temps réel selon l'avancée de l'armée de l'Ombre.",
@@ -558,7 +558,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Codex (4 fragments)",
-            categorie: "Artefact magique",
+            categorie: "Objet magique",
             image: "",
             description: "Livre ancien aux pages dorées et ornées d'or, divisé en quatre fragments dissimulés à travers Terraria.",
             infosComplementaires: "Renferme des incantations de magie blanche que seul le Grand Maître peut déchiffrer pour affaiblir le dôme magique. Le premier fragment a été récupéré à la Tour Nuage auprès de Morla.",
@@ -566,7 +566,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Collier de la faune et de la flore",
-            categorie: "Artefact magique",
+            categorie: "Objet magique",
             image: "",
             description: "Collier façonné à partir de la roche de Terraria et orné de plumes de plumards, remis à Galathea par Griffin.",
             infosComplementaires: "Permet à celle qui le porte de comprendre et parler le langage des animaux et des plantes, ainsi que de déchiffrer des langues anciennes liées à la nature.",
@@ -574,7 +574,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Cristal d'Obsidienne",
-            categorie: "Relique majeure",
+            categorie: "Relique",
             image: "",
             description: "Cristal énergétique constituant le cœur même de la cité de Terraria.",
             infosComplementaires: "Alimente les portails entre mondes ainsi que les systèmes de défense, d'armement et les boucliers de la cité. Dérobé par les sbires d'Icy.",
@@ -582,7 +582,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Croix de Vanessa Wheeler",
-            categorie: "Relique familiale",
+            categorie: "Relique",
             image: "",
             description: "Chaîne ornée d'une croix léguée à Celes par sa grand-mère Vanessa Wheeler.",
             infosComplementaires: "Sert d'ancrage spirituel permettant à Celes d'entendre la voix de sa grand-mère depuis l'au-delà lorsqu'elle la porte.",
@@ -590,7 +590,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Encre d'Ingaoué",
-            categorie: "Substance magique",
+            categorie: "Objet magique",
             image: "",
             description: "Liquide légèrement brillant qui tournoie de lui-même, conservé dans la salle des artefacts du palais.",
             infosComplementaires: "Trempée au contact du Cristal d'Obsidienne, elle offre une protection accrue contre les blessures physiques, accélère la récupération contre la fatigue et la faim et peut parfois éviter la mort.",
@@ -598,7 +598,7 @@ const CODEX_DATA = {
         },
         {
             nom: "Pierre de l'Esprit",
-            categorie: "Artefact magique",
+            categorie: "Objet magique",
             image: "",
             description: "Petite pierre brillante pas plus grande qu'une noisette remise à Timio/Liam par Catalina.",
             infosComplementaires: "Fusionnée directement dans le front de Timio. Elle permet de percevoir et de contrôler son environnement et les esprits (« Manipulation de la trame »).",
