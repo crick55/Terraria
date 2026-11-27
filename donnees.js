@@ -252,7 +252,7 @@ const CODEX_DATA = {
         {
             nom: "Morla",
             categorie: "Personnages secondaires",
-            image: "",
+            image: "images/persos/Morla.jpg",
             age: "Âgée",
             descriptionPhysique: "Sorcière âgée aux cheveux blancs et au regard perçant, portant un médaillon orné d'une citrine et un anneau runique",
             aptitudes: "Surveillance et protection magique de la Tour Nuage depuis son portrait enchanté",
