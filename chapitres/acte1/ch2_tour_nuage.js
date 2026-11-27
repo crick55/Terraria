@@ -1287,7 +1287,7 @@ Quelques secondes s'écoulèrent où les deux jeunes gens se regardèrent puis T
         },
         {
             type: "image",
-            src: "images/histoire/Moteurcite.jpg",
+            src: "images/histoire/Moteurcité.jpg",
             legende: "La salle du générateur au cœur de la cité de Terraria"
         },
         {
