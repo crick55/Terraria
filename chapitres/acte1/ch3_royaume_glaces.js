@@ -4,6 +4,7 @@ CHAPITRES_DATA.push({
     titre: "Le royaume des glaces",
     contenu: [
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès quitta la pièce après le départ du Grand Maître.
 Ses amis n’étaient pas bien, elle devait aller voir comment ils allaient. Elle-même avait été choquée d’apprendre que sa grand-mère était venue ici. Mais pourquoi leurs proches avaient-ils voulu fermer le passage ? Pourquoi le Grand Maître n’avait-il pas suivi leurs vœux, quoiqu’elle se doutât un peu de la réponse pour cette dernière quest… BAM !
@@ -14,7 +15,7 @@ Pour la seconde fois, Celès se retrouva sur les fesses après avoir foncé dans
 
 Elle releva la tête et vit Dolios qui lui tendait la main pour l’aider à se relever.
 
-— Désolée, dit-elle, j’étais encore dans mes pensées.
+— Désolée, dit-elle, j’étais encore dans ses pensées.
 — Tout va bien ? demanda-t-il l’air inquiet quand il vit son visage. On dirait que tu as pleuré.
 
 Celès essuya rapidement les larmes qui restaient dans ses yeux.
@@ -41,6 +42,7 @@ Elle se rendit devant la porte de la chambre de Timio et frappa timidement.
 — Timio, tu es là ? Est-ce que ça va ? Tu veux qu’on en parle ? demanda-t-elle à travers la porte fermée.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Trois toc-toc retentirent.
 
@@ -57,10 +59,12 @@ Il laissa Celès entrer.
 — Et quant à en parler… Non, ça ira, c'est gentil. Je pense que j'ai assez dézingué le Grand Maître. Ça m'a fait un bien fou. Et toi, ça va ? Tu n'as pas l'air en forme.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `— Ça va aller, tu sais à quel point ma grand-mère comptait pour moi, alors découvrir qu’elle est venue ici et qu’en plus je peux désormais lui parler, ça fait un peu beaucoup. Moi aussi, quand j’ai croisé le Grand Maître dans les couloirs, je me suis un peu lâchée sur lui. Mais je me dis que bientôt j’en saurai plus. Il faut que je m’entraîne avec mon pouvoir de médium. Grand-mère pourra peut-être nous apprendre des choses. Mais actuellement, je me fais du souci pour Galathea, on devrait essayer de la retrouver, tu ne crois pas ?`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Hummm, oui, je pense. Je la contacte et nous mets tous les trois en conf.
 
@@ -69,6 +73,7 @@ Timio ferma les yeux un instant et en quelques secondes à peine, il sentit la p
 — Galathea, tu nous entends ? Celès est avec moi.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Le Grand Maître s'éloigna alors de Galathea, lui laissant le temps de digérer toutes ces nouvelles !
 
@@ -82,16 +87,19 @@ Galathea coupa alors la discussion avec le joli Valtor.
 — Oui, je t'entends Timio.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Euh… Bah, je ne peux pas prévenir avant de faire ça Galathea… Tu veux que je fasse comment ? Je t'envoie un hibou ? dit Timio un peu peiné par la remarque. Bon, Celès est avec nous, elle t'entend. Tu es où ? On te cherche.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Excuse-moi de t'avoir bousculé, ce n'était pas volontaire. Je m'apprêtais à me confier à Valtor, et je t'avoue que je fus surprise de ton intervention. Je me recueille sur un banc, non loin du grand jardin de Terraria.
 
 Soudainement, Galathea se mit à pleurer.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès regarda Timio, consternée.
 
@@ -106,6 +114,7 @@ Elle courut vers le jardin de Terraria avec Timio, vit son amie sur un banc et s
 — On est là, dit-elle à son amie. Je suis désolée pour ce que tu viens d’apprendre. Je n’ose même pas imaginer comment tu dois te sentir. Je n’aime pas te voir dans cet état. Est-ce que tu souhaites qu’on en parle ? demanda-t-elle à Galathea.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea se sentit immédiatement soulagée.
 
@@ -114,16 +123,19 @@ Elle courut vers le jardin de Terraria avec Timio, vit son amie sur un banc et s
 Galathea se rendit compte qu'elle venait de sortir le prénom de Valtor.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `— Évidemment qu’on restera toujours ensemble, dit-elle en serrant de nouveau Galathea dans ses bras. Tu es condamnée à nous supporter encore longtemps. N’est-ce pas Timio ?`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Pffff, malheureusement oui, lança Timio de sa façon la plus décalée possible, avec les yeux révulsés, le haussement de sourcils qui va bien et le petit hochement de tête pour couronner le tout.
 
 Exactement comme ses amies aiment qu'il le fasse pour se moquer amicalement de l'une d'elles ou des deux.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea serra dans ses bras ses amis très fortement. Elle tenait tellement à eux.
 
@@ -132,6 +144,7 @@ Exactement comme ses amies aiment qu'il le fasse pour se moquer amicalement de l
 Galathea sortit de son sac à dos le remède, ainsi que le bestiaire de Terraria, qu'elle souhaitait absolument montrer à ses amis.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Merci, répondit Timio, qui était touché de l'intention de Galathea, et d'un homme dont il ne connaissait rien… Je l'apporterai à Thayri pour qu'il…
 
@@ -140,6 +153,7 @@ Timio s'arrêta dans sa phrase, venant de commettre une petite erreur et espéra
 — Je… Euh… Merci. On devrait y aller je pense, termina Timio avant que tous ne reprennent la route vers leurs chambres respectives.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Les trois amis se dirigeaient vers leurs chambres quand un énorme bruit se fit entendre.
 
@@ -172,6 +186,7 @@ Il guida le groupe vers la carte.
 — Bien vu, Celès. Votre équipage sera constitué de pauvres pirates maudits après avoir volé un trésor. Ils sont en quelque sorte plus morts que vivants, donc n’ont plus d’ADN. Mais malheureusement, ils ne peuvent jamais quitter la mer et aller sur terre. Voilà pourquoi ils ne peuvent aller chercher le codex. Pensez à prendre des vêtements chauds et des équipements pour vous défendre. Vous êtes encore plus en danger maintenant.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Le groupe quitta le Grand Maître en direction de leurs chambres respectives.
 Une bonne nuit de sommeil allait leur faire du bien avant de reprendre le trajet pour la seconde page du codex.
@@ -188,6 +203,7 @@ Timio put ainsi l'observer comme bon lui semblait, et cela confirma ses pensées
 Il se dévêtit (pas entièrement, bande de voyeurs), puis se coucha à côté de Thayri.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea, quant à elle, retourna dans sa chambre pour s'y reposer un peu avant de repartir à l'aventure. Elle décida de s'allonger sur son lit tout en pensant aux nouvelles qu'elle venait de recevoir. Des larmichettes ruisselèrent le long de ses joues, quand tout à coup, quelqu'un frappa à sa porte. Elle sécha alors ses larmes puis se dirigea vers la porte. Elle regarda par le judas mais ne vit personne !
 Elle retourna alors vers le lit et une nouvelle fois, quelqu'un frappa à la porte.
@@ -201,6 +217,7 @@ Elle prit son courage à deux mains puis ouvrit la porte. Elle sortit alors sur 
 Galathea se mit à hurler très fortement.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès alla dans sa chambre pour dormir avant le départ de demain. Elle s’apprêtait à se changer lorsque l’on toqua à la porte. Elle alla ouvrir.
 
@@ -273,6 +290,7 @@ Le lendemain matin, Celès prépara ses affaires. Elle prit soin de prendre de q
 Un jeune serviteur vint la chercher pour le petit-déjeuner où elle retrouva ses amis afin qu’ils puissent se restaurer, ils partirent ensuite vers le port où les attendaient l’équipage et le Grand Maître.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Le groupe d'amis dit au revoir au Grand Maître ainsi qu'à Dolios et Valtor qui étaient venus les accompagner jusqu'au port. Timio ne voyait pas Thayri, il pensait qu'il aurait accompagné son père et ses amis mais a priori non… Il regarda au loin en direction de la fenêtre de sa chambre mais la distance était trop grande pour apercevoir quoi que ce soit.
 
@@ -287,6 +305,7 @@ Il leur faudrait plusieurs heures afin d'atteindre les eaux interdites, leur pro
 Le voyage vers le monde de l'hiver éternel commença.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Les aventuriers en herbe étaient en mer pour leur nouvelle expédition. Le paysage était vraiment splendide, mais à la fois assez angoissant par la même occasion.
 
@@ -302,6 +321,7 @@ Après plusieurs heures à consulter son bestiaire, Galathea souhaita partager c
 — Les amis ! J'ai des informations importantes à vous communiquer. Et tout ne va pas vous plaire !`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès rejoignit Galathea.
 
@@ -310,6 +330,7 @@ Après plusieurs heures à consulter son bestiaire, Galathea souhaita partager c
 Celès serra dans son poing l’anneau que lui avait donné Dolios. Elle espérait vraiment que cette traversée se passerait sans encombre.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio était étonné que Galathea soit restée plusieurs heures assise sur du bois bien sec et froid (la température ne cessait de s'approcher du 0).
 Timio en avait les mains gelées.
@@ -346,10 +367,11 @@ L'ensemble de l'équipage s'arrêta de travailler, et ils se mirent tous à marc
         },
         {
             type: "image",
-            src: "images/faune/Sirenes.jpg",
+            src: "images/histoire/Sirenes.jpg",
             legende: "Les sirènes des eaux interdites"
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Qu'allons-nous faire, qu'allons-nous faire ! dit Galathea.
 
@@ -360,6 +382,7 @@ Galathea se mit à hurler :
 — C'est un Selbrie ! Une entité très féroce qui commande les sirènes. Par chance, j'ai étudié son cas. Je vais tenter de faire diversion pendant que toi, Céleste, tu t'occupes de Timio. Ça te va ?! `
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `— D’accord Galathea, je te laisse faire, mais il ne faut surtout pas le tuer, il faut qu’il reste en vie, dit-elle à son amie.
 
@@ -382,6 +405,7 @@ Mais le jeune homme ne répondit pas et déjà voulut retourner sauter.
 — Désolée, mais c’est pour ton bien, dit Celès avant de gifler très fortement son ami. Mais tu vas te réveiller, bordel ! dit-elle agacée en lui donnant une deuxième gifle.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio ressentit une douleur fulgurante sur son visage. Il ne s'attendait pas à cela car tout lui semblait tellement apaisant autour de lui.
 La musique douce, des voix féminines agréables, l'eau tellement bleue de la mer qui donnait envie de s'y baigner… Rien de tel que de piquer une tête en compagnie des jolies créatures marines qui chantaient pour lui.
@@ -406,10 +430,12 @@ Au prix d'un incroyable effort et par des encouragements qu'il entendait de plus
 Dans la désorientation de l'envoûtement, il glissa, et tomba à la mer.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Bon Celès, on va devoir réagir rapidement. Le cri du Selbrie est très strident, il peut faire perdre l'audition s'il est trop puissant. Mais il existe un moyen simple pour le contrer en utilisant un micro parabolique. Cela ne tuera pas la créature mais cela permettra de le neutraliser pendant une dizaine de minutes. Cela permettra aux sirènes d'arrêter leurs chants. Bon Celès, laisse-moi me charger de notre ami ! J'ai trouvé un micro parabolique dans la poupe (à l'arrière du bateau). Je dois pouvoir être capable de le neutraliser seule.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès vit Timio tomber par-dessus bord.
 
@@ -444,6 +470,7 @@ Triton fit signe à Willy de revenir avec Timio et toutes les créatures reparti
 Elle ne put finir sa phrase car elle disparut à ce moment-là. Le monde tourna autour de Celès. Marina lui avait pris trop d’énergie. Tout devint sombre pour Celès qui s’évanouit, tomba de la rambarde et coula dans la mer inconsciente.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio, sur le dos de Willy (ça ne s'invente pas !), vit la chute de son amie dans l'eau, inconsciente.
 Il n'avait pas beaucoup de temps pour réagir. Et de toute façon il était déjà trempé, transi de froid certes, mais pour sauver son amie, il ferait tout.
@@ -465,6 +492,7 @@ Sans comprendre ce qu'il se passait, il fut sorti de l'eau et fut déposé sur l
 Cependant, Timio ne respirait plus.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea, encore stupéfaite de ce qui venait de se passer, se mit deux ou trois gifles afin de reprendre ses esprits.
 Elle se rapprocha de ses amis, les stimula afin d'espérer qu'ils reprennent connaissance, mais ça ne donna rien. Elle tenta de tirer Timio par les bras, mais son corps frêle n'y parvint pas.
@@ -493,6 +521,7 @@ Galathea ne savait pas encore combien de temps elle allait encore tenir, mais il
 — Celès, est-ce que ça va ? Apportez-lui quelque chose de chaud à boire ! dit Galathea à l'équipage. Aidez-moi ! Aidez-moi ! hurla Galathea.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès ouvrit les yeux difficilement. Tout était flou pour le moment.
 
@@ -528,6 +557,7 @@ Elle se tourna vers l’équipage.
 — Vite, des couvertures pour Timio, il faut le maintenir au chaud.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio était tout étourdi et ne comprenait pas pourquoi il y avait tant d'agitation autour de lui.
 Les gens couraient partout, il avait mal aux côtes, il avait froid, tellement froid qu'il en grelottait. Et il avait mal à la tête, aux yeux, aux oreilles et…
@@ -543,6 +573,7 @@ Ses amies attendaient toujours, presque avec insistance, une phrase fatidique.
 — Je n'entends plus rien, je suis sourd.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Du Timio tout craché, dit Galathea en regardant Celès ! Une vraie princesse…
 
@@ -560,10 +591,11 @@ Tout à coup, le bateau se stoppa.
         },
         {
             type: "image",
-            src: "images/lieux/ChateauGlace.jpg",
-            legende: "Le château de glace du pays de l'hiver éternel"
+            src: "images/histoire/fondocean.jpg",
+            legende: "L'arrivée aux abords du pays de l'hiver éternel"
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès sentit le bateau s’arrêter. Elle découvrit un magnifique paysage de glace avec un superbe château glacé.
 
@@ -585,6 +617,12 @@ Au bout d’une heure ou deux, Celès se sentit mieux. Elle mit des vêtements t
 — Attendons-le, dit-elle à son amie. Il ne devrait pas tarder, enfin j’espère.`
         },
         {
+            type: "image",
+            src: "images/histoire/chateauglace.jpg",
+            legende: "Le château de glace du pays de l'hiver éternel"
+        },
+        {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio ressentait de plus en plus ses membres depuis qu'il avait pris un bain chaud.
 On lui avait apporté des vêtements épais, et redonné son attirail, il était prêt pour reprendre du service.
@@ -602,6 +640,7 @@ L'accès à la terre ferme leur fut ouvert par un membre de l'équipage et Timio
 Et Timio les laissa passer devant lui.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea marchait en tête, son manteau épais recouvert de flocons de neige, parcourant avec ses amis un sentier enneigé.
 Elle scrutait l'horizon, ses bottes s'enfonçant dans la poudreuse. Elle tenait entre ses mains une lanterne magique qui tenait au chaud nos amis.
@@ -615,6 +654,7 @@ Le château semblait irréel, ses tours s’élevant vers le ciel comme des stal
 — C’est magnifique. Mais comment allons-nous entrer ?`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès regarda le palais. Il était vraiment superbe, reflétant les rayons du soleil couchant. Elle ne vit personne aux alentours. Le lieu semblait être désert.
 
@@ -635,6 +675,7 @@ Personne ne lui répondit.
 Et elle entra. Elle fit quelques pas dans le hall d’entrée et, voyant qu’il n’y avait aucun danger, fit signe à ses amis que la voie était libre et qu’ils pouvaient entrer.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Le groupe s'avança dans le hall du palais. Il était vide, personne. Abandonné. Il n'y avait ni lumière, ni feu. Aucune source de chaleur. En même temps, c'était un palais des glaces.
 Cependant, la poussière qui recouvrait les grandes balustrades du hall d'entrée confirmait l'abandon du bâtiment.
@@ -649,10 +690,11 @@ Le hall donnait sur trois zones : une zone à gauche, qui semblait mener vers un
         },
         {
             type: "image",
-            src: "images/lieux/InterieurChateauGlace.jpg",
+            src: "images/histoire/hallglace.jpg",
             legende: "Le grand hall et le salon figés dans le givre"
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea acquiesça à la proposition de Timio. Se perdre dans ce genre d'endroit pourrait conduire à des conséquences catastrophiques. L'atmosphère glaciale transperçait le petit corps de Galathea. Cependant il fallait progresser, Galathea et ses amis prirent alors le chemin du salon.
 
@@ -683,6 +725,7 @@ Les ombres sur la cheminée forment lentement des lettres scintillantes qui s'as
 — J'espère que ce n'est pas un piège. Qu'en pensez-vous ? dit Galathea en regardant ses amis.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès réfléchit un instant. Elle était plutôt douée en énigmes.
 
@@ -697,20 +740,24 @@ Elle remarqua dans un coin de la pièce un piano recouvert de givre. Machinaleme
 Elle s’apprêta à faire demi-tour quand elle vit une petite porte dans le mur. Elle ouvrit la porte et découvrit un grand coffre. Elle prit sa dague et n’eut aucun mal à faire céder le verrou gelé. Quand elle ouvrit le coffre, elle découvrit un magnifique sceptre de glace qui brillait d’une lumière vive. Elle le prit en main et le montra à ses amis.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Waouuuuuh ! s'exclama Timio. Il est magnifique ! Il brille tellement qu'on dirait qu'il est… en vie. Je peux le prendre en main ? demanda-t-il à l'attention de Celès.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `— Oui, bien sûr, dit-elle.
 
 Et elle donna le sceptre à Timio.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Es-tu certaine que ce soit une bonne idée ? dit Galathea. À chaque fois que Timio touche à un truc, il nous arrive quelque chose !`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Trop tard, Timio avait déjà le sceptre en main. Mais il ne se passa rien de particulier.
 Après quelques secondes, la lumière vive qui émanait du sceptre disparut.
@@ -720,6 +767,7 @@ Après quelques secondes, la lumière vive qui émanait du sceptre disparut.
 Et Timio tendit le sceptre à Galathea.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea saisit alors le sceptre mais sa main commença à geler.
 
@@ -728,6 +776,7 @@ Et Timio tendit le sceptre à Galathea.`
 Il fallait faire vite, sinon Galathea finirait en glaçon géant !`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès prit le bâton qui se mit à luire de nouveau et essaya de dégeler Galathea, mais rien ne vint. Elle regarda, horrifiée, ses amis.
 
@@ -755,6 +804,7 @@ Celès regarda Galathea, son poignet était aussi gelé à présent. Elle lança
 — Où est-il ? demanda-t-elle.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio fut stupéfait ! Une statuette de glace qui parle ?! Enfin, avec tout ce qu'il avait vu, il ne devrait pas l'être…
 Par contre le chandelier et l'horloge, eux, ne parlent pas…
@@ -781,12 +831,14 @@ Et Timio eut une hypothèse.
 — Les filles ! Regardez ! Depuis qu'on est ici, rien n'a réagi en ma présence mais vous, par contre, oui. La statuette ne me répond pas, le bâton perd de sa vivacité et ne me gèle pas quand je l'ai en main ! Purée, Celès, Galathea, je risque de ne pas vous être d'une grande utilité ici…`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `La glace se propagea sur l'ensemble de son bras gauche, elle commençait à en perdre la sensibilité.
 
 — Timio, donne-moi la statuette, dans ma main droite. Je vais tenter quelque chose !`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Euuuh, tu es sûre ? Elle me paraît lourde, grosse et vu que tu es toute gelée et donc fragile… Je ne veux pas que tu perdes un bras…
 
@@ -794,12 +846,14 @@ Timio tenta d'attraper la statuette qui était très lourde. Il ne savait pas co
 Il lui tendit.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Au moment où Galathea voulut saisir la statuette, son bras se mit à geler.
 
 — Hahahah ! cria Galathea, je suis prise au piège, je ne peux plus bouger !`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès reprit la statuette des mains de Galathea. Elle la posa sur la table.
 
@@ -815,6 +869,7 @@ Elle se tourna vers Timio.
 — On ne peut pas la laisser seule. Si jamais un danger arrive, elle ne pourra rien faire. Il faut quelqu’un pour veiller sur elle. Le château n’interagit qu’avec les filles. Qu’est-ce qu’on fait ? Je dois aller voir le maître des lieux vu que je suis la seule fille qui puisse encore bouger. Mais toi, que vas-tu faire ? lui demanda-t-elle.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Euh…
 
@@ -823,10 +878,12 @@ Timio bégaya, pris de court.
 — Peut-être me travestir pour me faire passer pour une femme ? répondit-il, amusé. Non, je ne sais pas… Je vais errer dans le coin et surveiller si personne ne vient à notre rencontre et je serai là pour protéger Galathea au besoin. Contacte-moi par télépathie si tu as besoin. Galathea, en dehors d'être figée, tu penses pouvoir utiliser tes pouvoirs au cas où ?`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Je ne suis pas certaine de pouvoir les utiliser correctement étant bloquée dans la glace. J’espère pouvoir me libérer rapidement de cette fichue glace ! dit Galathea. Il existe peut-être un moyen de briser la glace, dit Galathea en regardant Timio.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Euh… Bonne question. Là comme ça, à part taper dessus avec un objet, je ne vois pas trop. Et je ne voudrais pas te faire mal aussi en tapant… Si je ripe mon coup, tu vas m'en vouloir à vie… Et si… j'allumais un feu ?! Tu es juste à côté de l'âtre ! Au moins ça pourrait te maintenir en vie plus longtemps si ce truc arrêtait de se répandre…
 
@@ -835,6 +892,7 @@ Timio partit en quête d'un objet lui permettant d'allumer un feu.
 Pendant ce temps, que se passait-il du côté de Celès ?`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès, suivant les instructions de la statuette, avait franchi la porte menant au tunnel qui conduisait au maître des lieux. Elle marchait rapidement, car elle savait que le temps pressait pour Galathea. Une fois le bout du tunnel atteint, elle arriva dans une salle où la température était encore plus glaciale. Elle examina la pièce et se figea. Dans un coin de la pièce se tenait un homme sur le trône, enchaîné, et il semblait endormi ou pire. Elle s’approcha de lui quand elle sentit le sol trembler. Elle s’arrêta, cherchant à trouver la source du tremblement.
 
@@ -844,6 +902,7 @@ Pendant ce temps, que se passait-il du côté de Celès ?`
 Elle s’avança de nouveau vers l’homme et tendit le bras pour sentir son pouls. À peine sa peau eut-elle touché celle de l’homme que celui-ci ouvrit brusquement les yeux, des yeux d’un bleu luminescent.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio changea de salle à la recherche d'un quelconque objet pouvant servir à faire du feu.
 Il erra dans un couloir puis dans un autre, il n'y avait aucun chandelier avec bougie pouvant l'aider. Il rechercha des pièces avec des cheminées en espérant y trouver une bûche ou deux. Rien.
@@ -868,12 +927,14 @@ Sur le chemin du retour, il pensa à une chose… Avec quoi allumerait-il le feu
 Il entra dans la pièce où se situait Galathea afin de lui apporter les bûches, mais là il eut un choc : la glace avait tellement recouvert Galathea ! Jusqu'à la base de son cou ! Galathea ne pouvait quasi plus bouger… Le temps était compté. Peut-être que Galathea avait une idée pour mettre le feu aux bûches humides…`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea, avec une lenteur douloureuse, tourna légèrement la tête vers lui. Sa voix n’était plus qu’un murmure rauque.
 
 — Utilise mon pendentif qui se trouve dans mon chignon, il renferme une essence que m’a confiée Valtor lors de ma visite dans sa serre. Il fonctionne par friction au contact d’une surface boisée. Même humide.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès recula précipitamment quand les yeux de l’homme s’ouvrirent.
 
@@ -917,6 +978,7 @@ Celès se tenait juste devant lui. Elle mit la lame du poignard contre le cœur 
 Celès laissa échapper un sanglot juste avant que le dragon ne se mette à rugir et à se précipiter sur elle, gueule ouverte.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Timio remarqua le joli pendentif dans les cheveux de Galathea. Il ne l'avait jamais vu.
 Il tenta de le prendre mais il était emmêlé dans les cheveux de la fille. Dans la précipitation, il n'arrivait pas à le retirer. Il n'allait pas couper les cheveux de son amie quand même !?!
@@ -935,6 +997,7 @@ D'un coup, un méga rugissement auquel personne ne s'attendait retentit avec une
 Il était à quelques centimètres de sa main tendue mais il n'arrivait pas à l'atteindre…`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Le sentiment du désespoir était visible dans les yeux de Galathea, ses espoirs de s’en sortir vivante commençaient à disparaître dans l’atmosphère glaciale.
 Jusqu’au moment où elle vit une souris sortir de son trou. Elle décida de tenter le tout pour le tout, et entra en communication avec le rongeur.
@@ -948,21 +1011,24 @@ Le rongeur s’exécuta alors et apporta le pendentif de Galathea à Timio.
 Ce fut la dernière parole de Galathea, à présent la glace la recouvrait entièrement. Combien de temps pourrait-elle tenir prisonnière dans le bloc de glace ?`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Une porte vola en éclats et le dragon blanc aux yeux bleus s’approcha de Timio et Galathea. Il s’arrêta devant eux et se pencha. Sur son dos se tenait Celès. La jeune fille avait changé, ses yeux étant d’un bleu luminescent. Elle descendit du dragon. Quand elle vit son amie recouverte de glace, elle se précipita vers elle. Elle s’arrêta devant elle et tendit un bras sur le côté. Le sceptre vola à travers la pièce pour atterrir dans sa main. Elle le saisit et toucha avec celui-ci la glace emprisonnant son amie ; elle mit aussi sa main sur la glace et ferma les yeux. Une lueur bleue sortit de sa main et enveloppa la glace qui se fissura et éclata, libérant Galathea.`
         },
         {
             type: "image",
-            src: "images/faune/Aether.jpg",
-            legende: "Aether, le dragon gardien du royaume des glaces"
+            src: "images/histoire/Celeseather.jpg",
+            legende: "Celès et Aether libèrent Galathea de la glace"
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Wahouuuuu ! s'exclama Timio devant la scène qui venait de se dérouler. Un dragon, Celès qui fait voler un sceptre et qui fait exploser la glace, des yeux qui pétillent… Euuuh Celès, c'est encore bien toi là ?
 
 Il se tourna vers Galathea, elle était libre. Enfin. Heureusement, elle ne semblait pas avoir d'engelure. La glace était magique, elle entravait, mais ne semblait pas avoir provoqué de véritable gel.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea ne comprit pas ce qu’il se passait sur le moment, mais fut soulagée d’être enfin libérée de l’emprise de la glace.
 
@@ -973,24 +1039,29 @@ Elle la prit dans ses mains pour la caresser.
 — Donc j’étais en train de parler à cette belle souris, jusqu’au moment où je me suis retrouvée prisonnière de la glace.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `— Seul le maître de ces lieux pouvait te libérer, mais il était enchaîné et ne pouvait être libéré. Je n’ai pas eu le choix. J’ai été obligée de le tuer pour devenir moi-même la maîtresse de ces lieux et donc te libérer. J’ai récupéré ce pouvoir et ce dragon est devenu mon gardien et mon protecteur, dit Celès en caressant la tête du dragon.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Donc cela signifie que, si tu es le maître des lieux, tu dois rester ici ? demanda Timio à Celès, devant la peur de devoir laisser son amie ici, seule, dans ce lieu froid et presque sinistre.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès sourit à Timio.
 
 — Non. Je ne suis pas obligée de rester ici, mais avant que l’on reparte il faudra que je nomme quelqu’un pour gérer le royaume à ma place.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Ouf ! s'exclama Timio, soulagé. Ça, c'est rassurant. Et tu vas y mettre qui du coup ?`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès réfléchit puis sortit du palais. Après une bonne demi-heure, elle revint avec deux membres de l’équipage.
 
@@ -1007,6 +1078,7 @@ Celès se tourna vers ses compagnons.
 Elle sortit du palais suivie par le dragon, son nouveau gardien.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `Le groupe reprit la mer (ou c'est la mer qui prend l'homme ??) en direction de la cité.
 
@@ -1015,6 +1087,7 @@ Timio s'installa au chaud dans une cabine avec ses deux amies et fit le point.
 — Donc pour résumer, nous avons deux codex sur quatre. Lorsque nous aurons récupéré les deux derniers codex, la voie vers Oméga nous sera ouverte afin de récupérer le cristal qui permettra à la cité de se débarrasser de ce foutu faux bouclier qui l'empêche de se protéger réellement contre de potentiels futurs envahisseurs qui veulent s'emparer de ladite cité. Ah, et au passage on essaie de ne pas se faire tuer et si on peut, on essaie aussi de protéger Dolios, Thayri et Valtor. Et maintenant on va se reposer pour reprendre des forces pendant les quelques heures à venir. Ai-je bien résumé ? demanda-t-il aux filles.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `— Tu as tout bien résumé Timio… dit Galathea. J’espère que Valtor et Astro vont bien. On est un peu partis précipitamment, si bien que je n’ai pas vraiment eu le temps de leur dire au revoir.
 
@@ -1022,13 +1095,14 @@ Galathea portait toujours le bracelet que lui avait offert son petit ami. Ce bra
 
 Elle tapota alors sur son bracelet et la silhouette de Valtor se dessina. Elle fut très heureuse de le voir, mais quelque chose n’allait pas dans le regard de Valtor.
 
-— Salut Galathea, j’espère que tu vas bien ? Ici ce n’est pas la forme, des individus ont saccagé la serre et des animaux sont morts. Nous n’avons pas identifié les coupables, mais de l’aide me serait bien précieuse… Je suis navré de devoir arrêter la conversation mais il faut que j’y retourne ! À bientôt ma douce.
+— Salut Galathea, j’espère que tu vas bien ? Ici ce n’est pas la forme, des individus ont saccagé la serre et des animaux sont morts. Nous n’avons pas identifié les coupables, mais de l’aide me serait bien précieuse… Je suis navré de devoir arrêter la conversation mais il faut j’y retourne ! À bientôt ma douce.
 
 Galathea se retourna vers ses amis et fondit en larmes.
 
 — Vous avez entendu la conversation les amis ? dit-elle d’une voix triste.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès se sentit triste pour les animaux et elle voyait la peine de Galathea.
 
@@ -1059,6 +1133,7 @@ Elle siffla pour appeler son dragon et monta dessus.
 — Galathea, Timio, grimpez ! On ira plus vite comme ça pour rentrer et voir ce qu’il se passe. Je viens de prévenir Dolios qu’on rentrera à dos de dragon et donc qu’ils ne nous attaquent pas en nous voyant arriver, dit-elle.`
         },
         {
+            type: "texte",
             auteur: "Yann",
             texte: `— Oh purée ! cria Timio, quand le dragon de Celès atterrit au sol, faisant valdinguer de la poussière et de la neige partout. Euh… Je ne suis pas très rassuré. La dernière fois je crois que je suis tombé de haut et je n'ai pas trop envie de retenter l'expérience… En plus l'eau est froide…
 
@@ -1069,6 +1144,7 @@ Devant le regard tueur de Celès, Timio se tut et grimpa sur le dos de celui-ci.
 Il tendit sa main vers Galathea pour l'aider à monter.`
         },
         {
+            type: "texte",
             auteur: "Brice",
             texte: `Galathea se montra préoccupée par ce qu’il se passait avec les animaux sur Terraria. Mais elle saisit la main de Timio afin de monter à dos d’un magnifique dragon.
 
@@ -1091,6 +1167,7 @@ Galathea interrompit alors le Grand Maître tout en regardant ses amis.
 — Il faut que je me rende à la réserve naturelle mais en même temps, on doit récupérer la troisième partie du codex ! Je ne sais pas quoi faire, dit Galathea en regardant ses amis et en fondant en larmes.`
         },
         {
+            type: "texte",
             auteur: "Vio",
             texte: `Celès caressa la tête de Galathea.
 
