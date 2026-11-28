@@ -618,7 +618,7 @@ Au bout d’une heure ou deux, Celès se sentit mieux. Elle mit des vêtements t
         },
         {
             type: "image",
-            src: "images/histoire/Chateauglace.jpg",
+            src: "images/histoire/chateauglace.jpg",
             legende: "Le château de glace du pays de l'hiver éternel"
         },
         {
