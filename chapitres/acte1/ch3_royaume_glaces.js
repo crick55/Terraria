@@ -591,7 +591,7 @@ Tout à coup, le bateau se stoppa.
         },
         {
             type: "image",
-            src: "images/histoire/fondocean.jpg",
+            src: "images/histoire/Fondocean.jpg",
             legende: "L'arrivée aux abords du pays de l'hiver éternel"
         },
         {
@@ -618,7 +618,7 @@ Au bout d’une heure ou deux, Celès se sentit mieux. Elle mit des vêtements t
         },
         {
             type: "image",
-            src: "images/histoire/chateauglace.jpg",
+            src: "images/histoire/Chateauglace.jpg",
             legende: "Le château de glace du pays de l'hiver éternel"
         },
         {
@@ -690,7 +690,7 @@ Le hall donnait sur trois zones : une zone à gauche, qui semblait mener vers un
         },
         {
             type: "image",
-            src: "images/histoire/hallglace.jpg",
+            src: "images/histoire/Hallglace.jpg",
             legende: "Le grand hall et le salon figés dans le givre"
         },
         {
